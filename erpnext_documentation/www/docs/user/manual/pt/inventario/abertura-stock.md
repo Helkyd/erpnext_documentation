@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Opening Stock
+# Stock de Abertura
 
-**Opening Stock is the amount and value of materials that a company has available for sale or use at the beginning of an accounting period.**
+**Stock de Abertura é o valor e a quantidade de materiais uma empresa tem disponivel para venda ou uso no inicio do periodo contabilistico.**
 
-The closing Stock of the previous accounting period becomes the opening Stock of the current accounting period.
+O Stock de fecho do periodo contabilistico anterior passa a ser o Stock de abertura do periodo contabilistico corrente.
 
-## 1. Prerequisites
+## 1. Prerequesitos
 
-* Create [Warehouses](/docs/user/manual/en/stock/warehouse).
-* Link Warehouse to appropriate accounting ledgers.
+* Criar [Armazens](/docs/user/manual/pt/inventario/armazem).
+* Ligar Armazem ao livro de contabilidade.
 
-## 2. Opening Stock for Non-serialized Items
+## 2. Stock de Abertura para Itens não serializados
 
-To post opening stock visit the [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation) page.
+Para postar stock de abertura visite a pagina [Reconciliação de Stock](/docs/user/manual/pt/inventario/reconciliacao-de-stock) .
 
 
-## 3. Opening Stock for Serialized and Batched Items
+## 3. Stock de Abertura para Itens Serializados e com Lotes
 
-Create the [Batch](/docs/user/manual/en/stock/batch) and [Serial No](/docs/user/manual/en/stock/serial-no) records beforehand. To post opening stock for serialized and batched items:
+Criar os registos [Lote](/docs/user/manual/pt/inventario/lote) e [Numero de Serie](/docs/user/manual/pt/inventario/numero-serie) de antemão. Para postar o stock de abertura para itens serializados e com lotes:
 
-1. Go to **Stock > Stock Transactions > Stock Entry > New**.
-1. Select 'Material Receipt' in 'Stock Entry Type'.
-1. Select the Warehouse in 'Default Target Warehouse'.
-1. In Items table select Item Code, Qty and Basic rate.
-1. For batched items select Batch No.
-1. For serialized items select Serial No.
-1. Save and Submit.
+1. Va para  **Inventario > Transações de Stock > Registo de Stock > Novo**.
+1. Selecionar 'Recepção de Material' em 'Tipo de Entrada de Stock'.
+1. Selecionar o Armazem em 'Armazem Alvo Padrão'.
+1. Na table de Itens selecionar o Codigo do Item, Qty e Preço.
+1. Para itens com lote selectionar o Numero do Lote.
+1. Para itens serializados selecionar o Numero de Serie.
+1. Salvar e Submeter.
 
 ## 4. Video
 <div>
@@ -35,7 +35,7 @@ Create the [Batch](/docs/user/manual/en/stock/batch) and [Serial No](/docs/user/
     </div>
 </div>
 
-### 5. Related Topics
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
+### 5. Topicos Relacionados
+1. [Contabilidade do Inventário de Stock](/docs/user/manual/pt/inventario/contabilidade-inventario-stock)
+1. [Entrada de Stock](/docs/user/manual/pt/inventario/entrada-stock)
+1. [Reconciliação de Stock](/docs/user/manual/pt/inventario/reconciliacao-de-stock)
