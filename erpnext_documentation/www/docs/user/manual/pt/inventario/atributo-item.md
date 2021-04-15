@@ -1,34 +1,34 @@
 <!-- add-breadcrumbs -->
-# Item Attribute
+# Atributo do Item
 
-**Item Attributes are characteristics given to Item Variants based on which Item Variants are created.**
+**Atributos do Item são caracteristicas dadas as Variantes de Item com base nas Variantes de Itens criados.**
 
-Item Attributes can be color, size, length, etc. Multiple attributes like multiple colors can be defined.
+Atributos do Item podem ser cor, tamanho, comprimento, etc. Varios atributos como varias cores podem ser definidos.
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute.png">
 
-To access the Item Attribute list, go to:
+Para aceder a lista de Atributos de Item, va para:
 
-> Home > Stock > Settings > Item Attribute
+> Home > Inventario > Configurações > Atributo do Item
 
-## 1. How to create an Item Attribute
-1. Go to the Item Attribute list, click on New.
-1. Enter a name for the Attribute.
-1. Enter the attribute values in the table.
-1. Save.
+## 1. Como criar um Atributo do Item
+1. Va para a lista de Atributos do Item, clique em Novo.
+1. Digite um nome para o Atributo.
+1. Digite os valores do atributo na tabela.
+1. Salvar.
 
-The attribute values can be numeric or non-numeric.
+Os valores do atributo podem ser numericos ou não numericos.
 
-### 1.1 Non Numeric Attributes
+### 1.1 Atributos Não Numericos
 
-For Non Numeric Attributes, specify attributes values along with its abbreviation in the Attribute Values table.
+Para os Atributos não Numericos, especifique os valores dos atributos com a abreviação na tabela dos Valores dos Atributos.
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute-non-numeric.png">
 
-### 1.2 Numeric Attributes
-If your attribute is Numeric, select Numeric Values. Specify the Range and the Increment Value. In the following example the pipe length is of range 0.25 to 3.0 and the range is 0.25 so the variants will be 0.25, 0.5, 0.75...3.0.
+### 1.2 Atributos Numericos
+Se o seu atributo for Numerico, selecione o valor Numerico. Especifique o Alcance o valor Incremental. No exemplo seguinte o tamanho do tubo tem o tamanho de 0.25 para 3.0 e o alcance é de 0.25 então as variantes será de 0.25, 0.5, 0.75...3.0.
 
 <img class="screenshot" alt="Attribute Master" src="{{docs_base_url}}/assets/img/stock/item-attribute-numeric.png">
 
-#### 2. Related Topics
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
+#### 2. Topicos Relacionados
+1. [Variantes do Item](/docs/user/manual/pt/inventario/variantes-item)
