@@ -1,24 +1,24 @@
 <!-- add-breadcrumbs -->
-# Quick Stock Balance
+# Balanço Rapido de Stock/Acções
 
-**Quick Stock Balance is a tool that can be used to quickly retrieve the current stock balance (quantity) and value of an item, in the specified warehouse, on the specified date.**
+**Balanço Rapdio de Stock/Acções é uma ferramenta que pode ser usada para rapidamente ir buscar o balanço actual do stock (quantidade) e o valor de um item, num armazem especifico, na data especificada.**
 
-It comes in handy during audits, while verifying stock details before transactions, etc.
+É util durante as auditorias, enquanto verifica os detalhes do stock antes das transações, etc.
 
-To access this tool, go to:
-> Home > Stock > Tools > Quick Stock Balance
+Para acessar esta ferramenta, va para:
+> Home > Inventario > Ferramentas > Balanço Rapido de Acções
 
-## 1. Using Quick Stock Balance
-Item and Warehouse are the basic fields required to fully utilize Quick Stock Balance. Item Barcode can also be used to fetch stock details.
+## 1. Usando o Balanço Rapido de Stock/Acções
+Item e Armazem são os campos basicos necessários para usar por completo o Balanço Rapido de Stock/Acções. Codigo de Barras pode ser usado para buscar os detalhes de stock.
 
-![Quick Stock Balance](/docs/assets/img/stock/quick-stock-balance.png)
+![Balanço Rapido de Stock/Acções](/docs/assets/img/stock/quick-stock-balance.png)
 
-You can opt to select a different warehouse or date. The stock value and quantity, will be fetched real-time according to the specified values.
+Você pode optar em selecionar armazem diferente ou data. O valor do stock e quantidade, seram procurados em tempo-real de acordo os valores especificados.
 
-You can also view the Stock Balance report by clicking on 'Stock Balance Report' . It will redirect you to the report with the Item and Warehouse filters populated.
+Você pode tambem visualizar o relatorio de Balanço de Stock fazendo um clique em 'Relatorio de Balanço de Stock' . Irá redirecionar para o relatorio com os filtros do Item e Armazem preenchidos.
 
-![Stock Balance Report](/docs/assets/img/stock/stock-balance-report.png)
+![Relatorio de Balanço de Stock](/docs/assets/img/stock/stock-balance-report.png)
 
-### 2. Related Topics
-1. [Stock Level Report](/docs/user/manual/en/stock/stock-level-report)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
+### 2. Topicos Relacionados
+1. [Relatorio de Nivel de Stock](/docs/user/manual/pt/inventario/relatorio-nivel-stock)
+1. [Registo de Stock](/docs/user/manual/pt/inventario/entrada-stock)

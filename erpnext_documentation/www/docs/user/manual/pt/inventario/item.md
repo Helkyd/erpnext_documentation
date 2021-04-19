@@ -92,7 +92,7 @@ Barcodes can be recorded in Items to quickly scan and add them in transactions. 
 * **Default Material Request Type**: When you create a new Material Request for this item, the field set here will be selected by default in the new Material Request. This is also known as an 'indent'.
 * **Valuation Method**: Select the Valuation Method whether FIFO or Moving Average. To know more about Valuation Methods, [click here](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
 
-### 3.4 Automatic Reordering
+### 3.4 Encomenda Automatica
 When the stock of an item dips under a certain quantity, you can set an automatic reorder under 'Auto Reorder' section. This should be enabled in [Stock Settings](/docs/user/manual/en/stock/stock-settings#9-automatic-material-request). This will raise a [Material Request](/docs/user/manual/en/stock/material-request) for the Item. The user with roles Purchase Manager and Stock Manager will be **notified** when the Material Request is created.
 
 * **Check in (group)**: In which group warehouses to check the quantity of the item.

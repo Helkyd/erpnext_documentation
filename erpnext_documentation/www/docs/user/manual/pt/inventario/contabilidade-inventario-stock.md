@@ -46,5 +46,5 @@ Se você for um usuario existente a usar o Inventario Periodico e quiser usar o 
 Inventory, você precisa seguir [alguns passos](/docs/user/manual/pt/inventario/artigos/migrate-to-perpetual-inventory) para migrar. 
 
 ### 3. Topicos Relacionados
-1. [Perpetual Inventory](/docs/user/manual/pt/inventario/perpetual-inventory)
-1. [Migrar para Perpetual Inventory](/docs/user/manual/pt/inventario/artigos/migrate-to-perpetual-inventory)
+1. [Inventario Perpetual](/docs/user/manual/pt/inventario/inventario-perpetual)
+1. [Emigrar para Inventario Perpetual](/docs/user/manual/pt/inventario/artigos/emigrar-para-inventario-perpetual)

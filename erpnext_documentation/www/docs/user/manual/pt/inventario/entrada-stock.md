@@ -1,114 +1,114 @@
 <!-- add-breadcrumbs -->
-# Stock Entry
+# Registo de Stock
 
-**A Stock Entry lets you record Item movement between Warehouses.**
+**Um Registo de Stock pemite registar o movimento do Item entre Armazens.**
 
-To access the Stock Entry list, go to:
-> Home > Stock > Stock Transactions > Stock Entry
+Para aceder va para lista de Registo de Stock, va para:
+> Home > Inventario > Transações de Stock > Registo de Stock
 
-Stock Entries can be made for the following purposes:
+Registo de Stocks pode ser feito com os seguintes propositos:
 
-* **Material Issue**: If the material is being issued to someone in or outside the company (Outgoing Material). The Items will be deducted from the Warehouse set under Source Warehouse.
-* **Material Receipt**: If the material is being received (Incoming Material). The Items will be added to the Warehouse set under Target Warehouse.
-* **Material Transfer**: If the material is being moved from one internal Warehouse to another.
-* **Material Transfer for Manufacturing**: If raw materials are being transferred for manufacturing. The transfer can happen against a [Work Order](/docs/user/manual/en/manufacturing/work-order) or a [Job Card](/docs/user/manual/en/manufacturing/job-card). To know more, visit the [Bill Of Materials](/docs/user/manual/en/manufacturing/bill-of-materials) page.
-* **Material Consumption for Manufacture**: There can be multiple consumption stock entries against a manufacturing Work Order. [Refer this link for more details](/docs/user/manual/en/manufacturing/articles/material_consumption)
-* **Manufacture**: If the Material is being received from a Manufacturing/Production Operation.
-* **Repack**: If the Original item/items are being repacked into new item/items.
-* **Subcontract**: If the Material is being issued for a sub-contract activity. This entry is made from a Purchase Order. To know more, visit the [subcontracting](/docs/user/manual/en/manufacturing/subcontracting) page.
-* **Send to Warehouse**: If the Material is being sent at a Warehouse and needs confirmation at the receiving end, this document will be selected in the Stock Entry with type 'Receive to Warehouse' to confirm how many items were received. The status will be 'Goods In Transit' until all goods are received, after which the status will change to 'Goods Transferred'.
-* **Receive to Warehouse**: If the Material is being received at a Warehouse the Stock Entry with type 'Send to Warehouse' will be selected here and the number of goods received will be updated.
+* **Requisição de Material**: Se o material esta a ser soliçitado para alguem dentro ou fora da empresa. Estes Itens serao deduzidos do Armazem definidos no Armazem Fonte.
+* **Receção de Material**: Se o material esta a ser recebido. Os Itens serao adicionados ao Armazem definido no Armazem Alvo.
+* **Transferencia de Material**: Se o material está a ser movido de um Armazem interno para outro.
+* **Transferencia de Material para Fabrico**: Se a materia prima está a ser transferida para produção. A transferencia pode ser contra uma [Ordem de Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho) ou um [Cartão de Trabalho](/docs/user/manual/pt/fabrico/cartao-trabalho). Para saber mais, visite a pagina  [Lista de Materiais](/docs/user/manual/pt/fabrico/lista-de-materiais) .
+* **Material de Consumo para Fabrico**: Pode have varios registo de consumo de stock contra uma Ordem de Trabalho para fabrico. [Siga esta link para mais detalhes](/docs/user/manual/pt/fabrico/artigos/consumo-de-material)
+* **Fabrico**: Se o Material a ser recibo de um Fabrico/Operação de Produção.
+* **Reembalar**: Se o item/Itens Originais estão a ser reembalados para um novo item/itens.
+* **Subcontracto**: Se o Material esta ser solicitado para uma operação de um Sub-contracto. Esta entrada é feita para a Ordem de Compra. Para saber mais, visite a pagina [subcontratação](/docs/user/manual/pt/fabrico/subcontratação) .
+* **Enviar para o Armazem**: Se o Material a ser enviado a um Armazem e precisa de confirmação pela parte a receber, este documento será selecionado no Registo de Stock com o tipo 'Receba no Armazem' para confirmar quantos itens foram recebidos. O status será 'Bens em Transito' até que todos os bens sejam recebidos, no depois o status irá mudar para 'Bens Transferidos'.
+* **Receba no Armazem**: Se o Material está a ser recebido no Armazem o tipo de Registo de Stock 'Enviar para o Armazem' será selecionario aqui e o numero de bens recebidos será atualizado.
 
-To know more in detail about the stock entry types, [visit this page](/docs/user/manual/en/stock/articles/stock-entry-purpose).
-
-
-## 1. Prerequisites
-Before creating and using a Stock Entry, it is advised that you create the following first:
-
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
-* [Item](/docs/user/manual/en/stock/item)
+Para saber mai em detalhe sobre os tipos de registo de stock, [visite esta pagina](/docs/user/manual/pt/inventario/artigos/motivo-registo-stock).
 
 
-## 2. How to create a Stock Entry
-Stock Entries for Manufacturing purposes are usually created from a [Work Order](/docs/user/manual/en/manufacturing/work-order). To create a Stock Entry manually for other purposes, follow these steps:
+## 1. Pre-requisitos
+Antes de criar e utilizar o Registo de Stock, é aconselhavel que crie os seguintes primeiro:
 
-1. Go to the Stock Entry list, click on New.
-1. Select the Stock Entry Purpose from the ones listed above.
-1. If you set the Default Source or Target Warehouses, they'll be automatically filled for the rows in the Items table.
-1. Source/Target Warehouses will be available as per the Stock Entry Purpose you selected.
-1. Select Items and enter a quantity.
-1. The basic rate will be fetched and the amount will be calculated automatically.
-1. Save and Submit.
+* [Armazem](/docs/user/manual/pt/inventario/armazem)
+* [Item](/docs/user/manual/pt/inventario/item)
+
+
+## 2. Como criar um Registo de Stock
+Registos de Stock para motivos de Fabrico são criados apartir de uma [Ordem de Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho). Para criar um Registo de Stock manual para outros motivos, siga estes passos:
+
+1. Va para a lista de Entrada de Stock, clique em Novo.
+1. Selecion o Motivo do Registo de Stock apartir dos listados em cima.
+1. Se voce definir a Fonte Padrão ou os Armazens Alvo, eles serao automaticamente preenchidos nas linhas da table de Itens.
+1. Armazens Fonte/Alvo ficaram disponiveis de acordo o Motivo de Registo de Stock que selecionou.
+1. Selecione Itens e digite a quantidade.
+1. O preço basico sera procurado e o valor será calculado automaticamente.
+1. Salvar e Submeter.
 
     <img class="screenshot" alt="Stock Entry" src="{{docs_base_url}}/assets/img/stock/stock-entry.png">
 
-Usually, "Source Warehouse" and "Target Warehouse" both are set for recording a movement.
+Normalmente, "Armazem Fonte" e "Armazem Alvo" ambos são definidos para gravar um movimento.
 
-### 2.1 Additional options when creating a Stock Entry
+### 2.1 Opções Adicionais ao criar um Registo de Stock
 
-* **Work Order**: If this is a Manufacturing entry, the Work Order will be shown in this field.
-* **Edit Posting Date and Time**: Will allow you to edit the Stock Entry's date and time.
-* **Inspection Required**: If a [Quality Inspection](/docs/user/manual/en/stock/quality-inspection) needs to be performed on the Items before submitting the Stock Entry.
-* **From BOM**: If this is a Manufacturing entry, the associated BOM for the Item being manufactured will be shown.
+* **Ordem de Trabalho**: Se este for um registo de Fabrico, a Ordem de trabalho será mostrada neste campo.
+* **Editar a Data e Hora de Postagem**: Irá permitir que você edite a data e hora do Registo de Stock.
+* **Inspeção Necessaria**: Se uma [Inspeção de Qualidade](/docs/user/manual/pt/inventario/inspecao-de-qualidade) for necessaria aos Itens antes de submeter o Registo de Stock.
+* **Apartir do LDM**: Se este registo for um Fabrico, a LDM associada para o Item sendo fabricado será mostrado.
 
-### 2.2 Stock Entry Type
-You can also create a Stock Entry Type where only the name will be different, for example 'Scrap Entry'. The purpose will be Material Transfer but the name will be different. This is useful if you want certain Users to have access only to specific actions related to stock.
+### 2.2 Tipo de Registo de Stock
+Vocẽ pode tambem criar um Tipo de Registo de Stock aonde somente o nome será diferente, por exemplo 'Entrada de Desgaste'. O motivo será Transferencia de Materia mas o nome será diferente. É util se você quer que certo usuarios tenha acesso somente a acções especificas relacionadas ao Stock.
 
-![Stock Entry Type](/docs/assets/img/stock/stock-entry-type.png)
+![Tipo de Registo de Stock](/docs/assets/img/stock/stock-entry-type.png)
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1 The Items table
-Details about the Item, Rate, Quantity, etc. will be shown here.
+### 3.1 A tabela de Itens
+Detalhes sobre o Item, Preço, Quantidade, etc. serao mostrados aqui.
 
-Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+Selecionando 'Permitir Taxa de Avalição Zero' irá permitir submeter o Recibo de Compra mesmo que a Taxa de Avaliação do Item seja 0. Isto pode ser um Item de amostra ou devido a um acordo mutuo com o seu Fornecedor.
 
-Different Source and Target Warehouses can be set for different Items.
+Armazens Fonte e Alvo diferentes podem ser definidos para Itens diferentes.
 
-### 3.2 Additional Costs
+### 3.2 Custos Adicionais
 
-If the stock entry is an incoming entry i.e any item is receiving at a target warehouse, you can add related additional costs (like Shipping Charges, Customs Duty, Operating Costs, etc) associated with the process. The additional costs will be considered to calculate the Valuation Rate of the items.
+Se o regito de stock é para um registo de entrada i.e  qualquer item é recebido no armazem alvo, você pode inserir custos adicionais relacionados (como Taxa de Shipping, Direitos de Alfandega, Custos de Operação, etc) associados com o processo. Os custos adicionais seram considerados para calcular o Valor da Avaliação dos itens.
 
-To add additional costs:
+Para adicionar Custos Adicionais:
 
-1. Select the Expense Account to which the expense from this Stock Entry will be recorded.
-1. Enter the description and amount of the cost in the Additional Costs table.
+1. Selecione a Conta de Despesa no qual a despesa deste Registo de Stock será guardado.
+1. Digite a descrição e valor do custo na tabela de Custos Adicionais.
 
 <img class="screenshot" alt="Stock Entry Additional Costs" src="{{docs_base_url}}/assets/img/stock/additional-costs-table.png">
 
-The added Additional Costs will be distributed among the receiving items (where the Target Warehouse mentioned) proportionately based on the Basic Amount of the items. And the distributed additional cost will be added to the basic rate of the item, to calculate Valuation Rate.
+Os Custos Adicionais serao distribuidos entre os itens recebidos (aonde o Armazem Alvo mencionado) proporcionalmente com base no Valor Basico dos itens. E o custo adicional distribuido será adicionado ao custo basico do item, para calcular o Valor de Avaliação.
 
-Quantity and Rate is shown as follows when you expand the Items table.
+Quantidade e Preço é mostrado como em baixo quando você expande a tabela de Itens.
 <img class="screenshot" alt="Stock Entry Item Valuation Rate" src="{{docs_base_url}}/assets/img/stock/stock-entry-item-valuation-rate.png">
 
-### 3.3 Accounting Dimensions
-You can tag different transactions based on different dimensions. By default, [Projects](/docs/user/manual/en/projects/project) can be considered as a dimension as it is a common practice to track costs of different projects. To know more about Accounting Dimensions, [visit this page](/docs/user/manual/en/accounts/accounting-dimensions).
+### 3.3 Contabilidade de Dimensões
+você pode marcar transações diferentes com base em dimensões diferentes. Por defeito, [Projectos](/docs/user/manual/pt/projectos/projecto) pode ser considerado como um dimensão como é de practica analizar custos de projectos diferentes. Para saber mais sobre Contabilidade de Dimensões, [visite esta pagina](/docs/user/manual/pt/contabilidade/dimensao-contabil).
 
-### 3.4 Printing Settings
+### 3.4 Configurações de Impressão
 
-#### Letterhead
-You can print your Purchase Receipt on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### Cabeçalho
+Você pode imprimir o seu Recibo de Compra com o logotipo da sua empresa. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalho
+Cabeçalho de Recibo de Compra pode tambem ser trocado ao imprimir o documento. Vocẽ pode fazer isso selecionando um **Imprimir Cabeçalho**. Para criar um novo Imprimir Cabeçalho va para: Home > Configurações > Impressão > Imprimir Cabeçalho. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/imprimir-cabeçalhos).
 
-### 3.5 More Information
+### 3.5 Mais Informações
 
-* **Is Opening**: If this entry is the opening stock entry for the Items.
-* **Remarks**: Any additional remarks about the Item.
-* **Percentage Transferred**: The percentage of Items transferred depending on Stock Entry purpose.
-* **Total Amount**: The total amount of Items transferred.
+* **É Abertura**: Se este registo é de abertura de stock para os Itens.
+* **Remarks**: Qualquer remarks adicional sobre o Item.
+* **Percentagem Transferida**: A percentagem dos Itens transferidos dependendo do motivo do Registo de Stock.
+* **Valor Total**: O valor total de Itens transferidos.
 
-### 3.6 Perpetual Inventory
+### 3.6 Inventario Perpetual
 
-If the perpetual inventory system is enabled, additional costs will be booked in Expense Account mentioned in the Additional Costs table .
+Se o sistema do Inventario perpetual estiver activo, custos adicionais seram alocado em Conta de Despesas mencionadas na tabela de Custos Adicionais.
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/stock-entry-additional-cost.png">
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/additional-costs-general-ledger.png">
 
-### 3.7 After Submitting
-After submitting a Stock Entry, you can go to the stock ledger or the accounting ledger from the dashboard.
+### 3.7 Depois de Submeter
+Depois de submeter um Registo de Stocks, você poide ir para o Razão do Stock ou Razão Geral pelo dashboard.
 
 <img class="screenshot" alt="Additional Costs General Ledger" src="{{docs_base_url}}/assets/img/stock/stock-entry-submit.png">
 
@@ -119,11 +119,10 @@ After submitting a Stock Entry, you can go to the stock ledger or the accounting
     </iframe>
 </div>
 
-### 5. Related Topics
-1. [Stock Entry Purpose](/docs/user/manual/en/stock/articles/stock-entry-purpose)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Production Plan](/docs/user/manual/en/manufacturing/production-plan)
-1. [Job Card](/docs/user/manual/en/manufacturing/job-card)
+### 5. Topicos Relacionados
+1. [Motivo de Registo de Stock](/docs/user/manual/pt/inventario/artigos/motivo-registo-stock)
+1. [Reconciliação de Stock](/docs/user/manual/pt/inventario/reconciliacao-de-stock)
+1. [Abertura de Balanço de Stock para Itens Serializados e Lotes](/docs/user/manual/pt/inventario/artigos/abertura-balanco-stock-para-itens-serializados-e-lotes)
+1. [Ordem de Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho)
+1. [Plano de Produção](/docs/user/manual/pt/fabrico/plano-de-producao)
+1. [Cartão de Trabalho](/docs/user/manual/pt/fabrico/cartao-trabalho)

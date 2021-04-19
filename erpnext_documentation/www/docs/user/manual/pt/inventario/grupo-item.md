@@ -1,61 +1,57 @@
 <!-- add-breadcrumbs -->
-# Item Group
+# Grupo de Item
 
-**An Item Group is a way to classify items based on types.**
+**Um Grupo de Item é a forma de classificar itens com base nos tipos.**
 
-Depending on the type of product, you can categorize an item under its respective field. If the product is
-service-oriented, assign it under the Item Group - service. If the
-product is used as a raw-material, assign it under the Raw Material
-category. In case, an item is used only in trading, you can categorize it
-under an Item Group called Trading.
+Dependendo do tipo de produto, você pode categorizar um item dentro do seu campo. Se o produto é serviço-orientado, atribua dentro do Grupo de Item - Serviço. Se o produto é usado como materia-prima, atribua dentro da categoria Materia Prima. No caso, um item for usado somente para Comerçcio, você pode categorizar dentro do Grupo de Item de nome Comercio.
 
-To access the Item Group list, go to:
-> Home > Stock > Items and Pricing > Item Group
+Para acessar a Lista de Grupo de Item, va para:
+> Home > Inventario > Itens e Preços > Grupo do Item
 
-This is what the Item Group tree looks like:
+Ẽ desta forma que se parece a arvor do Grupo do Item:
 <img class="screenshot" alt="Item Group Tree" src="{{docs_base_url}}/assets/img/stock/item-group-tree.png">
 
-## 1. How to create an Item Group
+## 1. Como criar um Grupo do Item
 
-1. Go to the Item Group list, click on New.
-1. Select a group node under which you wish to create the Item Group, the default root is 'All Item Groups'.
-1. Select 'Add Child' or click on the New button.
-1. To make this child a category/group node, tick on Group Node.
-1. Click on Create New. 
+1. Va para a lista de Grupo de Item, clique em Novo.
+1. Selecione um nó de grupo no qual queira criar o Item do Grupo, por defeito o Raiz é 'Todos os Grupos de Item'.
+1. Selecione 'Adicionar Filho' ou clique no Botão Novo.
+1. Para fazer este filho uma nó de categoria/grupo, selecione em Nó de Grupo.
+1. Clique em Criar Novo. 
 
 <img class="screenshot" alt="Add Item Group" src="{{docs_base_url}}/assets/img/stock/item-group-new.gif">
 
-### 1.2 Delete an Item Group
+### 1.2 Apagar um Grupo de Item
 
-1. Select the Item Group you want to delete.
-1. Select 'Delete'.
-1. Click on Yes.
+1. Selecione o Grupo do Item que deseja apagar.
+1. Selecione 'Apagar'.
+1. Clique em Sim.
 
-## 2. Features
-To see the following options, click on an Item Group, click on Edit.
+## 2. Funcionalidades
+Para ver as seguines opções, clique em Grupo de Item, clique em Editar.
 
-### 2.1 Parent Item Group
-You can change the parent Item Group of an item by choosing another one under General Settings.
+### 2.1 Parente do Grupo do Item
+Você pode mudar o parente do Grupo do Item de qualquer item selecionando outro dentro das Configurações Gerais.
 
-### 2.2 Defaults
+### 2.2 Padrões
 
-* **Default Price List**: A default price list that'll determine the Item Prices for this Item Group.
-* **Default Warehouse**: Default Warehouse set in transactions for the items that belong to this group.
+* **Lista de Preço Padrão**: Uma lista de preço padrão que irá determinar os Preços do Item para este Grupo do Item.
+* **Armazem Padrão**: Armazem Padrão definido em transaçoes para os itens que pertencem a este grupo.
 
-* **Default Buying/Selling Cost Center**: The default Buying/Selling Cost Center to which items in this group will be billed against.
-* **Default Expense/Income Account**: The default accounts for items that belong to this group.
-* **Default Supplier**: On setting a Supplier here, this supplier will be chosen in purchase transactions by default for items in this group.
+* **Centro de Custo Padrão para Compras/Vendas**: O Centro de Custo Padrão para Compras/Vendas no qual os itens neste grupo serao cobrados.
+* **Conta Padrão de Despesa/Rendimento**: As contas padrões para os itens que pertençãm a este grupo.
+* **Fornecedor Padrão**: Ao configurar um Fornecedor aqui, este fornecedor irá ser escolhido em transações de compra por defeito para os itens deste grupo.
 
-### 2.3 Item Tax
-A default item tax template will be applied to all items belonging to this group. Similarly a Tax Category can also be selected, visit [Quotation](/docs/user/manual/en/selling/quotation) to know more about Tax Categories.
+### 2.3 Imposto do Item
+Um modelo de Imposto do item será aplicado para todos os itens que pertenção a este grupo. Igualmente para a Categoria de Imposto que pode ser selecionada, visite [Proformas](/docs/user/manual/pt/vendas/proforma) para saber mais sobre Categoria de Impostos.
 
-### 2.4 Website Settings
-* **Show in Website**: Items belonging to this group will be shown on your website under the Item Group.
-* **Weightage**: This is the weight for the Item Groups themselves, item groups with higher weights will be shown first.
-* **Slideshow**: A slideshow for the Item Group, just like in an Item. Visit the [Homepage](/docs/user/manual/en/website/homepage) page in Website module to know more.
+### 2.4 Configurações de Pagina/Website
+* **Mostrar na Pagina**: Itens que pertençam a este grupo seram vistos na sua pagina no Grupo do Item.
+* **Peso**: Este é o peso para os Grupos do Item, grupos de item com maior peso serao os primeiros a ser visualizados.
+* **Slideshow**: Um slideshow para o Grupo do Item, tal como um Item. Visite esta pagina [Homepage](/docs/user/manual/pt/website/homepage) no Modulo Website para saber mais.
 
-* **Description**: This will appear on the Item Group page.
-* **Website Specifications**: Label and its description for an item group.
+* **Descrição**: Este ira aparecer na pagina do Grupo do Item.
+* **Especificações do Website**: Titulo e descrição para um grupo de item.
 
-### 3. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
+### 3. Topicos Relacionados
+1. [Item](/docs/user/manual/pt/inventario/item)

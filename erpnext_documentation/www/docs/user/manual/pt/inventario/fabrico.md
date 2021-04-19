@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
-# Manufacturer
+# Fabricante
 
-**A manufacturer created or produces an Item.**
+**Um Fabricante criou ou produz um Item.**
 
-A Manufacturer may not be the same person/company that sells the Item under a specific [Brand](/docs/user/manual/en/selling/brand). For example, Unico Plastics can be the Manufacturer of plastic brushes but it may be sold under a Brand, say, Super Brushes.
+Um Fabricante pode não ser a mesma pessoa/empresa que vende o Item de um marca especifica [Marca](/docs/user/manual/pt/vendas/marca). Por exemplo, Plastico Unico pode ser o Fabricante de escovas de plastico mas pode somente vender sobre a Marca, digamos, Super Escovas.
 
-In ERPNext, a Manufacturer can be used to identify Items using a specific part number.
+No ERPNext, um Fabricante pode ser usado para identificar Itens usando um numero de Peça.
 
-To access the Manufacturer list, go to:
-> Home > Stock > Manufacturer
+Para acessar a lista de Fabricantes, va para:
+> Home > Inventario > Fabricante
 
-## 1. How to Create a Manufacturer
-1. Go to the Manufacturer list and click on New.
-1. Enter a Manufacturer name and enter a description if needed.
-1. Save.
+## 1. Como Criar um Fabricante
+1. Va para a lista de Fabricantes e clique em Novo.
+1. Digite o nome do Fabricante e digite um descrição caso necessario.
+1. Salvar.
 
-    ![Manufacturer](/docs/assets/img/stock/manufacturer.png)
+    ![Fabricante](/docs/assets/img/stock/manufacturer.png)
 
-After creating a Manufacturer, it can be set in the Item form with a Manufacturer Part Number for identification.
-![Manufacturer](/docs/assets/img/stock/manufacturer-part.png)
+Depois de criar o Fabricante, pode ser usado no formulario do Item com o Numero da Peça Produzida para identificação.
+![Fabricante](/docs/assets/img/stock/manufacturer-part.png)
 
-### 1.1 Additional details
-The following details can be set for a Manufacturer:
+### 1.1 Detalhes Adicionais
+Os seguintes detalhes podem ser definidos para um Fabricante:
 
-* Website
-* Country
-* Logo
+* Pagina/Website
+* País
+* Logotipo
 
-## 2. Features
-### 2.1 Address and Contacts
+## 2. Funcionalidades
+### 2.1 Endereço e Contactos
 
-An [Address](/docs/user/manual/en/CRM/address) and [Contact](/docs/user/manual/en/CRM/contact) can be set for this Manufacturer.
+Um [Endereço](/docs/user/manual/pt/CRM/endereço) e [Contacto](/docs/user/manual/pt/CRM/contacto) podem ser definidos para este Fabricante.
 
-## 3. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Brand](/docs/user/manual/en/selling/brand)
+## 3. Topicos Relacionados
+1. [Item](/docs/user/manual/pt/inventario/item)
+1. [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+1. [Marca](/docs/user/manual/pt/vendas/marca)

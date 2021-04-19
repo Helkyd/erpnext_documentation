@@ -1,102 +1,102 @@
 <!-- add-breadcrumbs -->
-# Stock Settings
+# Configurações de Stock
 
-You can set default settings for your stock related transactions from the Stock Settings page.
-
-
-## 1. Item Naming By
-
-![Stock Settings](/docs/assets/img/stock/stock-settings-1.png)
-
-By default, the Item Name is set as per the Item Code entered. If you want Items to be named by a set [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) choose the 'Naming Series' option .
+Você pode definir configurações padrão para as transações de stock apartir da pagina de Configurações de Stock.
 
 
-## 2. Defaults
+## 1. Nome do Item por
 
-### 2.1 Default Item Group
-This will be the default item group allocated to a newly created item. Item groups are useful for classification and setting properties for the whole group. To know more visit the [Item Group](/docs/user/manual/en/stock/item-group) page.
+![Configuraçoes de Stock](/docs/assets/img/stock/stock-settings-1.png)
 
-### 2.2 Default Stock UOM
-The default unit of measure for stock is set as numbers (Nos), it can be changed from here.
+Por defeito, o Nome do Item é posto como o Codigo do Item digitado. Se você quer que os Itens sejam por um nome escolha [Serie de Atributo de Nomes](/docs/user/manual/pt/configuração/configurações/nome-das-series) a opção 'Serie de Atributo de Nomes' .
 
-### 2.3 Default Warehouse
-Set the default Warehouse from which the stock transactions are done. This will be fetched into the Default Warehouse in the Item master:
-    ![Stock Settings](/docs/assets/img/stock/stock-settings-def.png)
 
-### 2.4 Sample Retention Warehouse
-This is the Warehouse where sample retentions are stored. To know more, visit [this page](/docs/user/manual/en/stock/retain-sample-stock).
+## 2. Padrões
 
-### 2.5 Default Valuation method
-FIFO - first in first out or moving average valuation for your items. The default method is FIFO. If you select Moving Average, new Items will be valuated on Moving Average. You can change this when creating new Items in the Item form. Once the Item is saved, the Valuation Method cannot be changed.  Read more [here](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average).
+### 2.1 Item do Grupo Padrão
+Esta será o grupo de item padrão alocado ao novo item criado. Grupos de Item são uteis para classificação e configuração de propriedades para o grupo todo. Para saber mais visite a pagina [Grupo de Item](/docs/user/manual/pt/inventario/grupo-item) .
 
-## 3. Limit Percent
-This is the percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units, Supplier sends 120 units and the percentage is set to 10% then you are allowed to receive 110 units. By default, this is set to 0.
+### 2.2 UDM de Stock Padrão
+A unidade de medida padrão para o stock é posta como numeros (Nos), pode ser trocado aqui.
 
-## 4. Show Barcode Field
-A field to enter Barcode details for an item. If unticked, the field won't be visible in the Item form.
+### 2.3 Armazem Padrão
+Defina o Aramzem Padrão pelo o qual as transações são feitas. Esta será procurada no Armazem Padrão e na ficha de Item:
+    ![Definições de Stock](/docs/assets/img/stock/stock-settings-def.png)
 
-## 5. Convert Item Description to Clean HTML
-Usually, descriptions are copy-pasted from a website or Word/PDF file and they contain a lot of embedded styles. This messes up the Print view of your invoices or quotes.
+### 2.4 Armazem de Retenção de Amostra
+Este é o Armazem aonde as retenções das amostras são guardadas. Para saber mais, visite [esta pagina](/docs/user/manual/pt/inventario/reter-amostra-stock).
 
-To fix this, you can check "Convert Item Description to Clean HTML" in Stock Settings. This will ensure that when you save the Items, their descriptions will be cleaned up.
+### 2.5 Metodo de Avaliação Padrão
+FIFO - Primeiro entrou primeiro saiu ou Media movel (moving average valuation) para os seus itens. O metodo padrão é o FIFO. Se você selecionar Media Movel, novos Items seram avaliados com base na movimentação movel. Você pode mudar ao criar novos Itens no formulário do Item. Uma vez o Item salvo, o Metodo de Avalição não pode ser trocado. Leia mais [aqui](https://frappe.io/blog/erpnext-features/inventory-valuation-method-fifo-vs-moving-average).
 
-If you want to control your description, views, and allow any HTML to be embedded, you can uncheck this property.
+## 3. Limite de Percentagem
+Esta é a percentagem que você permite para receber ou enviar mais contra a quantidade encomendada. Por exemplo se você encomendou 100 unidades, o Fornecedor envia 120 unidade e a parcentagem está como 10% então será permitido receber 110 unidades. Por defeito, está definido como 0.
 
-## 6. Auto insert
+## 4. Mostrar o campo de Codigo de Barras
+Um campo para digiar os detalhes do Codigo de Barras para um item. Se não selecionado, o campo não ficará visivel no formulario do item.
 
-![Stock Settings](/docs/assets/img/stock/stock-settings-2.png)
+## 5. Converter a Descrição do Item para HTML
+Normalmente, descrições são copia-colar de uma Pagina ou ficheiro Word/PDF e contem muitos estilos escondidos. Isto cria confusão ao fazer Pre-Impressão das suas facturas ou proformas.
 
-### 6.1 Auto insert Price List rate if missing
-Enabling this will insert an Item Price to the Price List of an Item automatically when using the Item in its first transaction. This price is fetched from the 'Rate' set in the first transaction with the Item. The Price List depends on whether you're using a Purchase or Sales transaction.
+Para arranjar, você pode selecionar "Converter Descrição de Item para HTML" em Definições de Stock. Isto irá fazer com que quando ao salvar os Itens, as suas descrições estaram limpas.
 
-Note that, the Item Price will be automatically inserted only in the first transaction if not already present.
+Se voce quiser controlar a descrição, visualizações, e permitir qualquer codigo HTML, você pode não selecionar esta opção.
 
-If this is unticked, the 'Standard Selling Rate' set in the Item when creating the Item will be added as Item Price.
+## 6. Auto inserir
 
-### 6.2 Automatically Set Serial Nos based on FIFO
-Serial numbers for stock will be set automatically based on the Items entered based on first in first out. The Serial Numbers will be set automatically in transactions like Purchase/Sales Invoices, Delivery Notes, etc.
+![Definições de Stock](/docs/assets/img/stock/stock-settings-2.png)
 
-## 7. Allow Negative Stock
-This will allow stock items to be displayed in negative values. Using this option depends on your use case. For example, the stock transaction entries are entered at the weekend or month-end. In this case, negative stock needs to be enabled so that you can continue with your purchase/sales transaction entries.
+### 6.1 Auto inserir Taxa de Preço de Lista caso não tenha
+Activando esta opção irá inserir um Preço de Item a Lista de Preços de um Item automaticamente ao utilizar esta Iten na sua primeira transação. Este preço é procurado apartir da 'Taxa' definida na primeira transação com o Item. O Preço de Lista depende se estiver a usar a transação de Compra ou Vendas.
 
-## 8. Set Qty in Transactions based on Serial No Input
-The quantity of items will be set according to the serial numbers. For example, if the user has added serial nos like A001, A002, and A003 then the system will set the quantity as 3 in the transaction.
+De notar que, o Preço de Item será inserido automaticamente somente no caso da primeira transação se não estiver já feito.
 
-## 9. Automatic Material Request
+Se está opção não for selecionada, o 'Preço de Venda Standard' definido no Item ao criar o item será adicionado a Lista de Preço.
 
-![Stock Settings](/docs/assets/img/stock/stock-settings-3.png)
+### 6.2 Automaticamente definir o Numero de Serie com base no FIFO
+Numeros de Serie para o Stock serao automaticos com base nos Itens digitados com base no primeiro entrou primeiro saiu. O Numero de Serie será definido automaticamente nas transações como Facturas de Compra/Vendas, Guias de Remessa, etc.
 
-### 9.1 Raise Material Request when the stock reaches re-order level
+## 7. Permitir Stock Negativo
+Este irá permitir que o stock dos Itens fiquem com valores negativos. Usnado esta opção depende do seu caso. Por exemplo, os registo de transações são digitados no fim de semana ou fim do mês. Neste caso, stock negativo precisa estar activo para que você possa continuar com as transações de Compras/Vendas.
 
-This option is useful if you want to ensure a constant supply of raw materials/products and avoid shortage.
-A [Material Request](/docs/user/manual/en/stock/material-request) will be raised automatically when stock reached the re-order level defined in the [Item form](/docs/user/manual/en/stock/item#34-automatic-reordering).
+## 8. Definir Qtd em Transações com base no Numero de Serie Inputado
+A quando de Itens será definida de acordo os Numeros de Serie. Por exemplo, se o usuario adicionar numeros de serie como A001, A002 e A003 então o sistema irá definir a quantidade como 3 nas transações.
 
-### 9.2 Notify by Email on the creation of automatic Material Request
-An email will be sent to notify the User with the role 'Purchase Manager' when an automatic Material Request is created.
+## 9. Requisição de Material Automatica
 
-## 10. Inter Warehouse Transfer Settings
+![Definições de Stock](/docs/assets/img/stock/stock-settings-3.png)
+
+### 9.1 Criar Solicitação de Material quando o Stock atingir o nivel de encomenda
+
+Esta opção é util se você quer ter a garantia de fornecimento constante de um raw materials/produtos e evitar escacêz.
+Uma [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material) será criado automaticamente quando o nivel do stock atingir o nivel de encomenda definido no [Formulario do Item](/docs/user/manual/pt/inventario/item#34-encomenda-automatica).
+
+### 9.2 Notificar via Email na criação de uma Solicitação de Material
+Um email será enviado para notificar o Usuario com o papel de 'Gestor de Compras' quando uma Solicitação de Material automatica for criada.
+
+## 10. Configurações de Transferencia entre Armazens Internos
 
 <img class="screenshot" alt="Delivery Note Material Transfer" src="{{docs_base_url}}/assets/img/stock/inter-warehouse.png">
 
-### 10.1 Enable customer warehouse for material transfer from Delivery Note and Sales Invoice
+### 10.1 Activar armazem de clientes para transferencia de material apartir de uma Guia de Remessa e Factura de Venda
 
-This option is useful when material transfer needs to be presented as a Delivery Note. For example, if there are statutory requirements where taxes are to be applied on each transfer of Material. It is easier to manage in a transaction like Delivery Note, than in the Stock Entry
+Esta opção é util quando a transferencia de material precisa ser apresentada como uma Guia de Material. Por exemplo, se existe requesitos obrigatorios aonde os impostos são aplicadas para cada transferencia ou Material. É facil gerir a transferencia numa Guia de Remessa, do que numa Entrada de Stock
 
-### 10.2 Enable supplier warehouse for material transfer from Purchase Receipt and Purchase Invoice
+### 10.2 Activar armazem de fornecedores para transferencia de material apartir de um Recibo de Compra e Factura de Compra
 
-Similar to above option this option is useful when material transfer needs to be presented as Purchase Receipt.
+É igual a opção em cima, é util quando a transferencia de material precisa ser apresentada como Recibo de Compra.
 
-To know more about inter warehouse material transfer via Delivery Note and Purchase Invoice please refer this article [Material Transfer From Delivery Note](/docs/user/manual/en/stock/articles/material-transfer-from-delivery-note)
+Para saber mais sobre transferencia de material interna via Guia de Remessa e Factura de Compra por favor ver esta artigo [Transferencia de Material apartir de um Guia de Remessa](/docs/user/manual/pt/inventario/artigos/transferencia-material-pela-guia-de-remessa)
 
-## 11. Freeze Stock Entries
+## 11. Congelar Entradas de Stock
 
-The User will not be allowed to make stock postings beyond this date.
+O Usuario não será permitido a fazer registo de Stock depois desta data.
 
-![Stock Settings](/docs/assets/img/stock/stock-settings-4.png)
+![Definições de Stock](/docs/assets/img/stock/stock-settings-4.png)
 
-* **Stock Frozen Upto**: A threshold date till which stocks will be frozen.
-* **Freeze Stocks Older Than [Days]**: Stocks older than x days will be frozen. This is calculated based on the creation date of the item.
-* **Role Allowed to edit frozen stock**: The role you choose here will be allowed to edit frozen stock.
+* **Congelar Stock até**: Uma data limite no qual o stock ficará congelado.
+* **Congela Stocks anteriores a [Dias]**: Stocks anteriores a x dias serao congelados. É calculado com base na data de criação do item.
+* **Papel Permitido para editar stock congelado**: O papel que você ecolhe aqui será permitido editar o stock congelado.
 
-## 12. Batch identification
-Global setting for batches of stocks to be identified by a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series). You can override this in the Item DocType.
+## 12. Indentificação de Lote
+Configuração Global para lotes de stocks a serem identificado por um [Nome de Series](/docs/user/manual//pt/configuração/configurações/nome-das-series). Você pode passar por cima no DocType do Item.

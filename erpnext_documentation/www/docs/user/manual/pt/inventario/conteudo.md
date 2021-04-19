@@ -63,7 +63,7 @@ O modulo de Stock esta completamente ligado as Compras, Fabrico e modulo de Cont
 1. [Relatorio Livro de Stock](/docs/user/manual/pt/inventario/stock-ledger)
 2. [Relatorio Nivel de Stock](/docs/user/manual/pt/inventario/relatorio-nivel-stock)
 1. [Explorador LDM](/docs/user/manual/pt/inventario/explorador-ldm)
-1. [Stock Value and Account Value Comparision](/docs/user/manual/pt/inventario/valor-stock-conta-valor-comparacao)
+1. [Comparação de Valor de Stock e Conta](/docs/user/manual/pt/inventario/valor-stock-conta-valor-comparacao)
 
 ## 2. Artigos
 ### 2.1 Transações de Stock
