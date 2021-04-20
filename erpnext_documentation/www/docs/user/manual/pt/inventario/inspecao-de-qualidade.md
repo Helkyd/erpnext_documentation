@@ -1,29 +1,28 @@
 <!-- add-breadcrumbs -->
-# Quality Inspection
+# Inspeção de Qualidade
 
-In ERPNext, you can mark your incoming or outgoing products for Quality
-Inspection.
+No ERPNext, você pode marcar os produtos que entram ou saiem para Inspeção de Qualidade.
 
-To enable this feature go to:
-> Home > Stock > Tools > Quality Inspection 
+Para activar esta funcionalidade va para:
+> Home > Inventario > Ferramentas > Inspeção de Qualidade
 
-## 1. Prerequisites
-Before creating and using a Quality Inspection, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e utilizar a Inspeção de Qualidade, é aconselhavel criar os seguintes primeiro:
 
-* [Item](/docs/user/manual/en/stock/item)
-* Enable Quality Inspection Criteria in the Item master:
-    ![Enable Quality Inspection](/docs/assets/img/stock/enable-quality-inspection.png)
+* [Item](/docs/user/manual/pt/inventario/item)
+* Active os Criterios de Inspeção de Qualidade na tabela de Item:
+    ![Activar Inspeção de Qualidade](/docs/assets/img/stock/enable-quality-inspection.png)
 
-## 2. How to create a new Quality Inspection 
+## 2. Como criar uma nova Inspeção de Qualidade
 
-1. From a Purchase Receipt/Delivery note in the Draft stage, go the Item table's Quality Inspection field and click on Create a New Quality Inspection.
-1. Select the inspection type whether Incoming (Purchase), Outgoing (Sales), or In Process (Manufacturing).
-1. Select the Reference document type whether Purchase Receipt, Purchase Invoice, Delivery Note, Sales Invoice, or, Stock Entry.
-1. Select the Item and set the sample size which will be inspected. Note that only Items for which Inspection Criteria is enabled in the Item master will be fetched.
-1. The Quality Inspection Template set in the Item master will be fetched.
-1. You can change who it's inspected by and also add who it's verified by.
-1. Any additional Remarks about the Inspection can be added.
-1. Save and Submit.
+1. Apartir do Recibo de Compra/Guia de Remessa na fase de Rascunho, va para a tabela do Item no campo de Inspeção de Qualidade e clique em Criar Nova Inspeção de Qualidade.
+1. Selecione o tipo de inspeção caso Entrada (Compra), Saida (Vendas), ou Em Processo (Fabrico).
+1. Selecione o tipo de documento de Referencia caso Recibo de Compra, Factura de Compra, Guia de Remessa, Factura de Vendas, ou Registo de Stock.
+1. Selecione o Item e defina o tamanho da amostra no qual será inspecionada. De notar que somente os Itens que tenham Criterio de Inspeção activo na tabela de Item será procurados.
+1. O Modelo de Inspeção de Qualidade definido na tabela Item sera procurado.
+1. Vocẽ pode trocar quem poderá fazer a inspeção e tambem adicionar quem irá verificar.
+1. Qualquer Remark adicionar sobre a Inspeção poderá ser adiconada.
+1. Salvar e Submeter.
 
 <img class="screenshot" alt="Quality Inspection" src="{{docs_base_url}}/assets/img/stock/quality-inspection.png">
 
@@ -33,9 +32,9 @@ Before creating and using a Quality Inspection, it is advised that you create th
     </iframe>
 </div>
 
-### 4. Related Topics
-1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+### 4. Topicos Relaciondos
+1. [Recibo de Compra](/docs/user/manual/pt/inventario/recibo-compra)
+1. [Guia de Remessa](/docs/user/manual/pt/inventario/guia-de-remessa)
+1. [Registo de Stock](/docs/user/manual/pt/inventario/entrada-stock)
+1. [Factura de Vendas](/docs/user/manual/pt/contabilidade/factura-vendas)
+1. [Factura de Compras](/docs/user/manual/pt/contabilidade/factura-compras)

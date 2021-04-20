@@ -52,7 +52,7 @@ This configuration can be overridden for a particular customer by enabling the "
 
 <img alt="Sales Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/selling/so-required.png">
 
-### 3.2 Delivery Note Required
+### 3.2 Guia de Remessa Necessaria
 
 To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as 'Yes'. By default, this will be 'No'.
 

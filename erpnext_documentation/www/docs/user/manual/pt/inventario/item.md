@@ -1,289 +1,289 @@
 <!-- add-breadcrumbs -->
 # Item
 
-**An Item is a product or a service offered by your company.**
+**Um Item é um produto ou um serviço oferecido pela sua empresa.**
 
-The term Item is also applicable to raw materials or components of products yet to be produced (before they can be sold to customers). ERPNext allows you to manage all sorts of items like raw-materials, sub-assemblies, finished goods, item variants, and service items.
+O termo Item é tambem aplicavel a materia prima ou componentes de produtos ainda por produzir (antes de serem vendidos aos clientes). O ERPNext permite que voce faça a gestão todo o tipo de produtos, materias prima, bens produzidos, variantes de itens e até mesmo de itens como serviços.
 
-ERPNext is optimized for itemized management of your sales and purchase. If you are in services, you can create an Item for each service that you offer. Completing the Item Master is very essential for the successful implementation of ERPNext.
+O ERPNext está optimizado para gestão minima de itens das suas vendas e compras. Se voce tiver serviços, voce pode criar um Item para cada serrviço que ofereça. Inserindo na tabela de Itens é essencial para a implementação com sucesso do ERPNext.
 
-To access the Item list, go to:
-> Home > Stock > Items and Pricing > Item
+Para acessar a lista de Itens, va para:
+> Home > Inventario > Itens e Preços > Item
 
-## 1. Prerequisites
-Before creating and using an Item, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar o Item, é aconselhavel que voce crie primeiro:
 
-* [Item Group](/docs/user/manual/en/stock/item-group)
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
-* A Unit of Measure if required
+* [Grupo de Item](/docs/user/manual/pt/inventario/grupo-item)
+* [Armazem](/docs/user/manual/pt/inventario/armazem)
+* Uma Unida de Medida é necessaria
 
-## 2. How to create an Item
-1. Go to the Item list, click on new.
-2. Enter an Item Code, the name will be auto-filled the same as Item Code on clicking inside the Item Name field.
-1. Select an Item Group.
-1. Enter the opening stock units and standard selling rate.
-3. Save.
-  ![Item Saved](/docs/assets/img/stock/item-saved.png)
+## 2. Como criar um Item
+1. Va para a lista de Itens, clique em novo.
+2. Digite um Codigo de Item, o nome será preenchido automaticamente com o Codigo do Item quando fizer um clique no campo Nome do Item.
+1. Selecione um Grupo do Item.
+1. Digite o Stock de Abertura e o Preço de Venda Padrão.
+3. Salvar.
+  ![Item Salvo](/docs/assets/img/stock/item-saved.png)
 
-### 2.1 Item Properties
+### 2.1 Propriedades do Item
 
-  * **Item Name:** Item name is the actual name of your product or service.
+  * **Nome do Item:** Nome do Item é o nome actual do seu produto ou serviço.
   
-  * **Item Code:** Item Code is a short-form to denote your Item. If you have very few Items, it is advisable to keep the Item Name and the Item Code same. This helps new users to recognize and update Item details in all transactions. In case you have a lot of Items with long names and the list runs in hundreds, it is advisable to code. To understand naming Item codes see [Item Codification](/docs/user/manual/en/stock/articles/item-codification). You can also generate Item Code based on a [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series) by enabling this feature in [Stock Settings](/docs/user/manual/en/stock/stock-settings#1-item-naming-by).
+  * **Codigo do Item:** Codigo do Item é um nome pequeno para denomimar o Item. Se tem poucos Itens, é aconselhavel manter o Nome do Item e Codigo Item igual. Assim ajuda os novos usuarios a reconhecer e actualizar os detalhes dos Itens em todas as transações. No caso de ter uma lista grande de Itens com nomes compridos, é aconselhavel fazer uma codificação. Para entender a Codificação dos Itens veja [Codificação do Item](/docs/user/manual/pt/inventario/artigos/codificacao-item). Voce pode tambem gerar Codigos do item com base na [Serie de Nomes](/docs/user/manual/pt/configuração/configurações/nome-das-series) activando esta funcionalidade aqui [Configurações do Stock](/docs/user/manual/pt/inventario/configuracoes-stock#1-nome-do-item-por).
   
-  * **Item Group:** Item Group is used to categorize an Item under various criteria like products, raw materials, services, sub-assemblies, consumables or all Item groups. Create your default Item Group list under Setup > Item Group and pre-select the option while filling your New Item details under [Item Group](/docs/user/manual/en/stock/item-group). Item groups can be sub-assemblies, raw materials, etc, or based on your business use case.
+  * **Grupo do Item:** Grupo do Item é usado para categorizar um Item dentro varios criterios como produtos, materia prima, serviços, consumiveis ou todos os Grupos de Item. Crie a sua lista de Grupo do Item padrão em Configuração > Grupo do Item e pre-selecionando a opção enquanto estiver a preenher os detalhes do seu Novo Item [Grupo do Item](/docs/user/manual/pt/inventario/grupo-item). Grupos do Item podem ser materia prima, etc, ou com base no seu negocio.
   
-  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOMs that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
+  * **Unidade Medida Padrão:** Esta é a unidade padrão de medida que voce irá usar para os seu produtos. Pode ser Nos, Kgs, Metros, etc. Voce pode guardar todas as UDM que os seus produtos precisam  Configuraçoes > Master Data > UOM. Este pode ser pre-selecionado enquanto estiver a criar um Novo Item. Visite a pagina [UDM](/docs/user/manual/pt/inventario/udm) para mais detalhes
 
-### 2.2 Options when creating an item
-* **Disabled**: If you disable an Item, it cannot be selected in any transaction.
+### 2.2 Opções ao criar um Item
+* **Desactivo**: Se desactivar um Item, não pode ser usado em qualquer transação.
 
-* **Allow Alternative Item**: Sometimes when manufacturing a finished good, specific material may not be available. If you tick this, you can create and select an alternative item from the Item Alternative list. To know more, visit the [Item Alternative](/docs/user/manual/en/manufacturing/item-alternative) page.
+* **Permitir um Item Alternativo**: Algumas vezes ao fabricar um bem, material especifico pode não estar disponivel. Se voce activar isto, voce pode criar e selecionar um Item alternativo apartir da list de Itens Alternativos. Para sber mais, visite a pagina [Item Alternativo](/docs/user/manual/pt/fabrico/item-alternativo) .
 
-* **Maintain Stock:** If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item. Ensure to keep this option unchecked when creating a non-stock Item (make to order/engineer) or a service.
+* **Manter Stock:** Se voce estiver a manter o Stock deste Item no seu Inventario, o ERPNext irá criar um razão de Stock para cada transação deste item. Tenha a certeza em não activar esta opção ao criar um Item não-stock (make to order/engineer) ou um serviço.
 
-* **Include Item in Manufacturing**: This is for raw material Items that'll be used to create finished goods. If the Item is an additional service like 'washing' that'll be used in the BOM, keep this unchecked.
+* **Incluir Item no Fabrico**: Este é para os itens da materia prima que seram usado para cirar bens acabados. Se o Item for um serviço adiconal como  'lavagem' que será usado na LDM, mantenha desactivo.
 
-* **Valuation Rate**: There are two options to maintain valuation of stock. FIFO (first in - first out) and Moving Average. To understand this topic in detail please visit [Item Valuation, FIFO and Moving Average](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
+* **Taxa de Avaliação**: Exitem dois tipo de avaliação de stock para manter. FIFO (primeiro entrou - primeiro a sair) e o Media Movel. Para entender este topico em detalhe visite [Avaliação de Item, FIFO e Media Movel](/docs/user/manual/pt/inventario/artigos/avaliacao-item-fifo-e-media-movel).
 
-* **Standard Selling Rate**: When *creating* an Item, entering a value for this field will automatically create an [Item Price](/docs/user/manual/en/stock/item-price) at the backend. Entering a value after the Item has been saved will not work. In this case, the Item Price is created from any transactions with the Item. The rate at which you'll sell the item. This will be fetched in Sales Orders and Sales Invoices.
+* **Taxa de Venda Padrão**: Quando ao *criar* um Item, digitando o valor para este campo irá automaticamente criar um [Preço do Item](/docs/user/manual/pt/inventario/preço-item). Digitando um valor depois do Item ter sido criando não irá criar. Neste caso, o Preço do Item é criado apartir de qualquer transação com o Item. O preço no qual irá ser vendido. Este sera procurado na Ordem de Venda e Facturas de Venda.
 
-* **Is Fixed Asset**: Tick this checkbox if this item is a company Asset. Check out the [Asset Module](/docs/user/manual/en/asset) to know more.
+* **É um Activo Fixo**: Selecione esta caixa se o item é um Activo da Empresa. Verifique o [Modulo de Activos](/docs/user/manual/pt/activos) para saber mais.
 
-* **Auto Create Assets on Purchase**: If Item is a Company Asset, tick this checkbox if you want to auto create assets while purchasing this item through [Purchase Cycle](/docs/user/manual/en/buying/purchase-order). Check out the [Asset Page](/docs/user/manual/en/asset/asset) to know more.
+* **Criar Activos Automaticamente ao Comprar**: Se um Item é um Activo da Empresa, selecione esta caixinha se quiser criar activos automaticamente ao fazer a compra deste item pelo [Ciclo de Compras](/docs/user/manual/pt/compras/ordem-de-compra). Verifique a [Pagina dos Activos](/docs/user/manual/pt/activos/activo) para saber mais.
 
-* **Allowance Percentage**: This option will be available only when you create and save the item. This is the percent by which you will be allowed to over-bill or over-deliver this Item. If not set, it will select from [Stock Settings](/docs/user/manual/en/stock/stock-settings#3-limit-percent).
+* **Percentagem Permitida**: Esta opção irá estar disponiveil somente cria e salva um Item. Esta é a percentagem pelo qual poderá cobrar a mais ou entragar a mais este item. Se não for definido, irá selecionar apartir das [Configurações de Stock](/docs/user/manual/pt/inventario/configuracoes-stock#3-limite-de-percentagem).
 
-* **Uploading an Image**: To upload an image for your icon that will appear in all transactions, save the partially filled form. Only after your file is saved the 'Change' button will appear on the Image icon. Click on Change, then click on Upload, and upload the image.
+* **Carregar uma Imagem**: Para carregar um imagem para o icone que irá aparecer em todas as transações, salve o formulario preenchido parcialmente. Somente depois o seu ficheiro salvo que o botão 'Alterar' irá aparecer no Icone de Imagem. Clique em Alterar, depois clique em Carregar, e carregue a imagem.
 
-For India:
+Para India:
 
 * **HSN/SAC**: Harmonized System of Nomenclature (HSN) and Service Accounting Code (SAC) for GST. These numbers are defined by the government and different Items fall under different codes. New HSN codes can be added if not present in the list.
 * **Is nil rated or exempted**: For an Item that is under GST, but no tax is applied to it. Eg: Cereals.
 * **Is Non GST**: For an item that is not covered under GST. Eg: petrol.
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1 Brand and Description
+### 3.1 Marca e Descrição
 
-* **Brand**: If you have more than one brand save them under Selling > Brand and pre-select them while filling a New Item.
-* **Description**: Description of the item. The text from the Item Code will be fetched by default.
-  ![Item brand and description](/docs/assets/img/stock/item-brand-description.png)
+* **Marca**: Se voce tem mais que uma marca salve em Vendas > Marcas e pre-selecione ao preenher um Novo Item.
+* **Descrição**: Descrição do item. O texto do Codigo do Item será usado por defeito.
+  ![Marca do Item e descrição](/docs/assets/img/stock/item-brand-description.png)
 
-### 3.2 Barcodes
+### 3.2 Codigos de Barra
 
-Barcodes can be recorded in Items to quickly scan and add them in transactions. In the Barcodes table you can add an Item's [barcode for scanning](/docs/user/manual/en/stock/articles/track-items-using-barcode). There are two types of barcodes in ERPNext:
+Codigos de Barra podem ser gravados nos Itens para facilmente fazer o scan e adiconar em transações. Na tabela de Codigos de Barra voce pode adicionar Itens [scan do Codigo de Barras](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras). Existem dois tipos de Codigos de Barra no ERPNext:
 
-* **EAN**: The European Article Number is a 13 digit number. EAN is used internationally and recognized by more POS systems.
-* **UPC**: The Universal Product Code is a 12 digit number. UPC is generally used only in USA and Canada.
+* **EAN**: O Numero Europeu do Artigo é de 13 digitos. EAN é usado internacionalmente e reconhecido pelos varios sistemas POS.
+* **UPC**: O Codigo do Produto Universal é um numero de 12 digitos. UPS é geralmente usado somente no USA e Canada.
 
-### 3.3 Inventory
+### 3.3 Inventario
 
-* **Shelf Life In Days**: This is for a product [Batch](/docs/user/manual/en/stock/batch). The number of days after which product batch will be unusable. For example, medicines.
-* **End of Life**: For a single item/product, the date after which it'll be completely unusable. That is, the item will be unusable in transactions and manufacturing. For example, you're using plastic crystals for manufacturing Items for the next 5 years after which you want to use plastic beads. 
-* **Warranty**: To track a warranty period, it is necessary that the Item is serialized. When this Item is delivered, the delivery date and the expiry period is saved in the Serial Number master. Through the serial number master, you can track the warranty status.
+* **Dias de Vida no Armario**: Este é para o produto [Lote](/docs/user/manual/pt/inventario/lote). O numero de dias pelo qual o lote do produto depois deixara de ser usado. Por exemplo, medicamentos.
+* **Fim de Vida**: Para um unico item/produto, a data que depois ficará completamente fora de uso. Isto é, o item ficara inutilizado para transações e fabrico. Por exemplo, voce usa cristais de plastico para fabricar itens nos proximos 5 anos que depois irá usar as miçangas de plastico.
+* **Garantia**: Para rastrear o periodo de garantia, é necessario que o Item seja serializado. Quando o Item for entregue, a data de entrega e periodo de expiração é salvo na tabela de Numero de Serie. Pelo Numero de Serie, voce pode rastrear o status da garantia.
 
-  A warranty period is a time period in which a purchased product may be returned or exchanged.
+  O periodo de garantia é um tempo no qual o produto comprado pode ser devolvido ou trocado.
 
   <img class="screenshot" alt="Item Warranty" src="{{docs_base_url}}/assets/img/stock/item-inventory.png">
 
-* **Weight UOM**: The Unit of Measure for the item. This can be Nos, Kilo, etc. The Weight UoM which you use internally can be different from the purchase UoM.
-* **Weight Per Unit**: The actual weight per unit of the item. Eg: 1 kilo biscuits or 10 biscuits per pack.
-* **Default Material Request Type**: When you create a new Material Request for this item, the field set here will be selected by default in the new Material Request. This is also known as an 'indent'.
-* **Valuation Method**: Select the Valuation Method whether FIFO or Moving Average. To know more about Valuation Methods, [click here](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
+* **UDM do Peso**: A Unidade de Medida para o Item. Este pode ser Nos, Kilo, etc. O Peso da UDM pode ser usado internamente pode ser diferente da UDM de compra.
+* **Peso por Unidade**: O peso actual por unidade do item. Eg: 1 kilo de biscoitos ou 10 biscoitos por pacote.
+* **Tipo de Solicitação de Material Padrão**: Quando voce cria uma nova Solicitação de Material para este item, o campo definido aqui será selecionado na nova Solicitação de Material. Este é tambem conhecido como um 'indent'.
+* **Metodo de Avaliação**: Selecione o Metodo de Avaliação FIFO ou Media Movel. Para saber mais sobre os Metodos de Avaliação, [clique aqui](/docs/user/manual/pt/inventario/artigos/avaliacao-item-fifo-e-media-movel).
 
 ### 3.4 Encomenda Automatica
-When the stock of an item dips under a certain quantity, you can set an automatic reorder under 'Auto Reorder' section. This should be enabled in [Stock Settings](/docs/user/manual/en/stock/stock-settings#9-automatic-material-request). This will raise a [Material Request](/docs/user/manual/en/stock/material-request) for the Item. The user with roles Purchase Manager and Stock Manager will be **notified** when the Material Request is created.
+Quando o stock de um item está abaixo de uma certa quantia, voce pode definir um pedido automatico na secção 'Auto Encomenda'. Este deve ser activado em [Configurações de Stock](/docs/user/manual/pt/inventario/configuracoes-stock#9-requisição-de-material-automatica). Este irá criar uma [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material) para o Item. O usuario com o papel de Gestor de Compras e Gestor de Stock será **notificado** quando a Solicitação de Material for criada.
 
-* **Check in (group)**: In which group warehouses to check the quantity of the item.
-* **Request for**: Which warehouse to stock the item reorder.
-* **Re-order Level**: When this quantity is reached, the reorder will be triggered. Re-order level can be determined based on the lead time and the average daily consumption. For example, you can set the reorder level of Motherboard at 10. When only 10 Motherboards are remaining in stock, the system will either automatically create a Material Request in your ERPNext account. 
-* **Re-order Qty**: The number of units to be reordered so that the sum of ordering cost and holding cost is at its minimum. The re-order quantity is based on the 'Minimum Order Qty' specified by the supplier and many other factors.
+* **Check in (grupo)**: Em qual dos Grupos de Armazem deve verificar a quantidade de item.
+* **Pedido para**: Em que armazem guardar o pedido/solicitação de Stock.
+* **Nivel de pedido (Re-order)**: Quanto esta quantidade é alcançada, o pedido/solicitação sera activada. O nivel de pedido pode ser determinado com base na hora e na media do consumo diario. Por exemplo, voce pode definir o nivel de pedido para uma Motherboard aos 10. Somente quando a Motherboards tiver 10 no stock, o sistema irá automaticamente criar uma Solicitação de Material na sua conta do ERPNext. 
+* **Qtd de pedido (Re-order)**: O numero de unidade a serem pedidas para que a soma do custo do pedido e o custo sejam o minimo. A quantidade de pedido é feita com base na 'Qtd Minima do Pedido' especificado pelo fornecedor e muitos outros factores.
 
-  For example, If reorder level is 100 items, your reorder quantity may not necessarily be 100 items. The Reorder quantity can be greater than or equal to the reorder level. It may depend upon lead time, discount, transportation and average daily consumption.
+  Por exemplo, se o nivel de ordem for de 100 itens, a quantidade de pedido pode não ser necessaria mente de 100 itens. A quantidade do peidod pode ser maior ou igual ao nivel de pedido. Pode depender do tempo de entrega, desconto, tranporte e da media diario de consumo.
 
-* **Material Request Type**: The [Material Request](/docs/user/manual/en/stock/material-request) type with which the stock will be reordered. This depends whether you buy the Item, manufacture it yourself or transfer it between Warehouses.
+* **Tipo de Solicitação de Material**: O tipo de [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material) pelo qual o stock sera pedido. Este depende se voce compra o Item, fabrica ou transfere entre armazens.
 
   <img alt="Item Reorder" class="screenshot" src="{{docs_base_url}}/assets/img/stock/item-reorder.png">
 
-> **Note**: The Material Request is created at 12 midnight depending on the set reorder level.
+> **Nota**: A Solicitação de Material é criada as 12 horas dependendo do nivel de pedido definido.
 
-### 3.5 Multiple Units of Measure
-You can add alternate UoMs for an Item. If the default UoM in which you sell is numbers (NoS) but you receive it in Kilos, you can set an additional UoM with an appropriate conversion factor. For example, 500 Nos of screws = 1 Kilogram, so select Kilogram/Litre as UOM and set the conversion factor as 500. To know more about selling in different UoM, visit [this page](/docs/user/manual/en/selling/articles/Selling-in-different-UOM).
+### 3.5 Varias Unidades de Medida
+Voce pode adiconar UDM alternativas para um Item. Se a UDM padrão no qual voce vende for numeros (NoS) mas voce recebe em kilos, voce pode definir UDM adicional com o factor de conversão apropriado. Por exemplo, 500 Nos de parafusos = 1 Kilo, então selecione Kilogram/Litre como UDM e defina o factor de conversão como 500. Para saber mais sobre vendas em diferentes UDM, visite [esta pagina](/docs/user/manual/pt/vendas/artigos/vendendo-em-UDM-diferente).
 
-### 3.6 Serial Numbers
+### 3.6 Numeros de Serie
 
-With Serial Numbers, you can track warranty and returns. In case any individual Item is recalled by the supplier the number system helps to track individual Item. The numbering system also manages expiry dates.
+Com os Numeros de Serie, voce pode rastrear garantias e devoluções. Caso algum Item individual for chamado de volta pelo fornecedor o numero do sistema irá ajudar a procurar. A numeração do sistema tambem gere as datas de expiração.
 
-Please note that if you sell your items in thousands, and if the items are very small like pens or erasers, you need not serialize them.
+De notar que se voce vende os seu itens aos milhares, e se os itens são muito pequenos como esferograficas ou borrachas, voce precisa de dar um numero de serie.
 
-In ERPNext, you will have to mention the Serial Number in some accounting entries. If your product is not a big consumer durable Item, if it has no warranty and has no chances of being recalled, avoid giving serial numbers.
+No ERPNext, voce tem que mencionar o Numero de Serie em alguns registo de conta. Se o seu produto não for de consumo grande, se não tem garantias e não tem changes de ser chamado de volta pelo fornecedor, envite criar numeros de serie.
 
 <img alt="Serial No modal" class="screenshot" src="{{docs_base_url}}/assets/img/stock/serial_no_modal.gif">
 
-### 3.7 Batches
+### 3.7 Lotes
 
-A set of Items can be manufactured in batches. This is useful for moving the batch and associate an expiry date with a certain batch. 
+Um conjunto de Itens pode ser fabricado em Lotes. Este é util para mover os lotes e associar uma data de expiração com um certo lote.
 
-* **Has Batch No**: Options for batch number, expiry date, and retaining sample stock will be revealed on ticking this checkbox. You cannot activate this if there is any pre-existing transaction for this item. If this is disabled, you'll have to enter the serial numbers manually for every transaction.
+* **Tem Numero de Lote**: Opções de numero de Lote, data de expiração, e amostra de retenção de stock sera mostrado ao selecionar esta caixa. Voce não pode activar isto se ja existe uma transação para este item. Se estiver desactivo, voce vai ter que digitar o numero de serie manual para cada transação.
 
-* **Batch Number Series**: Prefix that'll be applied to batch numbers. If you set 5x1SCR, then the first batch will be named like 5x1SCR00001 on first transaction/manufacture.
+* **Numero de Serie para Lotes**: O Prefixo que será aplicado aos numeros de lote. Se voce definir 5x1SCR, então o primeiro lote será 5x1SCR00001 na primeira transação/produção.
 
-* **Automatically Create New Batch**: If the batch number is not mentioned in transactions, then they will be automatically created according to a format like AAAA.00001. If you always want to manually create a batch number for this item, leave this field blank. This setting will override 'Naming Series Prefix' in Stock Settings. Batch numbers can be set to be generated automatically if you manufacture the Items or can be entered manually if it comes from an external manufacturer.
+* **Criar um Novo Lote Automaticamente**: Se o numero do lote for mencionado em transações, então eles vão ser automaticamente criados de acordo o formato AAAA.00001. Se voce quer criar sempre manualmente um numero de lote para este item, deixe em branco este campo. Esta configuração irá passar por cima do 'Prefixo de Nome de Series' nas configurações do Stock. Numeros de Lote pode ser gerados automaticamente se voce fabrica os itens ou podem ser inserido manualmente se veem de um fabricante externo.
 
-* **Has Expiry Date**: If you tick this, the batch number will be created according to the expiry date. The expiry dates can be set in the 'Batch' master.
+* **Tem Data de Expiração**: Se voce selecionar este, o numero de lote será criado de acordo a data de expiração. A data de expiração pode ser definida na tabela dos 'Lotes'.
 
-* **Retain Sample**: To retain a minimum number of sample stock of the item. You need to set a Sample Retention Warehouse in Stock Settings for this. To know more, [click here](/docs/user/manual/en/stock/retain-sample-stock).
+* **Reter Amostra**: Para reter um numero pequeno da amostra do stock do item. Voce precisa definir um Armazem para Retenção de Amostra nas Configurações de Stock. Para saber mais, [clique aqui](/docs/user/manual/pt/inventario/reter-amostra-stock).
 
-* **Has Serial No**: This is similar to Batch Number Series, it'll be created when you make transactions/manufacture. If you set Serial Number Series as AA, then on the first transaction a serial number like AA00001 will be created.
+* **Tem Numero de Serie**: Este é similar aos Lotes de Serie, será criado quando fizer uma transação/fabrico. Se voce definir o Numero de Serie como AA, então a primeira transação o numero de serie sera criado como AA00001.
 
-> Tip: While entering an Item Code in an Items table, if the table requires inventory details, then depending on whether the entered item is batched or serialized, you can enter serial or batch numbers right away in a pop-up dialog.
+> Dika: Ao digitar o Codigo do Item na tabela de Itens, se a tabela requer detalhes de inventario, então dependendo da escolha em ser lote ou serie, voce pode digitar o Numero de Serie ou Lote aqui mesmo.
 
 <img alt="Batch No modal" class="screenshot" src="{{docs_base_url}}/assets/img/stock/batch_no_modal.png">
 
-> **Note**: Once you mark an item as serialized or batched or neither, you cannot change it after you have made a Stock Entry.
+> **Nota**: Uma vez que marque um item como Serializado ou Lote ou nenhum, ja não vai poder trocar depois de fazer um Registo de Stock.
 
-To know more, visit the [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation) page.
+Para saber mais, visita a pagina [Reconciliação de Stock](/docs/user/manual/pt/inventario/reconciliacao-de-stock) .
 
-### 3.8 Variants
-An Item Variant is a different version of a Item. To learn more about managing variants see [Item Variants](/docs/user/manual/en/stock/item-variants).
+### 3.8 Variantes
+Uma Variante do Item é uma versão diferente de um Item. Para aprender mais sobre gerir variantes [Variantes de Item](/docs/user/manual/pt/inventario/variantes-item).
 
-### 3.9 Item Defaults
+### 3.9 Padroẽs do Item
 
-In this section, you can define Company-wide transaction-related defaults for this Item.
+Nesta secção, voce pode definir as transações relacionadas com a Empresa para este Item.
 
-* **Default Warehouse:** This is the Warehouse that is automatically selected in your transactions with this item.
-* **Default Price List:** Whether Standard Selling or Standard Buying. Likewise, you can also set the purchasing and selling default accounts
-* **Supplier**: If a default supplier is set, this supplier will be selected for new purchase transactions.
-* **Default Expense Account:** It is the account in which cost of the Item will be debited.
-* **Default Income Account:** It is the account in which income from selling the Item will be credited.
-* **Default Cost Center:** It is used for tracking expense for this Item.
+* **Armazem Padrão:** Este é o Armazem que é automaticamente selecionado nas transaçóes com este item.
+* **Lista de Preço Padrão:** Quer seja Lista de Venda ou Compra. Voce pode definir as contas padrão de compras e vendas
+* **Fornecedor**: Se o fornecedor padrão for definido, este fornecedor será selecionar para novas transações de compra.
+* **Conta de Despensas Padrão:** É uma conta no qual o custo do Item será debitado.
+* **Conta de Rendimento Padrão:** É uma conta no qual o rendimento pela venda do Item será creditada.
+* **Centro de Custo Padrão:** É usado para gerir despesas para este Item.
 
-  ![Item defaults](/docs/assets/img/stock/item-defaults.png)
+  ![Padrões do Item](/docs/assets/img/stock/item-defaults.png)
 
-> Tip: You can add more rows for multiple companies.
+> Dika: Voce pode adiconar mais linhas para varias empresas.
 
-### 3.10 Purchase, Replenishment Details
+### 3.10 Compra, Detalhes de Reabastecimento
 
-* **Default Purchase Unit of Measure**: The default UoM that will be used in Purchase transactions.
-* **Minimum Order Qty**: The minimum quantity required for purchase transactions like Purchase Orders. If set, the system will not let you proceed with the purchase transaction if the item quantity in the purchase transaction is lesser than the quantity set in this field.
-* **Safety Stock**: “Safety Stock” is used in the report “Itemwise Recommended Reorder Level”. Based on Safety Stock, average daily consumption and the lead time, the system suggests Reorder Level of an item.
+* **Unidade de Medida de Compra Padrão**: A UDM padrão que será usado para as transações de Compras.
+* **Qtd Minima de Ordem**: A quantidade minima necessari para transações de compra como Ordens de Compra. Se definido, o sistema não irá deixar que prosiga com a transação de compra se a quantidade do item na transação de compra for menor que a quantidade definida neste campo.
+* **Stock de Segurança**: “Stock de Segurança” é usado no relatorio “Itemwise Recommended Reorder Level”. Com base no Stock de Segurança, media do consumo diario e tempo de entrega, o sistema sugere a Nivel de Ordem para um item.
 
-  Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time)
-* **Last Purchase Rate**: The rate at which you last purchased this item using a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) will be displayed here.
-* **Is Purchase Item:** If unticked, you won't be able to use this item in purchase transactions.
-* **Is Customer Provided Item:** Checked if Item is provided by a customer and received through **Stock Entry > Material Receipt**. If Checked, **Customer** field is Mandatory as the default customer for **Material Request**. To know more visit [this page](/docs/user/manual/en/manufacturing/articles/customer-provided-items).
-* **Lead time days:** Lead time days are the number of days between ordering the Item and it to reach the Warehouse.
+  Nivel de Pedido = Stock de Segurança + (Media do Consumo Diario * Tempo de Entrega)
+* **Ultimo Preço de Compra**: O preço no qual foi feita a ultima compra para este item usando [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra) sera mostrado aqui.
+* **É um Item de Compra:** Se não selecionado, voce não poderá usar este item para transações de compra.
+* **É um Item dado pelo Cliente:** Selecionado se o Item é dado por um cliente e recebido pelo **Registo de Stock > Recepção de Material**. Se selecionado, o campo **Cliente** é Obrigadorio como o cliente padrão para **Solicitação de Material**. Para saber mais visite [esta pagina](/docs/user/manual/pt/fabrico/artigos/customer-provided-items).
+* **Dias de Tempo de Entrega:** Dias de tempo de entrega é o numero de dias entre a ordem do Item e a mesmo alcançar o Armazem.
 
   <img class="screenshot" alt="Purchase details" src="{{docs_base_url}}/assets/img/stock/item-purchase-details.png">
 
-### 3.11 Supplier Details
+### 3.11 Detalhes do Fornecedor
 
-* **Delivered by Supplier (Drop Ship)**: If the item is delivered directly by the supplier to the customer, tick this checkbox. Read more [here](/docs/user/manual/en/selling/articles/drop-shipping).
-* **Supplier Codes:** Track Item Code defined by the Suppliers for this Item. In the Purchase transactions, on selecting an Item, a Supplier Part No. will be fetched as well for the Supplier's reference. You can read more about it [here](/docs/user/manual/en/buying/articles/maintaining-suppliers-part-no-in-item).
+* **Entregue pelo Fornecedor (Drop Ship)**: Se o item for entregue directamente pelo fornecedor ao clisnte, selecione este caixinha. Leia mais [aqui](/docs/user/manual/pt/vendas/artigos/drop-shipping).
+* **Codigos do Fornecedor:** Rastreie o Codigo do Item definido pelos Fornecedores para este Item. Nas Transções de Compras, ao selecionar o Item, o Numero da Peça do Fornecedor sera procurado bem como o referencia do Fornecedor. Pode ser mais [aqui](/docs/user/manual/pt/compras/artigos/maintaining-suppliers-part-no-in-item).
 
-  ![Item Supplier Details](/docs/assets/img/stock/item-supplier.png)
+  ![Detalhes do Item do Fornecedor](/docs/assets/img/stock/item-supplier.png)
 
-### 3.12 Foreign Trade Details
-If you're sourcing the item from another country, you can set the details here.
+### 3.12 Detalhes de Transações Estrangeiras (Foreign Trade Details)
+Se voce estiver a pegar o item de um outro país, voce pode definir os detalhes aqui.
 
-* **Country of Origin**: The country from which you're sourcing the item.
-* **Customs Tariff Number**: You can create a customs tariff number with a description and use it for reference here to share with custom agencies. Later it can be used to add in Delivery Notes.
+* **País de Origem**: O país pelo qual voce busca o item.
+* **Numero de Tarifa da Alfandega**: Voce pode criar um Numreo de Tarifa da Alfandega com uma descrição e usar como referencia aqui para partilhar com agencias das Alfandegas. Mais tarde poderá ser usado para adicionado nas Guia de Remessa.
 
-### 3.13 Sales Details
+### 3.13 Detalhes de Vendas
 
-* **Default Sales Unit of Measure**: The default UoM that'll be fetched for sales transactions.
-* **Max Discount (%)**: You can define the maximum discount in % to be applied to an item. Eg: if you set 20%, you cannot sell this item with a discount greater than 20%.
-* **Is Sales Item**: If unticked, you won't be able to use this item in sales transactions.
+* **Unidade de Medida de Venda Padrão**: A UDM padrão que será usada para as transações de vendas.
+* **Desconto Maximo (%)**: Voce pode definir o desconto maximo em % a ser aplicado num item. Eg: se voce definir 20%, voce não pode vender este item com um desconto maior que 20%.
+* **É um Item de Venda**: Se não selecionado, voce não poderá usar este item nas transações de vendas.
 
-  ![Item Sales Details](/docs/assets/img/stock/item-sales.png)
+  ![Detalhes do Item de Vendas](/docs/assets/img/stock/item-sales.png)
 
-### 3.14 Deferred Revenue and Deferred Expense
-You can enable deferred revenue or expense from the item. Once you tick the checkbox, you'll see options to set the Deferred Expense Account and the number of months through which the revenue/expense is deferred. 
+### 3.14 Remunerações Diferidas e Despesas Diferidas
+Voce pode activar  deferred revenue or expense pelo formulario do item. Umva vez activa a caixa, voe irá ver opções para definir a Conta de Despesa Diferida e o numero de meses pelo o qual a remuneração/desconto é diferido. 
 
-For example, consider a yearly gym membership, you pay the money upfront at once but the service is given throughout the year. For the gym owner, this is deferred revenue and for the customer, it is a deferred expense.
+Por exemplo, considere um ano de adessão ao ginasio, voce paga o valor adiantado uma unica vez mas o serviços são dados durante o ano. Para o dono do ginsasio, este é uma remuneração diferida e o para cliente, é um despesa diferida.
 
-  ![Deferred Revenue](/docs/assets/img/stock/deferred-revenue.png)
+  ![Remuneração Diferida](/docs/assets/img/stock/deferred-revenue.png)
 
-Check out the pages on [Deferred Revenue](/docs/user/manual/en/accounts/deferred-revenue) for more details.
+Verifique as paginas em [Remuneração Diferida](/docs/user/manual/pt/contabilidade/receita-diferida) para mais detalhes.
 
-### 3.15 Customer Details
+### 3.15 Detalhes do Cliente
 
-The Customer may identify an Item with a different Item Code. this is Similar to [Supplier Code](/docs/user/manual/en/stock/item#311-supplier-details). 
+O Cliente pode identificar um Item com um Codigo de Item diferente. Este é similar ao [Codigo do Fornecedor](/docs/user/manual/pt/inventario/item#311-detalhes-do-fornecedor). 
 
-* **Customer Name**: Select a customer here.
-* **Customer Group**: This will be fetched based on the Customer you selected in the previous field.
-* **Ref Code:** A customer can identify this item with a different number. You can track Item Code assigned by the Customer for this Item. When you create a Sales Order, the Customer's Reference Code for this Item will be shown.
+* **Nome do Cliente**: Selecione um cliente aqui.
+* **Grupo do Cliente**: Este ira procurar com base no Cliente que selecionou no campo anterior.
+* **Codigo de Ref:** Um cliente pode identificar este item com um numero diferente. Voce pode rastrear o Codigo do Item atribuido pelo Cliente para este item. Quando voce cria uma Ordem de Vendas, o Codigo de Referencia do Cliente para este Item ficara visivel.
 
 ### 3.16 Imposto de Item
 
-These settings are required only if a particular Item has a different tax rate than the rate defined in the standard tax Account.
+Estas configurações são necessarias osmente se um Item em particular tiver uma taxa de imposto diferente que a taxa definida na Conta de imposto padrão.
 
-You need to create a new 'Item Tax Template' or choose an existing one. For example, if you have a tax Account, “VAT 14%” and this particular Item is exempted from tax, then you select “VAT 14%” in the first column, and set “0” as the tax rate in the second column. Visit the [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template) page for more details.
+Voce precisa criar um novo 'Modelo de Imposto de Item' ou escolher um existente. Por exemplo, se voce tiver uma Conta de Imposto, “VAT 14%” e este Item em particular esta isento do imposto, entao voce seleciona “VAT 14%” na primeira coluna, e define “0” como o valor da taxa na segunda coluna. Visite a pagina[Modelo de Imposto de Item](/docs/user/manual/pt/contabilidade/modelo-imposto-item) para mais detalhes.
 
-![Item tax template](/docs/assets/img/stock/item-tax-template.png)
+![Modelo de Imposto de Item](/docs/assets/img/stock/item-tax-template.png)
 
-You can also set a [Tax Category](/docs/user/manual/en/accounts/tax-category) for this Item.
+Voce pode tambem definir a [Categoria do Imposto](/docs/user/manual/pt/contabilidade/categoria-imposto) para este Item.
 
 
-### 3.17 Inspection Criteria
+### 3.17 Criterio de Inspeção
 
-* **Inspection Required before Purchase**: If an inspection is mandatory before the item is purchased, i.e., before you generate Purchase Receipt, tick this checkbox.
-* **Inspection Required before Delivery**: If an inspection is required at the time of delivery from your Supplier is mandatory for this Item, tick this checkbox. That is, before you generate a Delivery Note. 
-* **Quality Inspection Template**: If a Quality Inspection is prepared for this Item, then this template of criteria will automatically be updated in the Quality Inspection table of the Quality Inspection. Examples of Criteria are: Weight, Length, Finish, etc.
+* **Inspeção Necessaria antes da Compra**: Se uma inspeção for obrigatoria antes do item for comprado, i.e., antes de voce gerar o Recibo de Compra, selecione esta caixa.
+* **Inpeção Necessaria antes da Entrega**: Se a inspeção é necessaria na altura da entrega pelo seu Fornecedor for obrigatoria para este Item, selecione a caixinha. Isto é, antes de voce gerar a Guia de Remessa. 
+* **Modelo de Inspeção de Qualidade**: Se a Inspeção da Qualidade for preparada para este Item, então este modelo de criterio sera automaticamente actualizado na tabela de Inspeção de Quadlidade. Exemplos de Criterios são: Peso, Largura, Termino, etc.
 
-Quality Inspection can be done with Quick View and you need not go to a different page to update the details inspection in ERPNext.
+Inspeção de Qualidade pode ser feito com o Visão Rapida e voce não precisa ir a uma pagina diferente para actualizar os detalhes de inspeção no ERPNext.
 
-To know more about Quality Inspection, [click here](/docs/user/manual/en/stock/quality-inspection).
+Para saber mais sobre Inspeção de Qualidade, [clique aqui](/docs/user/manual/pt/inventario/inspecao-de-qualidade).
 
-### 3.18 Manufacturing
+### 3.18 Fabricando
 
-* **Default BOM**: The default [Bill of Materials](/docs/user/manual/en/manufacturing/bill-of-materials) used to manufacture this Item.
-* **Supply Raw Materials for Purchase**:  If you're subcontracting to a vendor, you can choose to provide them with the raw materials to manufacture the item using the default BOM.
-* **Manufacturer:** Select the Manufacturer who manufactured this item.
-* **Manufacturer Part Number:** Enter the manufacturer part number that the manufacturer has assigned to this item.
+* **LDM Padrão**: A [Lista de Materiais](/docs/user/manual/pt/fabrico/lista-de-materiais) padrão usado para fabricar este Item.
+* **Fornecer Materia Prima para Compra**: Se voce subcontractou a venda, voce pode escolher a materia prima para fabrico do item usando a UDM padrão deles.
+* **Fabricante:** Selecione o Fabricante que produziu este item.
+* **Numero de Peça do Fabricante:** Digite o numero da peça do fabricante que o fabricante atribuiu a este item.
 
-  ![Item Manufacturing](/docs/assets/img/stock/item-manufacturing.png)
+  ![Fabrico do Item](/docs/assets/img/stock/item-manufacturing.png)
 
-* The manufacturer details appear after you've created an 'Item Manufacturer' from the dashboard and selected that record as default. Here, add details for:
-  * Item Code
-  * Enter the manufacturer name
-  * Enter the part number the manufacturer uses to identify this item
-  * Select 'Is Default' to show the manufacturer and part number in the Item record
+* Os detalhes do fabricante aparecem depois de voce criar um 'Fabricante do Item' no dashboard e selecionou esse registo como padrão. Aqui, acrescente os detalhes para:
+  * Codigo do Item
+  * Diogite o nome do Fabricante
+  * Digite o numero da peça o fabricante usou para identificar este item
+  * Selecione 'É Padrão' para mostrar o fabricante e o numero da peça no registo do Item
 
-  ![Item Manufacturer](/docs/assets/img/stock/item-manufacturer.png)
+  ![Fabricante do Item](/docs/assets/img/stock/item-manufacturer.png)
 
 ### 3.19  Website
 
-* **Show in Website**: Choose if you want to show this Item on your website. Once you tick this, additional options will be visible to configure the item on your website. To view the item on the website click on the 'See on Website' link on the top left just above the item image. Visit the [Website module](/docs/user/manual/en/website) to know more.
+* **Mostrar na Pagina**: Escolha se quiser mostra este Item na sua pagina. Uma vez selecionado, opções adicionais ficaram visiveis para configurar o item na sua pagina. Para visualizar o item na pagina clique em 'Ver na Pagina' em cima no lado esquedo em baixo da imagem do item. Visite [Modulo Website](/docs/user/manual/pt/website) para saber mais.
 
   <img class="screenshot" alt="Manufaturing details" src="{{docs_base_url}}/assets/img/stock/item-manufacturing-website.png">
 
-* **Weightage**: Items with higher weight will be displayed first on the website. The limit for the number you can enter here is very high. 
+* **Weightage**: Itens com maior peso serao mostrados primeiro na pagina. O limite para o numero que pode digitar aqui é muito alto. 
 
-* **Slideshow**: A slideshow can be displayed at the top of the page. Visit the [Homepage](/docs/user/manual/en/website/homepage) page in Website module to know more.
-* **Image**: You can attach an image instead of a Slideshow. 
-* **Website Warehouse**: Select an existing or create a new warehouse for transactions via your website. This Warehouse will be different from your offline Warehouses. Stock for any online transactions will be deducted from the Warehouses set under Website Warehouse.
-* **Website Item Groups**: In this table you can select existing or create new [Item Groups](/docs/user/manual/en/stock/item-group) to classify items on your website.
-* **Set Meta Tags**: Meta tags help with SEO. See [Web Page](/docs/user/manual/en/website/web-page) to know how to add them.
+* **Slideshow**: Um slideshow pode ser mostrado no top da pagina. Visite a pagina [Homepage](/docs/user/manual/pt/website/homepage) no Modulo Website para saber mais.
+* **Imagem**: Voce pode anexar uma imagem em vez de um Slideshow. 
+* **Armazem da Pagina**: Selecione um existente ou crie um novo armazem para transações via pagina. Este Armazem será diferente dos seus outros Armazens. Stock para qualquer transação onlin será deduzida apartir dos Armazens definidos na sua pagina.
+* **Grupos de Item do Website**: Aqui nesta table voce pode selecionar existente ou criar um novo [Grupos de Item](/docs/user/manual/pt/inventario/grupo-item) para classificar itens na sua pagina.
+* **Set Meta Tags**: Meta tags ajudam com o SEO. Veja [Web Page](/docs/user/manual/pt/website/web-page) para saber como adicionar.
 
-Visit [Manufacturing](/docs/user/manual/en/manufacturing) and [Website](/docs/user/manual/en/website) to understand these topics in detail.
+Visite [Fabrico](/docs/user/manual/pt/fabrico) e [Website](/docs/user/manual/pt/website) para entender estes topicos em detalhe.
 
-### 3.20 Website Specifications
-This section is for configuring other details about the item.
+### 3.20 Especificações da Pagina
+Este secção é para configurar outros detalhes sobre o item.
 
-* **Copy from Item Group:** The 'Website Specifications' details will be fetched as set in a specific Item Group chosen on the previous section (2.17).
-* **Website Specifications**: Label and its description for the item. For example, 'Warranty: 1 year'.
-* **Website Description**: This will appear on the item page.
-* **Website Content**: (*Introduced in v12*) You can create additional styling, etc., use Bootstrap 4 markup to display on the item page.
+* **Copiar apartir do Grupo de Item:** O detalhes 'Especificações da Pagina' seram procurados como definidos num Grupo de Itens especificos e escolhidos com base na secção anterior (2.17).
+* **Especificações da Pagina**: Titulo e descrição para o item. Por exemplo, 'Garantia: 1 Ano'.
+* **Descrição da Pagina**: Este irá aparecer na pagina do item.
+* **Conteudo da Pagina**: (*Criando na v12*) Voce pode criar estilo adicional, etc., use Bootstrap 4  marcador para mostra na pagina do item.
 
-### 3.21 Hub Publishing Details
+### 3.21 Hub de Detalhes de Publicação
 
-The hub is a free online marketplace where Suppliers and Customers can transact. If both parties are on ERPNext, the transactions happen seamlessly. You can visit the hub at: https://hubmarket.org.
+O hub é um mercado online livre aonde Fornecedores e Clientes pode transacionar. Se ambas parte estão no ERPNext, as transações são rapidas. Voce pode visitar o hub em : https://hubmarket.org.
 
-* **Publish in Hub**: Choose if you want to publish your item on https://hubmarket.org/. It is a free marketplace. If your supplier/customer is also on ERPNext, the transactions will be seamless. For example, on creating a Purchase Order from your end, a Sales Order will be created on the Supplier's end.
-* **Hub Warehouse**: This is a separate Warehouse to maintain the stock for your hub transactions.
-* **Synced With Hub**: Sync item and other details with the hub when transactions take place.
+* **Publicar no Hub**: Escolha se voce quer publicar o seu item no https://hubmarket.org/. É um mercado livre. Se o seu fornecedor/cliente estiver a usar o ERPNext, as transações são rapidas. Por exemplo, ao criar uma Ordem de Compra no seu lado, uma Ordem de Venda será criada no lado do Fornecedor.
+* **Armazem do Hub**: Este é um Armazem separado para manter o stock das transações do seu hub.
+* **Syncronizar com o Hub**: Sincronizar item e outros detalhes com o hub quando transações acontecem.
 
 ## 4. Video
 
@@ -294,20 +294,19 @@ The hub is a free online marketplace where Suppliers and Customers can transact.
   </div>
 </div>
 
-### 5. Related Topics
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Item Valuation FIFO And Moving Average](/docs/user/manual/en/stock/articles//item-valuation-fifo-and-moving-average)
-1. [Item Valuation Transactions](/docs/user/manual/en/stock/articles/item-valuation-transactions)
-1. [Maintain Stock Field Frozen In Item Master](/docs/user/manual/en/stock/articles/maintain-stock-field-frozen-in-item-master)
-1. [Managing Rejected Finished Goods Items](/docs/user/manual/en/stock/articles/managing-rejected-finished-goods-items)
-1. [Return Rejected Item](/docs/user/manual/en/stock/articles/return-rejected-item)
-1. [Track Items Using Barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode)
-1. [Creating Depreciation For Item](/docs/user/manual/en/stock/articles/creating-depreciation-for-item)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
+### 5. Topicos Relacionados
+1. [Preço do Item](/docs/user/manual/pt/inventario/preço-item)
+1. [Codificação do Item](/docs/user/manual/pt/inventario/artigos/codificacao-item)
+1. [Variantes do Item](/docs/user/manual/pt/inventario/variantes-item)
+1. [Grupo do Item](/docs/user/manual/pt/inventario/grupo-item)
+1. [Atributos do Item](/docs/user/manual/pt/inventario/atributo-item)
+1. [Avaliação do Item FIFO e Media Movel](/docs/user/manual/pt/inventario/artigos//avaliacao-item-fifo-e-media-movel)
+1. [Transações de Avaliação do Item](/docs/user/manual/pt/inventario/artigos/transacoes-de-avaliacao-item)
+1. [Manter o Campo Stock Congelado na Ficha do Item](/docs/user/manual/pt/inventario/artigos/maintain-stock-field-frozen-in-item-master)
+1. [Gerir Bens Produzidos Rejeitados](/docs/user/manual/pt/inventario/artigos/managing-rejected-finished-goods-items)
+1. [Devolver Itens Rejeitados](/docs/user/manual/pt/inventario/artigos/return-rejected-item)
+1. [Rastrear Itens usando Codigo de Barras](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
+1. [Criando Depreciação para Item](/docs/user/manual/pt/inventario/artigos/creating-depreciation-for-item)
+1. [Nome do Numero do Serie](/docs/user/manual/pt/inventario/artigos/serial-no-naming)
+1. [Registo do Saldo de Abertura do Stock para Itens com Serie e Lote](/docs/user/manual/pt/inventario/artigos/abertura-balanco-stock-para-itens-serializados-e-lotes)
+1. [Numero de Serie](/docs/user/manual/pt/inventario/numero-serie)

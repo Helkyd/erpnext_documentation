@@ -1,68 +1,66 @@
 <!-- add-breadcrumbs -->
-# Delivery Note
+# Guia de Remessa
 
-**A Delivery Note is made when a shipment is shipped from the company’s Warehouse to the customer.**
+**Uma Guia de Remessa é feita quando uma entrega é enviada apartir do Armazem da Empresa para o cliente.**
 
-A copy of the Delivery Note is usually sent with the transporter. The Delivery
-Note contains the list of Items that are sent in the shipment and updates the
-inventory. The Delivery Note is an optional step and a Sales Invoice can be created directly from a Sales Order.
+Uma copia da Guia de Remessa é normalmente enviado com o Transportador. A Guia de Remessa contem a lista de Itens que são usados nos envios e actualiza o inventario. A Guia de remessa é um passo opcional e a Factura de Venda pode ser criado directamente apartir da Ordem de Venda.
 
-To access the Delivery Note list, go to:
-> Home > Stock > Stock Transactions > Delivery Note
+Para acessar a lista da Guia de Remessa, va para:
+> Home > Inventario > Transações de Stock > Guia de Remessa
 
-![Delivery Note flow](/docs/assets/img/stock/delivery-note-flow.png)
+![Fluxo de Guia de Remessa](/docs/assets/img/stock/delivery-note-flow.png)
 
 
-## 1. Prerequisites
-Before creating and using a Delivery Note, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e utilizadr uma Guia de Remessa, é aconselhado criar os seguintes primeiro:
 
-* [Sales Order](/docs/user/manual/en/selling/sales-order)
+* [Ordem de Venda](/docs/user/manual/pt/vendas/ordem-vendas)
 
-> Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions in ERPNext. [Learn more here](/docs/user/manual/en/accounts/articles/immutable-ledger-in-erpnext).
+> Nota: Apartir da versão-13 nós introduzimos o Razão imudavel (immutable ledger) que muda as regras para cancelamento de entradas de stock e postagem para datas atrás de transações de stock no ERPNext. [Aprenda mais aqui](/docs/user/manual/pt/contabilidade/artigos/razão-imudavel-erpnext).
 
-## 2. How to create a Delivery Note
-The entry of the Delivery Note is very similar to a Purchase Receipt. It is usually created from a “Submitted” Sales Order (that is not shipped) by clicking on Create > Delivery.
+## 2. Como criar uma Guia de Remessa
+O registo da Guia de Remessa é similar ao Recibo de Compra. É normalmente criado apartir de uma Ordem de Venda "Submetida" (que não foi enviado) fazendo o clique em Criar > Guia.
 
-To create a Delivery Note _manually_ (not recommended), follow these steps:
+Para criar a Guia de Remessa _manual_ (não recomendado), siga estes passos:
 
-1. Go to the Delivery Note list, click on New.
-1. The Customer and Item details can be fetched by clicking on 'Get Items from > Sales Order'.
-1. The UOM and Rates will be fetched automatically.
-1. Save and Submit.
+1. Va para a lista de Guia de Remessa, clique em Novo.
+1. O Cliente e os detalhes de Item podem ser procurados fazendo clique em 'Obter Itens apartir > Ordem de Vendas'.
+1. A UDM e Preços serao procurados automaticamente.
+1. Salvar e Submeter.
 
     <img class="screenshot" alt="Delivery Note" src="{{docs_base_url}}/assets/img/stock/delivery-note.png">
 
-To fetch Items from a Sales Order, click on Get Items from > Sales Order. This will open a popup from where you can search for Sales Orders and select one.
+Para procurar Itens apartir de um Ordem de Venda, clique em Obter Itens apartir > Ordem de Vendas. Este irá abrir uma janela no qual poderá procurar as Ordens de Venda e selecionar uma.
 
-You will notice that all the information about unshipped Items and other details are carried over from your Sales Order if you create the Delivery Note from there.
+Você irá verificar que todas as informações sobre Itens não enviados e outros detalhes são transportados das Ordens de Venda se você criar a Guia de Remessa apartir daqui.
 
-You can also edit the posting date and time, the current date and time are set when you create the Delivery Note.
+Você pode tambem editar a data e hora de postagem, a data e hora corrente são definidas quando você criar a Guia de Remessa.
 
 
 ### 2.1 Statuses
 
-These are the statuses a Delivery Note can be in:
+Estes são os statuses em que uma Guia de Remessa pode ter:
 
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **To Bill**: Yet to be billed using a [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice).
-* **Completed**: Submitted and sent all the Items.
-* **Canceled**: Canceled the Delivery Note.
-* **Closed**: The purpose of the Close is to manage short-closing. For example, your Customer ordered for 20 qty but closed at 15 qty. The remaining 5 is not to be sent or billed.
+* **Rascunho**: Um rascunho é salvo mas ainda não foi submetido no sistema.
+* **Para Cobrar**: Ainda por ser cobrado usando uma [Factura de Vendas](/docs/user/manual/pt/contabilidade/factura-vendas).
+* **Completado**: Submetido e todos os Itens enviados.
+* **Cancelado**: Cancelada a Guia de Remessa.
+* **Fechado**: O motivo do Fechar é de gerir um pequeno-fechar. Por exemplo, o seu Cliente pediu 20 qtds mas fechou em 15 qtds. Os restantes 5 não seram enviados ou cobrados.
 
-### 2.2 Partial Deliveries
+### 2.2 Entregas Parciais
 
-When you create a Delivery Note from a Sales Order, the quantities can be changed. So if the Sales Order contains 10 Items to be delivered and you're delivering only 5 this week and the remaining next week, then you can create 2 Delivery Notes in two weeks.
+Quando você cria a Guia de Remessa apartir de um Ordem de Venda, as quantidades podem ser trocadas. Somente se a Ordem de Venda contem 10 Itens a serem entregues e vocẽ somente entragará 5 este semana e os restantes na semana seguinte, então você pode criar 2 Guias de Remessa em duas semanas.
 
 
-## 3. Related Actions
-### 3.1 Customer Purchase Order Details
-You can enter the Customer's Purchase Order number here for Reference.
+## 3. Acções Relacionadas
+### 3.1 Detalhes da Ordem de Compra do Cliente
+Você pode digiar o numero da Ordem de Compra do Cliente aqui como Referencia.
 
-### 3.2 Address and Contact
-* **Shipping Address**: The Customer's address where the Items will be shipped.
-* **Contact Person**: If the Customer is an organization, add the Contact person in this field.
+### 3.2 Endereço e Contacto
+* **Endereço de Envio**: O endereço do Cliente aonde os Itens serao enviados.
+* **Pessoa de Contacto**: Se o Cliente for uma Empresa, adicione a pessoa de contacto neste campo.
 
-For India, the following details can be added for GST:
+Para India, os seguintes detalhes pode ser adicionados para GST:
 
 * Customer GSTIN
 * Place of Supply
@@ -70,177 +68,172 @@ For India, the following details can be added for GST:
 * Company GSTIN
 * Company Address Name
 
-[Contacts](/docs/user/manual/en/CRM/contact) and [Addresses](/docs/user/manual/en/CRM/address) are stored separately so that you can attach multiple Contacts or Addresses to the customer.
+[Contactos](/docs/user/manual/pt/CRM/contacto) e [Endereço](/docs/user/manual/pt/CRM/endereço) são guardados separados para que você possa anexar varios Contactos ou Endereços do cliente.
 
-### 3.3 Currency and Price List
-You can set the currency in which the Deliver Note is to be sent. This is usually fetched if set in the Sales Order. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+### 3.3 Lista de Preços e Moedas
+Você pode definir a moeda no qual a Guia de Remessa será enviada. Normalmente procurado se a Ordem de Venda for definida. Se você definir a Lista de Preços,então os preços de item serao procurados apartir dessa lista. selecionando Ignorar Regra de Preço irá ignorar as Regras de Preço definidos em Contabilidade > Regra de Preços.
 
-To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
+Para saber sobre Lista de Preços, [clique aqui](/docs/user/manual/pt/inventario/lista-preços).
 
-To know about managing transactions in multiple currencies, [click here](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
+Para saber sobre gerir transações em multiplas moedas, [clique aqui](/docs/user/manual/pt/contabilidade/artigos/gerir-transações-multiplas-moedas).
 
-### 3.4 Warehouses
+### 3.4 Armazens
 
-* **Set Source Warehouse**: This is where the Items will be sourced from to send to the Customer.
-* **To Warehouse**: In a regular Sales scenario, the Item exits your Warehouse and reaches the Customer. However, if you wish to retain sample stock, enter a Warehouse here.
+* **Definir Armazem Fonte**: Este é aonde os Itens seram fornecidos para ser enviado ao Cliente.
+* **Para o Armazem**: Num cenario normal de Vendas, o Item existe no seu Armazem e vai para o Cliente. Contudo, caso queira manter uma amostra de stock, digite o Armazem aqui.
 
-### 3.5 Items Table
-* **Barcode**: You can track Items using [barcodes](/docs/user/manual/en/stock/articles/track-items-using-barcode).
+### 3.5 Tabela de Itens
+* **Codigo de Barras**: Você pode gerir os Itens usando [Codigo de Barras](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras).
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the [Item master](/docs/user/manual/en/stock/item).
+* O Codigo de Item, nome, descrição, Imagem, e Fabricante sera procurado apartir de [Table de Item](/docs/user/manual/pt/inventario/item).
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+* **Scan Codigo de Barras**: Você pode adicionar Itens numa tabela de Itens fazendo o scan dos Codigos de Barra se você tiver um leitor de Codigo de Barras. Saiba como rastrear [aqui](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
 
-* **Discount and Margin**: You can apply a discount on individual Items percentage-wise or the total amount of the Item. Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+* **Desconto e Margem**: Você pode aplicar percentagens de desconto em Itens individuais ou em valor total do Item. Leia [Aplicando Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto) para mais detalhes.
 
-* **Rate**: The Rate is fetched if set in the [Price List](/docs/user/manual/en/stock/price-lists) and the total Amount is calculated.
+* **Preço**: O Preço é procurado se definido em [Lista de Preço](/docs/user/manual/pt/inventario/preço-item) e o Valor total é calculado.
 
-* **Item Tax Template**: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit [this page](/docs/user/manual/en/accounts/item-tax-template).
+* **Modelo de Imposto de Item**: Você pode definir um Modelo de Imposto de Item para aplicar um valor de imposto especifico para este Item. Para saber mais,visite [esta pagina](/docs/user/manual/pt/contabilidade/modelo-imposto-item).
 
-* The Item Weight details per unit and Weight UOM are fetched if set in the Item master.
+* Os detalhes do Peso do Item por unidade e Peso de UDM são procurados se definido na tabela de Item.
 
-* **Warehouse and Reference**: The Warehouse from which the Items are sent to the Customer is shown. Also, a Sales Order will be shown if this Delivery Note was the creation flow: 'Sales Order > Deliver Note'.
+* **Armazem e Referencia**: O Armazem pelo qual os Itens são enviados para o Cliente serão visualizados. Tambem, um Ordem de Venda será vista se a Guia de Remessa foi criado: 'Ordens de Venda > Guia de Remessa'.
 
-* **Batch No and Serial No**: If your Item is serialized or batched, you will have to enter [Serial Number](/docs/user/manual/en/stock/serial-no) and [Batch](/docs/user/manual/en/stock/batch) in the Items table. You are allowed to enter multiple Serial Numbers in one row (each on a separate line) and you must enter the same number of Serial Numbers as the quantity.
+* **Numero do Lote e Numero de Serie**: Se o seu Item for serializado ou lote, você irá digitar [Numero de Serie](/docs/user/manual/pt/inventario/numero-serie) e [Lote](/docs/user/manual/pt/inventario/lote) na tabela de Itens. Você term permissão para digitar varios Numeros de Serie numa linha (cada em linhas separadas) e você pode digitar o mesmo Numero de Serie como quantidade.
 
-    The 'Available Qty at From Warehouse', 'Available Batch Qty at From Warehouse', and 'Installed Qty' will be shown. To know more about installation, visit the [Installation Note](/docs/user/manual/en/stock/installation-note) page.
+    A 'Qtd disponivel no Armazem de Origem', 'Qtd do Lote Disponivel no Armazem de Origem', e 'Qtds Instalada' serao mostrados. Para saber mais sobre a instalação, visite a pagina [Nota de Instalação](/docs/user/manual/pt/inventario/nota-de-instalacao) .
 
-    **Note**: The Item has to be serialized or batched for these features to work. If the Item is serialized a popup will appear where you can enter the Serial Numbers.
+    **Nota**: O Item tem que ser serializado ou lote para estas funcionalidades funcionarem. Se o Item for serializado uma janela irá aparecer aonde pode digitar os Numeros de Serie.
 
-* Expense Account is the account from which the amount will be debited. Ticking on 'Allow Zero Valuation Rate' will allow submitting the Delivery Note even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+* Conta de Despesa é a conta no qual o valor será debitado. Activando 'Permitir Taxa de Avaliação Zero' irá permitir submeter a Guia de Remessa mesmo que a Taxa de Avaliação é 0. este pode ser uma amostra de item ou devido a um entendimento mutuo com o seu Fornecedor.
 
-* Accounting Dimensions help to tag each transaction with different Dimensions without the need for creating new Cost Centers. You need to create Accounting Dimensions first, to know more, visit [this page](/docs/user/manual/en/accounts/accounting-dimensions).
+* Dimensões de Contabilidade ajudam a marcar cada transação com Dimensões diferentes sem a necessidade de criar um novo Centro de Custo. você precia criar Dimensões de Contabilidade primeiro, para mais informação, visite [esta pagina](/docs/user/manual/pt/contabilidade/dimensao-contabil).
 
-* **Page Break** will create a page break just before this Item when printing.
+* **Quebra de Pagina** Irá criar uma Quebra de Pagina mesmo antes deste Item ser impresso.
 
-### 3.6 Tracking Quality Inspection
-If for certain Items, it is mandatory to record Quality Inspections (if you have set it in your Item master), you will need to update the “Quality Inspection" field. The system will only allow you to “Submit” the
-Delivery Note if you update the “Quality Inspection”.
+### 3.6 Rastreando a Inspeção de Qualidade
+Se para alguns Itens, for obrigatorio registar as Inspeções de Qualidade (se voce definiu na tabela de Item), voce ira ter que atualizar o campo “Inspeção de Qualidade". O sistema irá somente permitir “Submeter” a Guia de Remessa
+se você atualizar a  “Inspeção de Qualidade”.
 
-After enabling Inspection Criteria in the [Item form](/docs/user/manual/en/stock/item#216-inspection-criteria) for Sales and attaching a Quality Inspection Template there, Quality Inspections can be recorded in Delivery Notes.
+Depois de activar o Criterio de Inspeção no [Formulario do Item](/docs/user/manual/pt/inventario/item#317-criterio-de-inspecao) para Vendas e anexando o Modelo de Inspeção de Qualidade aquie, Qualidades de Inspeção podem ser registados nas Guias de Remessa.
 
-### 3.7 Taxes and Charges
-The Taxes and Charges will be fetched from the [Sales Order](/docs/user/manual/en/buying/purchase-order).
+### 3.7 Impostos e Taxas
+Os Impostos e Taxas serao procurados apartir de [Ordem de Vendas](/docs/user/manual/pt/compras/ordem-de-compra).
 
-Visit the [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) page to know more about taxes.
+Visite a pagina [Modelo de Impostos e Taxas de Venda](/docs/user/manual/pt/vendas/modelo-impostos-taxas-vendas) para sabe mais sobre impostos.
 
-The total taxes and charges will be displayed below the table.
+O total de impostos e taxas serao mostrados na tabela em baixo.
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+Para adiconar Impostos automaticamente via Categoria de Imposto, visite [esta pagina](/docs/user/manual/pt/contabilidade/categoria-imposto).
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+Tenha a certeza de marcar todas os impostos na tabela de Impostos e Taxas para uma avaliação correta.
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### Regra de Envio
+A Regra de Envio ajuda definir o custo do Item de envio. O custo sreá normalmente aumentado com a distancia do envio. Para saber mais, visite a pagina [Regra de Envio](/docs/user/manual/pt/vendas/regra-envio).
 
-### 3.8 Additional Discount
-Any additional discounts to the whole order can be set in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+### 3.8 Desconto Adicional
+Qualquer desconto adicional para a ordem completa pode ser definido nesta secção. Este desconto pode ser com base no Total Geral i.e., post tax/charges or Net total i.e., pre tax/charges. O desconto adicional pode ser aplicado como uma percentagem ou um valor.
+Leia [Aplicando Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto) para mais detalhes.
 
-### 3.9 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.9 Termos e Condições
+Nas transações de Vendas/Compras pode ter alguns Termos e Condições com base no qual o Fornecedor da bens ou serviços ao Cliente. Você pode aplicar os Termos e Condições para transações e eles vão aparecer ao imprimir o documento. Para saber mais sobre Termos e Condições, [clique aqui](/docs/user/manual/pt/configuração/imprimir/termos-e-condições)
 
-### 3.10 Transporter Information
+### 3.10 Informação de Transporte
 
-If you outsource transporting Items to their delivery location, the transporter details can be added. This is not the same as [drop shipping](/docs/user/manual/en/selling/articles/drop-shipping).
+Se você outsource o transporte de Itens para a sua entrega, os detalhes do transportador podem ser adicionados. Este não é o mesmo como [drop shipping](/docs/user/manual/pt/vendas/artigos/drop-shipping).
 
-* **Transporter**: The Supplier who will transport the Item to your Customer. The transporter feature should be enabled in the Supplier master to select the [Supplier](/docs/user/manual/en/buying/supplier) here.
-* **Driver**: You can add a Driver here who will drive the mode of transport.
+* **Transportador**: O Fornecedor que irá transportar o Item para o seu Cliente. A funcionalidade do transportador sera activo na tabela de Fornecedor para selecionar o [Fornecedor](/docs/user/manual/pt/compras/fornecedor) aqui.
+* **Motorista**: Você pode adicionar o Motorista aqui que irá conduzir o modo de transporte.
 
-![Delivery Note Transport](/docs/assets/img/stock/delivery-note-transport.png)
+![Nota de Entrega de Transporte](/docs/assets/img/stock/delivery-note-transport.png)
 
-The following details can be recorded:
+Os seguintes detalhes podem ser registados:
 
-* Distance in km
-* Mode of Transport whether road, air, rail, or ship.
+* Distançia em km
+* Modo de Transporte quer seja estrada, voo, caminhos de ferro ou maritimo.
 
-For India, GST:
+Para India, GST:
 
 * GST Transporter ID
 * Transport Receipt No
 * Vehicle No
     The GST Vehicle Type can be changed
 
-The Transport Receipt Date and Driver Name will be fetched.
+A Data do Recibo de Transporte e Nome do Condutor seram procurados.
 
-### 3.11 More Information
+### 3.11 Mais Informações
 
-The Delivery Note can be linked to the following for tracking purposes:
+A Guia de Remessa pode ser ligada aos seguines para motivos de rastreamento:
 
-* [Project](/docs/user/manual/en/projects/project)
-* [Campaign](/docs/user/manual/en/CRM/campaign)
-* [Source](/docs/user/manual/en/CRM/lead_source)
+* [Projecto](/docs/user/manual/pt/projectos/projecto)
+* [Campanha](/docs/user/manual/pt/CRM/campanha)
+* [Fonte](/docs/user/manual/pt/CRM/lead_source)
 
-### 3.11 Printing Settings
+### 3.11 Configurações de Impressão
 
-#### Letterhead
-You can print your Delivery Note on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### Cabeçalho
+Você pode imprimir a Guia de Remessa com o seu logotipo da empresa. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-'Group same items' will group the same items added multiple times in the Items table. This can be seen when your print.
+'Agrupar itens iguais' irá agrupar os itens iguais adicionados varias vezes na tabela de Itens. Isto pode ser visto ao Imprimir.
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalho
+Cabeçalho de Recibo de Compras pode tambem ser alterado ao imprimir o documento. Você pode fazer isso selecionando **Imprimir Cabeçalho**. Para criar um novo Imprimir Cabeçalho va para: Home > Configurações > Impressão > Imprimir Cabeçalho. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-There are additional checkboxes for printing the Delivery Note without the amount, this might be useful when the Item is of high value. You can also group the same Items in one row when printing.
+Existem caixas adicionais para imprimir a Guia de Remessa sem o valor, este pode ser util quando o Item é de grande valor. Você tambem pode agrupar os itens iguais numa unica linha ao imprimir.
 
 ### 3.12 Status
-The status of the document and installation percentage is shown here. Any additional instructions for delivery can be entered here.
+O Status do documento e percentagem de instalação é mostrado aqui. Qualquer instrução adicional para entrega pode ser digitado aqui.
 
-### 3.13 Commission
+### 3.13 Comissão
 
-If the sale took place via one of your Sales Partners, you can add their commission details here. This is usually fetched from the Sales Order.
+Se a venda foi feita via um dos Parceiros de Venda, você pode adicionar os detalhes das comissões aqui. Este é procurado pela Ordem de Venda.
 
-### 3.14 Sales Team
-**Sales Persons:** ERPNext allows you to add multiple Sales Persons who may have worked on this deal.
+### 3.14  Sales Team
+**Vendedor:** O ERPNext permite que voce adicone varios Vendedores que podem ter trabalhado neste negocio.
 
-This is usually fetched from a Sales Order, for example:
+Este é procurado apartir da Ordem de Vendas, por exemplo:
 
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
-### 3.15 Shipping Packets or Items with Product Bundle
+### 3.15 Pacotes de Envio ou Itens com Pacote de Produtos
 
-If you are shipping Items that have a [Product Bundle](/docs/user/manual/en/selling/product-bundle), ERPNext will automatically create a “Packing List” table for you based on the sub-Items in that Item.
+Se você estiver a enviar Itens que tem [Pacote de Produtos](/docs/user/manual/pt/vendas/pacote-de-produtos), o ERPNext irá automaticamente criar uma tabela de "Lista de Escolhas" para si com base nos sub-Itens neste Item.
 
-If your Items are serialized, then for Product Bundle type of Items, you will have
-to update the Serial Number in the “Packing List” table.
+Se os seus Itens forem serializados, então para o tipo de Pacote de Produtos, você irá ter que actualizar
+os Numeros de Serie na tabela "Lista de Escolhas".
 
-### 3.16 Packing Items into Cases, for Container Shipment
+### 3.16 Empacotando Itens em caixas, para Envio de Contentor
 
-If you are doing making the delivery via container shipment or by weight, then you can use the Packing
-Slip to break up your Delivery Note into smaller units. To know more about a Packing Slip, visit [this page](/docs/user/manual/en/stock/packing-slip).
-go to:
+Se você estiver para fazer uma entrega via contentor ou por peso, então pode usar a Nota Fiscal para dividir a sua Guia de Remessa em unidades mais pequenas. Para saber mais sobre a Nota Fiscal, visite [esta pagina](/docs/user/manual/pt/inventario/nota-fiscal).
 
-You can create multiple Packing Slips for your Delivery Note and ERPNext will
-ensure that the quantities in the Packing Slip do not exceed the quantities in
-the Delivery Note. Note that you can create a Packing Slip from a Delivery Note only when the Delivery Note is in the Draft stage.
+Você pode criar varias Notas Fiscais para as Guias de Remessa e o ERPNext fazer com que as quantidades na Nota Fiscal não excedam as quantidades da Guia de Remessa. De notar que pode criar uma Nota Fiscal apartir da Guia de Remessa somente quando a Guia de Remessa estiver em Rascunho.
 
-### 3.17 After Submitting
+### 3.17 Depois de Submeter
 
-When the Delivery Note is submitted, a Stock Ledger Entry is made for each Item and stock is updated. Pending
-Quantity in the Sales Order is updated (if applicable).
+Quando a Guia de Remessa for submetida, o Registo do Razão de Stock é feito para cada Item e o stock actualizado. Quantidades pendentes na Ordem de Venda são actualizados (caso necessário).
 
-The Dashboard will show the following options:
+O Dashboard irá mostrar as seguintes opções:
 
-* [Installation Note](/docs/user/manual/en/stock/installation-note)
-* [Sales Return](/docs/user/manual/en/stock/sales-return)
-* [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
-* [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+* [Nota de Instalação](/docs/user/manual/pt/inventario/nota-de-instalacao)
+* [Devolução de Vendas](/docs/user/manual/pt/inventario/retorno-vendas)
+* [Viagem de Entrega](/docs/user/manual/pt/inventario/viagem-de-entrega)
+* [Factura de Vendas](/docs/user/manual/pt/contabilidade/factura-vendas)
 
-![Delivery Note after submit](/docs/assets/img/stock/delivery-note-submit.png)
+![Guia de Remessa depois de Submeter](/docs/assets/img/stock/delivery-note-submit.png)
 
-> Tip: To disallow the creation of Delivery Notes without a Sales Order against it:
+> Dika: Para não permitir a criação de Guias de Remessa sem uma Ordem de Venda:
 
-### 3.18 Returning a Sales Order
-Once you've delivered a Sales Order using a Delivery Note, you can create a return entry in case the [Customer](/docs/user/manual/en/CRM/customer) returns the Item. To know more, visit the [Sales Return](/docs/user/manual/en/stock/sales-return) page.
+### 3.18 Devolução de uma Ordem de Venda
+Uma vez entregue a Ordem de Venda usando a Guia de Remessa, você pode criar um registo de devolução caso o cliente [Cliente](/docs/user/manual/pt/CRM/cliente) devolva o Item. Para saber mais, visite  a pagina [Devolução de Vendas](/docs/user/manual/pt/inventario/retorno-vendas) .
 
-### 3.19 Skipping Delivery Note
+### 3.19 Pulando a Guia de Remessa
 
-If you don't want to create a Delivery Note after a Sales Order and directly want to create a Sales Invoice, enable the feature for it in [Selling Settings](/docs/user/manual/en/selling/selling-settings#32-delivery-note-required).
+Se você não quer criar uma Guia de Remessa depois de uma Ordem de Venda e queira criar um Factura de Vendas directamente, active a funcionalidade para tal em [Configurações de Venda](/docs/user/manual/pt/vendas/configurações-venda#32-guia-de-remessa-necessaria).
 
 
-### 4. Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
-1. [Delivery Note Stock Error](/docs/user/manual/en/stock/articles/delivery-note-stock-error)
-1. [Material Transfer From Delivery Note and Purchase Receipt](/docs/user/manual/en/stock/articles/material-transfer-from-delivery-note)
-1. [Installation Note](/docs/user/manual/en/stock/installation-note)
-1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
+### 4. Topicos Relacionados
+1. [Armazem](/docs/user/manual/pt/inventario/armazem)
+1. [Erro de Stock na Guia de Remessa](/docs/user/manual/pt/inventario/artigos/erro-stock-guia-de-remessa)
+1. [Tranferencia de Material apartir da Guia de Remessa e Recibo de Compra](/docs/user/manual/pt/inventario/artigos/transferencia-material-pela-guia-de-remessa)
+1. [Nota de Instalação](/docs/user/manual/pt/inventario/nota-de-instalacao)
+1. [Viagem de Entrega](/docs/user/manual/pt/inventario/viagem-de-entrega)
