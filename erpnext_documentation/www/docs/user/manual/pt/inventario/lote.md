@@ -1,70 +1,70 @@
 <!-- add-breadcrumbs -->
-# Batch
+# Lote
 
-**Batch feature in ERPNext allows you to group multiple units of an Item and assign them a unique value/number/tag called Batch No.**
+**A funcionalidade do Lote no ERPNext permite agrupar varias unidade de um Item e atribuir ele um valor/numero/marca unico chamado Numero do Lote.**
 
-This is done based on the Item. If the Item is batched, then a Batch number must be mentioned in every stock transaction. Batch numbers can be maintained manually or automatically. This feature is useful to set the expiry date of multiple Items or move them together to different Warehouses.
+Isto é feito com base no Item. Se o Item tiver lotes, então o Numero do Lote deve ser mencionado em cada transação de Stock. Numeros de Lote podem ser geridos manualmente ou automaticamente. Esta funcionalidade é util para definir a data de expiração de varios Itens ou move todos de uma so vez para armazens diferentes.
 
-To access the Batch No list, go to:
-> Home > Stock > Serial No and Batch > Batch
-
-
-## 1. Prerequisites
-Before creating and using a Batch, it is advised that you create the following first:
-
-* [Item](/docs/user/manual/en/stock/item)
-* Enable 'Has Batch No' in the Item master
-    ![Batch No Enabled](/docs/assets/img/stock/batch-no-enabled.png)
+Para acessar a lista de Numeros de Lotes, va para:
+> Home > Inventario > Numero de Serie e Lotes > Lotes
 
 
-## 2. How to create a new Batch
+## 1. Pre-requisitos
+Antes de criar e usar os Lotes, é aconselhavel primeiro criar os seguintes:
 
-To set item as a batch item, "Has Batch No" field should be checked in the Item master. If you have not selected "Automatically Create New Batch" when creating an Item, you will have to make Batches Manually as you go along. 
+* [Item](/docs/user/manual/pt/inventario/item)
+* Active 'Tem Nr. de Lote' na ficha do Item
+    ![Lote não Activo](/docs/assets/img/stock/batch-no-enabled.png)
 
-To create new Batch No. master for an item, go to:
 
-1. Go to the Batch list, click on New.
-1. Set the Batch ID.
-1. Select the Item.
-1. If any transaction is done with an item, the batch cannot be set or unset.
-1. Save.
+## 2. Como criar um novo Lote
 
-When Batches are enabled for an Item, the option to [retain sample stock](/docs/user/manual/en/stock/retain-sample-stock) also becomes available. 
+Para definir o item como um item com lote, o campo "Tem Nr. Lote" deve estar activo na ficha do Item. Se voce não selecionou "Criar novo lote automaticamente" ao criar um Item, voce terá que criar os Lotes Manualmente. 
 
-### 2.1 Batch Auto Creation
-If you want automatic batch creation at the time of Purchase Receipt, you must tick 'Automatically Create New Batch' in the Item master:
+Para criar um novo Nr. de Lote para um item, va para:
+
+1. Va para a lista de Lotes, clique em Novo.
+1. Defina o ID do Lote.
+1. Selecione o Item.
+1. Se alguma transação for feito com um item, o lote não pode ser definido ou retirado.
+1. Salve.
+
+Quando os Lotes estão activos para um Item, a opção [reter amostra de stock](/docs/user/manual/pt/inventario/reter-amostra-stocks) tambem fica activa. 
+
+### 2.1 Lote e Auto Criação
+Se voce quiser a criação de lotes automaticos na altura da criação do Recibo de Compras, voce deve selecionar 'Criar novo lote automaticamente' na ficha do Item:
 
 <img class="screenshot" alt="Item Setup for Batches" src="{{docs_base_url}}/assets/img/stock/item_setup_for_batch.png">
 
-## 3. Features
-### 3.1 Splitting and Moving Batches
+## 3. Funcionalidades
+### 3.1 Dividindo e Movendo Lotes
 
-When you open a batch, you will see all the quantities that belong to that batch on the page.
+Quando voce abre um lote, voce irá ver todas as quantidades do mesmo lote.
 
 <img class="screenshot" alt="Batch View" src="{{docs_base_url}}/assets/img/stock/batch_view.png">
 
-* To move the batch from one Warehouse to another, you can click on the **Move** button.
+* Para mover o lote de um Armazem para outro, voce pode fazer o clique no botão **Mover**.
 
-* You can also split the batch into smaller one by clicking on the **Split** button. This will create a new Batch based on this Batch and the quantities will be split between the batches.
+* Voce pode tambem dividir o lote em quantidades pequenas fazer o clique no botão **Dividir** button. This will create a new Batch based on this Batch and the quantities will be split between the batches.
 
     ![Split Batch](/docs/assets/img/stock/batch_split.png)
 
-* If you set expiry date, the Batch will show 'Not Expired' until the expiry date, after which it'll show 'Expired'. If a date is not set, the Batch will show 'Not Set'.
+* Se voce definir data de expiração, o Lote ira mostrar 'Não Expirado' até a data de expiração, depois mostrará 'Expirado'. Se a data não for definida, o Lote irá mostrar 'Não Definido'.
 
-### 3.2 Transacting Items with Batches
+### 3.2 Transação de Itens com Lotes
 
-A Batch master should be created before the creation of Purchase Receipt.
-Hence, every time a Purchase Receipt or Work Order is being made for a batch item,
-you will first create its Batch No, and then select it in the Purchase order or Stock Entry.
+Um Lote mestre deve ser criado antes de criar o Recibo de Compra.
+Daí, sempre que criar um Recibo de Compra ou Ordem de Trabalho for feita com um item de lote,
+voce primeiro irá criar o Numero do Lote, e depois selecionar o mesmo na Ordem de Compra ou Registo de Stock.
 
-On every stock transaction (Purchase Receipt, Delivery Note, Invoice) with a batch item,
-you should provide the Item's Batch No.
+Em cada transação de stock (Recibo de Compra, Guia de Remessa, Factura) com um item de lote,
+deve providenciar o Numero do Lote do Item.
 
-> Note: In stock transactions, Batch IDs will be filtered based on Item Code, Warehouse,
-Batch Expiry Date (compared with a Posting date of a transaction) and Actual Qty in Warehouse.
-While searching for Batch ID  without value in the Warehouse field, Actual Qty filter won't be applied.
+> Nota: Em transações de stock, IDs do Lote serao filtrados com base no Codigo do Item, Armazem,
+Data de Expiração do Lote (comparado com a Data de Postagem de uma transação) e a Qtd Actual no Armazem.
+Enquanto procura pelo ID do Lote sem valor no campo do Armazem, o filtro Qtd Actual não será aplicada.
 
-### 4. Related Topics
-1. [Serial Number](/docs/user/manual/en/stock/serial-no)
-1. [Opening Stock Balance Entry For Serialized And Batch Item](/docs/user/manual/en/stock/articles/opening-stock-balance-entry-for-serialized-and-batch-item)
-1. [Managing Batch Wise Inventory](/docs/user/manual/en/stock/articles/managing-batch-wise-inventory)
+### 4. Topicos Relacionados
+1. [Numero de Serie](/docs/user/manual/pt/inventario/numero-serie)
+1. [Registo de Abertura de Stock para Itens com Numero de Serie e Lote](/docs/user/manual/pt/inventario/artigos/abertura-balanco-stock-para-itens-serializados-e-lotes)
+1. [Gerindo Inventario de Lotes de forma Inteligente](/docs/user/manual/pt/inventario/artigos/gerindo-inventario-de-lotes-inteligente)

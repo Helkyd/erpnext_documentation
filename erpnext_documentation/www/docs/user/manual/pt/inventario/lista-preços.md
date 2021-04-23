@@ -1,35 +1,35 @@
 <!-- add-breadcrumbs -->
-# Price Lists
+# Listas de Preço
 
-**A Price List is a collection of Item Prices either Selling, Buying, or both.**
+**Uma Lista de Preço é um coleção de Preços de Item para Venda, Compra ou ambos.**
 
-ERPNext lets you maintain multiple Selling and Buying [Item Prices](/docs/user/manual/en/stock/item-price) using Price Lists.
+O ERPNext permite que mantenha varios preços de Venda ou Compra [Preços de Item](/docs/user/manual/pt/inventario/preço-item) usando a Lista de Preços.
 
-Price Lists can be used in scenarios where you have different prices for different zones (based on the shipping costs), for different currencies, etc. An Item can have multiple prices based on customer, currency, region, shipping cost, etc, which can be stored as different rate plans.
+Lista de Preços podem ser usado num cenario aonde voce tem preços diferente para zonas diferentes (com base nos custos de envio), para moedas diferentes, etc. Um Item pode ter varios preços com base no cliente, moeda, região, custos de envio, etc, que pode ser guardado os varios preços.
 
-In ERPNext, all the Item Prices are stored separately. Buying Price for an item is different from Selling Price and thus they're stored separately.
+No ERPNext, todos os Preços dos Itens são guardados separados. Preço de Compra para um item é diferente do Preço de Venda e para tal são guardados em separado.
 
-To access a Price List go to:
+Para acessar a Lista de Preços va para:
 
-> Home > Selling/Buying/Stock > Items and Pricing > Price List
+> Home > Vendas/Comprar/Inventario > Itens e Preços > Lista de Preços
 
 <img class="screenshot" alt="Price List" src="{{docs_base_url}}/assets/img/stock/price-list.png">
 
-## 1. How to use a Price List
+## 1. Como usar a Lista de Preços
 
-* Price Lists will be used when creating an [Item Prices](/docs/user/manual/en/stock/item-price) to track selling or buying price of an item.
+* Lista de Preços será usado ao criar [Preços de Item](/docs/user/manual/pt/inventario/preços-item) para gerir os preços das vendas ou compras de um item.
 
-* Specific countries can be assigned in the Price List.
+* Paises especificos podem ser atribuidos na Lista de Preços.
 
-* To disable specific Price List, untick the 'Enabled' checkbox. Disabled Price List will not be available for selection in the Sales and Purchase transactions.
+* Para desactivar a Lista de Preços, desactive a caixa 'Activado'. Lista de Preços desactivas não vão estar disponiveis para a selecção de transações de Facturas e Compras.
 
-* **Price Not UOM Dependent**: Consider an item, Tomatoes which you buy in Boxes and sell in Kilos. 1 Box = 10 Kilos and 1 Kilo buying price is 10rs. If this Box is unchecked and you select 1 Box in your transaction, the price will show up only for a Kilo since that's the only Item Price saved.
+* **Preço não Dependente do UDM**: Considere um item, Tomate no qual voce compra em Caixas e vende a Kilo. 1 Caixa = 10 Kilos e 1 Kilo compra por 10rs. Se esta Caixa não estiver selecionada e voce selecionar 1 Caixa na sua transação, o preço irá mostrar somente para o Kilo venod que é o unico Preço do Item salva.
 
-    Now, if you tick this checkbox and make a transaction with a Box of Tomatoes, then the price will be automatically set as 100 since the price of 1 Box (10 Kilos) is 100.
+    Agora, se voce selecionar esta caixa e fizer uma transação com a Caixa de Tomate, então o preço irá automaticamente ser 100 vendo que o prelo de 1 Caixa (10 Kilo) é 100.
 
-* Standard Buying and Selling Price Lists are created by default.
+* Listas de Preço Compra e Venda Padrão são criados por defeito.
 
-**Note**: If you have multiple Price Lists, you can select a Price List or tag it to a Customer (so that it is auto-selected). Your Item Prices will automatically be updated from the Price List. 
+**Nota**: Se voce tiver varias Listas de Preço, voce pode selecionar a Lista de Preço ou marcar a um Cliente (que foi auto-selecionado). Os seus Preços de Item vão ser automaticamente actualizados apartir da Lista de Preços. 
 
-### Related Topics
-1. [Item Price](/docs/user/manual/en/stock/item-price)
+### Topicos Relacionados
+1. [Preço de Item](/docs/user/manual/pt/inventario/preço-item)

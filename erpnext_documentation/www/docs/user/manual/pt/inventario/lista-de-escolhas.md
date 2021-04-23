@@ -1,116 +1,115 @@
 ---
-title: Pick List
+titulo: Lista de Escolha
 add_breadcrumbs: 1
 show_sidebar: 0
 
 metatags:
- description: A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many Stock Keeping Unit(SKU).
- keywords: Pick List, Picking Slip, frappe, Pick Ticket, erpnext new features, erp, open source erp, free erp, stock
+ descrição: Uma lista de Escolha é um documento que indica quais os itens que devem sair do seu inventario para comprir as solicitações. Este é util para os expeditores com um volume grande de inventario, volume de solicitações, ou clientes solicitando muitas Unidade de Armazenamento (SKU).
+ keywords: Lista de Escolha, Escolhendo Lista, frappe, Bilhete de Escolha, novas funcionalidade do erpnext, erp, open source erp, free erp, stock
 ---
 
-# Pick List
+# Lista de Escolha
 
-**A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders.**
+**Uma Lista de Escolha é um documento que indica quais os itens que deve ser retirados do seu inventario para comprir com as solicitações.**
 
-This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many Stock Keeping Unit(SKU).
-Pick list selects Warehouse where an Item is available on FIFO (First-In-First-Out) basis.
-Selection of Warehouse for a batched item is different. In case of batched items, Warehouse where the batch is nearer to its expiry will be selected.
+Este é particularmente util para expeditores com grandes volumes de inventario, volume de solicitações, our clientes solicitando muitas Unidades de Armazenamento (SKU).
+A Lista de Escolha seleciona o Armazem aonde o Item está disponivel com base no FIFO (Primeir-in-Primerio-sair).
+Seleção do Armazem para itens do Lote é diferente. Em casos de itens de lote, Armazem aonde o lote está proximo a sua data de expiração que será selecionado.
 
-To access Pick List, go to:
+Para acessar a Lista de Escolha, va para:
 
-> Home > Stock > Stock Transactions > Pick List
+> Home > Inventario > Transações de Stock > Lista de Escolha
 
-## 1. Prerequisites
+## 1. Pre-requesitos
 
-Before creating and using a Pick List, it is advised that you create the following first:
+Antes de criar e usar a Lista de Escolha, é aconselhavel que crie os seguintes:
 
-- [Stock Item](/docs/user/manual/en/stock/item)
-- [Warehouse](/docs/user/manual/en/stock/warehouse)
+- [Item de Stock](/docs/user/manual/pt/inventario/item)
+- [Armazem](/docs/user/manual/pt/inventario/armazem)
 
-## 2. How to create Pick List
+## 2. Como criar a Lista de Escolha
 
-1. Go to the Pick List list, click on New.
+1. Va para a lista de Lista de Escolha, clique em Novo.
  <img class='screenshot' alt='Unsaved Pick List' src='{{docs_base_url}}/assets/img/stock/pick-list-unsaved-doc.png'>
 
-1. Set the Company.
-1. Select the Purpose of Pick List. These are the options under Purpose:
+1. Defina a Empresa.
+1. Selecione o Motivo da Lista de Escolha. Estas são as opções no Motivo:
 
-   - **Delivery:** This option will let you add Items from a Sales Order, to deliver. After submitting Pick List a new Delivery Note can be created based on the Warehouse from which items were picked.
+   - **Entrega:** Esta opção irá permitir que você adicione Itens apartir da Ordem de Venda, para a entrega. Depois de submeter a Lista de Entrega uma nova Guia de Remessa pode ser criado com base no Armazem no qual os itens foram levantados.
 
-   - **Material Transfer for Manufacture:** This will let you select a Work Order from which raw materials will be pulled for picking. You will be presented with an option to select the number of finished goods for which you want to pick raw materials. After picking the stock you can create Stock Entry for the picked items i.e., raw materials.
+   - **Transferencia de Material para Fabrico:** Este irá permitir selecionar a Ordem de Trabalho no qual as materias primas vao ser usados pela lista de escolha. Ira ser apresentado uma opção para selecionar o numero de bens produzidos no qual voce quer escolher materias primas. Depois de selecionar o stock voce pode criar o Registo de Stock para os itens selecionados i.e., materias primas.
 
-   - **Material Transfer:** This will let you select a Material Request for which you want to pick items. After picking the stock you can create a Stock Entry for the picked items.
+   - **Transferencia de Material:** Este permite selcionar a Solicitação de Material no qual voce que escolher os itens. Depois de escolher o stock voce pode criar um Registo de Stock para os itens ecolhidos.
 
-1. Add Item and the quantity you want to pick in the Item Locations table. Click on **Get Item Locations** to get the Warehouse and other details for each Item.
+1. Adicione o Item e a quantidade que voce quer escolher na tabela de Localizações do Item. Clique em **Obter Localização de Item** para obter o Armazem e outros detalhes para cada Item.
 
-1. **Parent Warehouse:** If a parent Warehouse is selected, Warehouses only under that parent Warehouse will be suggested.
+1. **Parente do Armazem:** Se um parente de Armazem é selecionado, somente os Armazens somente dentro do Parente do Armazem será sugerido.
+1. **Obter Localização do Item:** Uma vez os itens a serem escolhidos foram produzidos voce pode fazer o clique no botão **Obter Localização o Item** para ter o Armazem selcionado para cada item. Vendo que o Armazem irá automaticamente procurado se obter o Item de qualquer documento referente, este botão pode ser util para manualmente adicionar Itens ou mudar a quantidade de Itens existentes na tabela de Localização de Itens.
 
-1. **Get Item Locations:** Once items to be picked is finalized you can click on the **Get Item Locations** button to get Warehouse selection for each item. Since Warehouse will be automatically fetched if you get an Item from any reference document, this button can be useful to manually add additional Items or change the quantity of existing Items in the Item Locations table.
-
-1. **Item Locations:** This will have the information of the item location (Warehouse), Serial Number for serialized items and batch no for batched items.
+1. **Localização de Item:** Este irá ter a informação da localização do item (Armazem), Numero de Serie para itens serializados e para numeros de lote para itens com lote.
  <img class='screenshot' alt='Item Locations' src='{{docs_base_url}}/assets/img/stock/pick-list-item-locations.png'>
 
- If Serial Numbers are involved, the Item row will look like this:
+ Se os numeros de serie estiverem, a linha do Item será visto assim:
  <img class='screenshot' alt='Item Location Detail' src='{{docs_base_url}}/assets/img/stock/pick-list-item-location-detail.png'>
 
-1. Save and Submit.
+1. Salvar e Submeter.
  <img class='screenshot' alt='Submitted Pick List' src='{{docs_base_url}}/assets/img/stock/pick-list-submitted-doc.png'>
 
-### 2.1 Create Pick List from a Sales Order
+### 2.1 Criar a Lista de Escolha pela Ordem de Vendas
 
-1. Go to a [Sales Order](/docs/user/manual/en/selling/sales-order).
-1. Click on the **Create** button on the top right of the form and then click the **Pick List** option.
-1. Once you click Pick List, all the data required for Pick List will be fetched from the Sales Order.
-1. You should be able to see the Item Locations Table with the Warehouse selected for each item.
-1. Save this document and it can be used for stock picking by the person performing this activity.
-1. Submit the document once the stock picking is done and picked item quantities are updated in the document.
+1. Va para a [Ordem de Vendas](/docs/user/manual/pt/vendas/ordem-vendas).
+1. Clique no botão **Criar** no lado direito em cima do formulario e depois fazer um clique na opção **Lista de Escolha**.
+1. Quando fizer o clique na Lista de Escolhas, todos os dados necessarios para a Lista de Entrega serao procurados apartir da Ordem de Vendas.
+1. Voce podreá ver a Tabela de Localizações de Item com os Armazens selcionados para cada um dos itens.
+1. Salve esta documento e poderá ser usado para recolher o stock pela pessoa permitida nesta actividade.
+1. Submeter o documento uma vez a lista de stock feita e as quantidades do item actualizados no documento.
 
-**Tip:** You can create a Pick List for multiple Sales Order from the same Customer. Click on Get Items and select the Sales Orders.
+**Dica:** Voce pode criar uma Lista de Escolha para varias Ordens de Venda apartir do Cliente. Clique em Obter Itens e selecione as Ordens de Venda.
 
-> **Note:**
+> **Nota:**
 >
-> - Pick list can only be created for Sales Orders which has pending Items to be delivered.
-> - A **Delivery Note** can be created only if the Pick List is submitted.
+> - Lista de Escolha somente pode ser criada para as Ordens de Venda no qual tem Itens pendentes para ser entregues.
+> - Uma **Guia de Remessa** pode ser criada somente se a Lista de Escolha for submetida.
 
-### 2.2 Create Pick List from a Work Order
+### 2.2 Crie um Lista de Escolha apartir da Ordem de Trabalho
 
-1. Go to a [Work Order](/docs/user/manual/en/manufacturing/work-order).
-1. Click **Create Pick List** button.
-1. You'll see the dialog box asking for the quantity of Finished Goods Item. This is required to calculate the number of raw material items required to manufacture the entered quantity of Finished Goods Item.
+1. Va para a [Ordem de Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho).
+1. Clique no botão **Crie a Lista de Escolha** .
+1. Voce irá ver uma caixa de dialogo pedindo a quantidade dos Bens Produzidos. Este é necessario para calcular o numero de materia prima os itens precisam para fabricar a quantidade digitada dos Bens Produzidos.
 <img class='screenshot' alt='Dialog For qty' src='{{docs_base_url}}/assets/img/stock/pick-list-dialog-for-qty.png'>
 
-1. You should be able to see the Item locations table with the Warehouse selected for each raw material item.
-1. Save this document and then this document can be forwarded to the person who is picking the stock.
-1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
+1. Voce deve poder ver a tabela de Localização do Item com o Armazem selecionado para cada linha de material.
+1. Salve o documento e depois esta documento poderá ser enviado para a pessoa que irá pegar o stock.
+1. Submeta o documento uma vez que a recolha do stock for feita e os itens recolhidos forem atualizados no documento.
 
-> **Note:**
+> **Nota:**
 >
-> - Pick list can only be created for Work Orders that are still in the state of 'Not Started' or 'In Progress'.
-> - A **Stock Entry** can be created only after the Pick List is submitted.
+> - Lista de Escolha somente pode ser criado para Ordens de trabalho que ainda estão no estado de 'Não Inciado' ou 'Em Progresso'.
+> - Um **Registo de Stock** pode ser criado somente depois da Lista de Escolha ter sido submetida.
 
-### 2.3 Create Pick List from Material Request
+### 2.3 Crie a Lista de Escolha apartir da Solicitação de Material
 
-1. Go to a [Material Request](/docs/user/manual/en/stock/material-request).
-1. Click on **Create** button and then click **Pick List** option.
-1. You should be able to see the Item Locations table with the Warehouse selected for each item in Material Request.
-1. Save this document and then this document can be forwarded to the person picking the stock.
-1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
+1. Va para a [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material).
+1. Clique no botão **Criar** e depois clique na opção **Lista de Escolha**.
+1. Voce podera ver a tabela de Localização do Item com o Armazem selecionado para cada item na Solicitação de Material.
+1. Salve este documento e depois poderá transferir para a pessoa que irá levantar o material.
+1. Submeta o documento uma vez a recolha de stock for feita e os itens recolhidos actualizados no documento.
 
-> **Note:**
+> **Nota:**
 >
-> - Only Material Requests with type 'Material Transfer' can be used for Pick List creation.
-> - A **Stock Entry** of type 'Material Transfer' can be created after the Pick List is submitted.
+> - Somente Solicitação de Material com o tipo 'Transferencia de Material' pode ser usado para criar uma Lista de Escolha.
+> - Um **Registo de Stock** do tipo 'Transferencia de Material' pode ser criado depois da Lista de Escolha ter sido submetida.
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1. Update Current Stock
+### 3.1. Actualizar o Stock Corrente
 
-If a Pick List is outdated, there could be a shift in stock availability by the time a Delivery Note or Stock Entry is created against it. Clicking **Update Current Stock** will update the quantities and warehouses in the Item Locations table.
+Se a Lista de Escolha estiver desactualizada, poderá have uma troca na disponibilidade do stock na altura da criação da Guia de Remessa ou Registo de stock. Fazendo o clique em **Actualizar Stock Corrente** irá actualizar as quantidades e os armazens na tabela de localização do Item.
 
-> **Note:** This button is visible as long as there are no Delivery Notes or Stock Entries against the Pick List.
+> **Nota:** Este botão é visivel desde que não tenha Guias de Remessa ou Registos de Stock contra a Lista de Escolha.
 
-## 4. Related Topics
+## 4. Topicos Relacionados
 
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
-1. [Material Request](/docs/user/manual/en/stock/material-request)
+1. [Ordem de Vendas](/docs/user/manual/pt/vendas/ordem-vendas)
+1. [Ordem Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho)
+1. [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material)
