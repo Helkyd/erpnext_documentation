@@ -45,9 +45,9 @@ Quando voce abre um lote, voce irá ver todas as quantidades do mesmo lote.
 
 * Para mover o lote de um Armazem para outro, voce pode fazer o clique no botão **Mover**.
 
-* Voce pode tambem dividir o lote em quantidades pequenas fazer o clique no botão **Dividir** button. This will create a new Batch based on this Batch and the quantities will be split between the batches.
+* Voce pode tambem dividir o lote em quantidades pequenas fazer o clique no botão **Dividir**. Isto irá criar um novo Lote com base neste Lote e as quantidades seram divididas entre os lotes.
 
-    ![Split Batch](/docs/assets/img/stock/batch_split.png)
+    ![Divisão de Lotes](/docs/assets/img/stock/batch_split.png)
 
 * Se voce definir data de expiração, o Lote ira mostrar 'Não Expirado' até a data de expiração, depois mostrará 'Expirado'. Se a data não for definida, o Lote irá mostrar 'Não Definido'.
 

@@ -1,73 +1,72 @@
 <!-- add-breadcrumbs -->
-# Serial Number
+# Numero de Serie
 
-As discussed in the [Item](/docs/user/manual/en/stock/item) page, if an **Item** is _serialized_, a
-**Serial Number** (Serial No) record is maintained for each quantity of that
-**Item**. This information helps track the location of the Serial
-No, its warranty and end-of-life (expiry) information.
+Como visto na pagina [Item](/docs/user/manual/pt/inventario/item), se um **Item** for _serializado_, um
+registo **Numero de Serie** (Serial No) é mantido para cada quantidade desse
+**Item**. Esta informação ajuda a rastrear a localização do Nº de Serie,
+sua garantia e informação do fim-da-vida (data de expiração).
 
-**Serial Nos** are also useful to maintain fixed assets. [Maintenance Schedules](/docs/user/manual/en/support/maintenance-schedule) can also be created against Serial Numbers for planning and scheduling maintenance activity for these assets (if they require maintenance).
+**Numeros de Serie** são tambem uteis para para activos fixos. [Calendario de Manutenção](/docs/user/manual/pt/suporte/calendario-manutencao) pode ser criado contra Numeros de Serie para planeamento e actividade do calendario de manutenção para estes activos (se precisam de manutenção).
 
-You can also track from which **Supplier** you purchased the **Serial No** and
-to which **Customer** you have sold it. The **Serial No** status will tell you
-its current inventory status.
+Voce pode tambem rastrear de que **Fornecedor** voce comprou o **Nº de Serie** e
+para quem **Cliente** voce vendeu. O status do **Nº de Serie** irá dizer
+o status do inventario corrente.
 
-If your Item is _serialized_ you will have to enter the Serial Nos in the
-related column with each Serial No in a new line.
-You can maintain single units of serialized items using Serial Number.
+Se o seu Item for _serializado_ voce tera de digitar o Nº de Serie na
+coluna correcta para cada Nº de Serie numa linha nova.
+Voce pode manger unidades singulares de itens serializados usando o Numero de Serie.
 
-To access the Serial Number list, go to:
-> Home > Stock > Serial No and Batch > Serial No
+Para acessar a lista de Numeros de Serie, va para:
+> Home > Inventario > Nº de Serie e Lotes > Nº de Serie
 
-## 1. Prerequisites
-Before creating and using a Serial Number, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar o Numero de Serie, é aconselhado criar o seguinte:
 
-* [Item](/docs/user/manual/en/stock/item)
-* Enable 'Has Serial No' in the Item master
-    ![Serial No Enabled](/docs/assets/img/stock/serial-no-enabled.png)
+* [Item](/docs/user/manual/pt/inventario/item)
+* Activar na tabela do Item 'Tem Nº de Serie'
+    ![Serie não Activado](/docs/assets/img/stock/serial-no-enabled.png)
 
 
-## 2. How to create a Serial Number
-Usually, Serial Numbers are auto-created when transactions are made against a serialized Item. This works only when 'Has Serial No' is enabled and a series is set in the Item master.
+## 2. Como criar um Numero de Serie
+Normalmente, Numeros de Serie são auto-criados quando as transações são feito contra um Item serializado. Este funciona somente quando 'Tem Nº de Serie' esta activo e uma serie é definida no formulario do Item.
 
-For example, a series was set for the following Item as 'PB2L.#####'. Then a Stock Entry was submitted to receive the Item. The Serial Numbers were created accordingly.
+Por exemplo, uma serie foi definido para o seguinte Item como 'PB2L.#####'. Então um Registo de Stock foi submetido para receber o Item. Os Numeros de Serie são criado de acordo.
 
-![Serial No Created](/docs/assets/img/stock/serial-no-created.png)
+![Nº de Serie Criados](/docs/assets/img/stock/serial-no-created.png)
 
-However, if you want to create a Serial No _manually_ follow these steps:
+Contudo, se voce quer criar um Nº de Serie _manualmente_ siga estes passos:
 
-1. Go to the Serial Number list, click on New.
-1. Enter a Serial Number.
-1. Enter the Item Code and details will be fetched.
-1. If any transaction is done with an item, Serial No cannot be set or unset.
-1. Save.
+1. Va para a lista de Numeros de Serie, clique em Novo.
+1. Digite o Numero de Serie.
+1. Digite o Codigo do Item e os detalhes seram procurados.
+1. Se qualquer transação for feita com um item, Nº de Serie não pode ser definido ou removido.
+1. Salvar.
 
-Inventory of an Item can only be affected if the Serial No is transacted via a
-Stock transaction (Stock Entry, Purchase Receipt, Delivery Note, Sales
-Invoice). When a new Serial No is created directly, its Warehouse cannot be
-set.
+Inventario de um Item somente pode ser afectado se o Nº de Serie for transacionado via
+Transação de Stock (Registo de Stock, Recibo de Compra, Guia de Remessa, Facturas de Venda). 
+Quando um Nº de Serie é criado directamente, o Armazem não pode ser definido.
 
 <img class="screenshot" alt="Serial Number" src="{{docs_base_url}}/assets/img/stock/serial-no.png">
 
-### 2.1 Notes about Serial Number
+### 2.1 Notas sobre o Numero de Serie
 
-* The Status is set based on Stock Entry.
-* Only Serial Numbers with status 'Available' can be delivered.
-* Serial Nos can automatically be created from a Stock Entry or Purchase Receipt. If you mention Serial No in the Serial Nos column, it will automatically create those serial Nos.
-* If in the Item Master, the Serial No Series is mentioned, you can leave the Serial No column blank in a Stock Entry / Purchase Receipt. Serial Nos will automatically be set from that series.
+* O Status é definido com base no Registo de Stock.
+* Somente Numeros de Serie com status 'Disponivel' podem ser entregues.
+* Numeros de Serie podem ser automaticamente criados apartir de um Registo de Stock ou Recibo de Compra. Se voce mencionar o Numero de Serie na coluna de Numero de Serie, irá automaticamente criar estes Numeros de Serie.
+* Se na tabela Item, o Numero de Serie for mencionado, voce pode deixar a coluna Numero de Serie em branco num Registo de Stock / Recibo de Compra. Numeros de Serie serao automaticamente criados apartir da serie.
 
-## 3. Features
-### 3.1 Purchase/Manufacture details
-The document from which the Serial No was created will be shown. If you purchased it from a Supplier, it'll be linked here.
+## 3. Funcionalidades
+### 3.1 Detalhes de Compra/Fabrico
+O documento no qual o Numero de Serie foi criado sera mostrado. Se voce comprou de um Fornecedor, ficará ligado aqui.
 
-### 3.2 Delivery Details
-If the Serial No was generated from a Sales Order, the Customer will be linked here.
+### 3.2 Detalhes de Entrega
+Se o Numero de Serie foi gerado apartir de uma Ordem de Venda, o Cliente será ligado aqui.
 
-### 3.3 Warranty/AMC Details
-If the Item is under warranty or AMC (Annual Maintenance Contract), the expiry dates for these can be set.
+### 3.3 Detalhes de Garantias/AMC
+Se o Item estiver em garantia ou AMC (Contracto de Manutenção Anual), as datas de expiração para este podem ser definidas.
 
-### 3.4 More Information
-Any additional information about this specific Item unit can be set under 'Serial No Details'.
+### 3.4 Mais Informações
+Qualquer informação adicional sobre este Item especifico pode ser definido em 'Detalhes do Numero de Serie'.
 
 ## 4. Video
 <div class="embed-container">
@@ -75,8 +74,8 @@ Any additional information about this specific Item unit can be set under 'Seria
     </iframe>
 </div>
 
-### 5. Related Topics
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
+### 5. Topicos Relacionados
+1. [Codificação do Item](/docs/user/manual/pt/inventario/artigos/codificacao-item)
+1. [Variantes do Item](/docs/user/manual/pt/inventario/variantes-item)
+1. [Nome do Numero de Serie](/docs/user/manual/pt/inventario/artigos/serial-no-naming)
 

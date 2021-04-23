@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-# Installation Note
+# Nota de Instalação
 
-**An Installation Note can be created when a product/item is being installed or set up at the Customer's place.**
+**Uma Nota de Instalação pode ser criada quando um produto/item esta a ser instalado ou configurado no local do Cliente.**
 
-For example, if you sell an Air Conditioner, a service person generally accompanies the delivery to install the Air Conditioner at the Customer’s place. The service person can create an “Installation Note”, to track the date and details of the installation.
+Por exemplo, se voce vende um Ar Condicionado, a pessoa de serviço geralmente acompanha a entrega para instalar o Ar Condicionado no Cliente. A pessoa de serviço pode criar uma "Nota de Instalação", para rastrear a data e detalhes da instalação.
 
-To access the Installation Note list, go to:
-> Home > Stock > Serial No and Batch > Installation Note
+Para acessar a lista das Notas de Instalação, va para:
+> Home > Inventario > Numero de Serie e Lotes > Nota de Instalação
 
-## 1. How to create an Installation Note
-An Installation Note is usually created from a Delivery Note. You can also create it manually and click on the 'From Delivery Note' button to fetch details from a selected Delivery Note.
+## 1. Como criar uma Nota de Instalação
+Uma Nota de Instalação é normalmente criado apartir de uma Guia de Remessa. Voce pode tambem criar manualmente e fazer um clique no botão 'Apartir da Guia de Remessa' para procurar os detalhes apartir da Guia de Remessa selecionada.
 
-1. Go to the Installation Note list, click on New.
-1. The Customer, Item, and quantity will be fetched from the Delivery Note.
-1. The date and time are set to when the note is created.
-1. Save and submit.
+1. Va para a lista da Nota de Instalação, clique em Novo.
+1. O Cliente, Item, e quantidade serao procurados apartir da Guia de Remessa.
+1. A data e hora são definidos quando a nota é criada.
+1. Salvar e Submeter.
 
     <img class="screenshot" alt="Installation Note" src="{{docs_base_url}}/assets/img/stock/installation-note.png">
 
-Any additional remarks about the installation can be added. If the Item is serialized, the serial numbers can be added in Items table.
+Qualquer nota adicional sobre a instalação pode ser adiconada. Se o Item for serializado, os numeros de serie podem ser adiconados a tabela de Itens.
 
-### 2. Related Topics
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
+### 2. Topicos Relacionados
+1. [Guia de Remessa](/docs/user/manual/pt/inventario/guia-de-remessa)
+1. [Viagem de Entrega](/docs/user/manual/pt/inventario/viagem-de-entrega)

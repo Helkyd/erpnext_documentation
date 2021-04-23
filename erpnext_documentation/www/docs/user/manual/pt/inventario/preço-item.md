@@ -1,54 +1,54 @@
 <!-- add-breadcrumbs -->
-# Item Price
+# Preço do Item
 
-**Item Price is the record in which you can log the selling and buying rate of an item.**
+**Preço do Item é um registo no qual voce pode gravar os preços de venda e compra de um item.**
 
-## 1. How to create Item Price
-1. There are two ways to reach a new Item Price form:
+## 1. Como criar um Preço de Item
+1. Existem tudas formas de alcançar o formulario de um novo Preço de Item:
 
-    **Selling/Buying/Stock > Items and Pricing > Item Price > New**.
+    **Vendas/Comprar/Inventario > Itens e Preços > Preço do Item > Novo**.
  
-    Or
+    Ou
 
-    **Stock > Item > Click on "+" next to Item Price**.
-1. Select the Item. The name, UoM and description will be fetched.
-1. Select the Price List whether Selling/Buying price or any other price list you may have created.
-1. Enter the actual rate in the Rate field.
-1. Save.
+    **Inventario > Item > Clique em "+" proximo do Preço do Item**.
+1. Selecione o Item. O nome, UdME e descrição serao procurados.
+1. Selecione a Lista de Preço quer Vendas/Compras ou qualquer lista de preço que ja tenha criado.
+1. Digite o preço actual no campo Valor.
+1. Salvar.
     <img class="screenshot" alt="Item Price list" src="{{docs_base_url}}/assets/img/stock/item-price-1.png">
 
 
-### 1.1 Selecting the Price List
+### 1.1 Selecionando a Lista de Preço
 
-You can create multiple Price Lists for one Item in ERPNext to track Selling and Buying Price of an Item separately. Also if the Item's selling prices change based on Territory or due to other criteria, you can create multiple Selling Price Lists for it.
+Voce pode criar varias Listas de Preço para um Item no ERPNext para rastrear Preço das Vendas e Compras de um Item. Tambem se os preços de venda de um Item muda com base no Territorio ou devido a outros criterios, voce pode criar varias listas de Preço de Venda para tal.
 
-On selection of Price List, its currency and applicability whether for selling/buying or both will be fetched as well. To have Item Price fetching in the sales or purchase transaction, you should have 'Price List' selected in the transaction under Currency and Price List.
+Ao selecionar a Lista de Preço, a moeda e aplicabilidade para venda/compra or ambos sera procurado tambem. Para procurar o Preço do Item nas transações de vendas ou compras, voce deve selecionar 'Lista de Preço' na transação em Moedas e Lista de Preço.
 
-To check all Item Prices together, go to:
+Para selecionar todos os Preços do Item, va para:
 
-**Stock > Stock Reports > Item Price Stock**
+**Inventario > Relatorios de Stock > Preço do Item Preço**
 
-Visit the [Price Lists](/docs/user/manual/en/stock/price-lists) page to know more.
+Visite a pagina [Lista de Preços](/docs/user/manual/pt/inventario/lista-preços) para saber mais.
 
-## 2. Features
+## 2. Funcionalidades
 
-###2.1 Packing Unit
-This is the quantity that must be bought or sold per unit of measure. For example, if Packing Unit is two, and UOM is one, two items in quantity will be transacted. The default is 0, you can use non-integer UoM like 1.5Kg Oats for 1 Packing Unit. If you leave it as 0, it'll not affect any transaction.
+###2.1 Unidade de Pacote
+Este é a quantidade que deve ser comprado ou vendido por unidade de medida. Por exemplo, se a Unidade do Pacote for dois, e UDM é um, dois itens na quantidade serao transacionados. O padrão é 0, voce pode usar UdM não-inteiro como 1.5Kg Oats para 1 Unidade de Pacote. Se voce deixar como 0, não irá afectar qualquer transação.
 
-###2.2 Minimum quantity
-This is the minimum quantity of items to be transacted for this price to be applicable and updated in the Item Price list. 
+###2.2 Quantidade Minima
+Este é a quantidade minima de itens a ser transacionado para este preço ser aplicado e actualizado na lista do Preço do Item. 
 
-### 2.3 Applying Price List to a specific Customer/Supplier
-If you select a Selling Price list, a customer field will appear where you can assign this Item Price to a specific customer. Likewise, if you select a Buying Price List, a Supplier field will appear where you can select a specific Supplier
+### 2.3 Aplicadndo Lista de Preço a um Cliente/Fornecedor especifico
+Se voce selecionar a lista de Preços de Venda, um campo de cliente irá aparecer aonde poderá atribuir este Preço de Item a um cliente especifico. Da mesma forma, se voce selecionar uma lista de Preços de Compra, um campo de Fornecedor ira aparece aonde podera o Fornecedor
 
-###2.4 Validity
-There are two fields here—'Valid From' and 'Valid Upto'. Valid from is set to the date you created the Item Price, you can also set the Valid Upto date on which the Item Price will expire.
+###2.4 Validade 
+Tem dois campos aqui —'Valido Apartir' e 'Valido Até'. Valido apartir é definido a data que criou o Preço do Item, voce pode definir a data de Valida Até no qual o Preço do Item expira.
 
-###2.5 Lead Time in days
-The approximate number of days it takes the product to reach the warehouse. You can set different Item Prices based on how much time the same product will reach you from different vendors.
+###2.5 Tempo de Entrega em dias
+O numero aproximado de dias que leva o produto até o armazem. Voce pode definir Preços de Item com base na quantidade de tempo o mesmo produto irá levar até si apartir de diferentes vendedores.
 
-###2.6 Note
-You can add any note about the Item Price in this field.
+###2.6 Nota
+Voce pode adiconar qualquer nota sobre o Preço do Item neste campo.
 
 ## 3. Video 
 
@@ -60,6 +60,6 @@ You can add any note about the Item Price in this field.
     </div>
 </div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount)
+### 4. Topicos Relacionados
+1. [Item](/docs/user/manual/pt/inventario/item)
+1. [Aplicando Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto)
