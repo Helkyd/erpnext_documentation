@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-# Projected Quantity
+# Quantidade Projectada
 
-**Projected Quantity is the level of stock that is predicted for a particular Item based on the current stock levels and other requirements.**
+**Quantidade Projectada é o nivel de stock que é previsto para um Item em particular com base no nivel do stock corrente e outros requisitos.**
 
-It is the quantity of gross inventory that includes supply and demand in the past which
-is done as part of the planning process.
+É a quantidade dos inventario completo que inclui entrega e demanda no passado que faz parte
+do processo de planeamento.
 
-The projected inventory is used by the planning system to monitor the reorder
-point and to determine the reorder quantity. The projected Quantity is used by
-the planning engine to monitor the safety stock levels. These levels are
-maintained to serve unexpected demands.
+O inventario projectado é usado pelo planeamente do sistema para minitorizar a ponto de encomenda 
+e determinar a quantidade de reencomenda. A Quantidade projectada é usada pela maquina
+de planeamento para monitorizar os niveis de segurança do stock. Este niveis são
+mantidos para servir as demandas não esperadas.
 
-Having tight control of the projected inventory is crucial to determine
-shortages and to calculate the right order quantity.
+Tendo um control rigido do inventario projectado é crucial para determinar
+escasez e para calcular a quantidade de solicitação correcta.
 
 <img class="screenshot" alt="Projected Quantity" src="{{docs_base_url}}/assets/img/stock/projected_quantity.png">
 
-The formula to calculate projected quantity is as follows:
+A formula para calcular a quantidade projectada é a seguinte:
 
-*Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty - Reserved Qty for Production - Reserved Qty for Subcontracting*
+*Qtd Projectada = Qtd Actual + Qtd Planeada + Qtd Solicitada + Qtd Requisitada - Qtd Reservada - Qtd Reservada para Produção - Qtd Reservada para Subcontração*
 
-* **Actual Qty**: Quantity available in the Warehouse. This is the actual physical stock you have.
-* **Planned Qty**: Quantity, for which, Work Order has been raised, but is pending to be manufactured.
-* **Requested Qty**: Quantity requested via a [Material Request](/docs/user/manual/en/stock/material-request). It is added on submission of Material Request and subtracted when Purchase Order/Work Order/Stock Entry is created against it based on the Material Request type.
-* **Ordered Qty**: Quantity ordered for purchase ([Purchase Order](/docs/user/manual/en/buying/purchase-order)), but not received (via a [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt) or a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice). 
-* **Reserved Qty**: Quantity ordered for sale by your Customer ([Sales Order](/docs/user/manual/en/selling/sales-order)), but not delivered (via a [Delivery Note](/docs/user/manual/en/stock/delivery-note)). This quantity increases when a Sales Order is submitted and decreases when a Delivery Note or Sales Invoice is created against that Sales Order is submitted.
-* **Reserved Qty for Production**: Raw materials are reserved on submission of [Work Order](/docs/user/manual/en/manufacturing/work-order) and is reduced when raw materials are transfered to Work in Progress warehouse via a Stock Entry.
-* **Reserved Qty for Subcontracting**: Raw materials reserved when a subcontracting Purchase Order is submitted. When raw materials are transfered to Supplier Warehouse via a Stock Entry, this quantity reduces. To know more about subcontracting [click here](/docs/user/manual/en/manufacturing/subcontracting).
+* **Qtd Actual**: Quantidade disponivel no Armazem. Este é o stock fisico actual que tem.
+* **Qtd Planeado**: Quantidade, pelo o qual, Ordem de Trabalho foi criada, mas está pendente para ser fabricado.
+* **Qtd Solicitada**: Quantidade solicitada via [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material). É adicionado ao submeter a Solicitação de Material e reduzida quando a Ordem de Compra/Ordem de Trabalho/Registo de Stock é criada com base no tipo de Solicitação de Material.
+* **Qtd Pedida**: Quantidade pedida para compra ([Ordem de Compra](/docs/user/manual/pt/compras/ordem-compra)), mas não recebido (via um [Recibo de Compra](/docs/user/manual/pt/inventario/recibo-compra) ou uma [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra). 
+* **Qtd Reservada**: Quantidade solicitada para venda pelo seu Cliente ([Ordem de Vendas](/docs/user/manual/pt/vendas/ordem-vendas)), mas não entregues (via uma [Guia de Remessa](/docs/user/manual/pt/inventario/guia-de-remessa)). Esta quantidade aumenta quando uma Ordem de Venda é submetida e diminui quando uma Guia de Remessa ou Factura de Vendas é criada contra essa Ordem de venda quando submetida.
+* **Qtd Reservada para Fabrico**: Materia primas são reservadas ao submissão de [Ordem de Trabalho](/docs/user/manual/pt/fabrico/ordem-trabalho) e é reduzido quando materia prima é transferida para o Armazem Trabalhos em Progresso via Registo de Stock.
+* **Qtd Reservada para Subcontratação**: Materias primas reservadas quando uma subcontratação de Ordem de Compra é submetida. Quando materia prima é transferida para um Armazem do Fornecedor via Registo de Stock, esta quantidade é reduzida. Para saber sobre subcontratação [clique aqui](/docs/user/manual/pt/fabrico/subcontratação).
 
-#### Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
-1. [Material Request](/docs/user/manual/en/stock/material-request)
+#### Topicos Relacionados
+1. [Armazem](/docs/user/manual/pt/inventario/armazem)
+1. [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material)

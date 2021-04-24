@@ -37,7 +37,7 @@ This configuration can be overridden for a particular supplier by enabling the "
 
 <img alt="Purchase Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/buying/po-required.png">
 
-### 2.3 Purchase Receipt Required
+### 2.3 Recibo de Compras Obrigatorio
 
 If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. In case the Item being transacted is a service, it'll not require a receipt, you can directly create an Invoice.
 

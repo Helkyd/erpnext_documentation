@@ -1,194 +1,193 @@
 <!-- add-breadcrumbs -->
-# Purchase Receipt
+# Recibo de Compra
 
-**Purchase Receipts are made when you accept Items from your Supplier usually against a Purchase Order.**
+**Recibo de Compras são feitas quando voce aceita Itens do seu Fornecedor normalmente contra uma Ordem de Compra.**
 
-You can also accept Purchase Receipts directly without the need for a Purchase Order. To do this, set Purchase Order
-Required as “No” in Buying Settings.
+Voce pode tambem aceitar Recibos de Compra directamente sem a necessida de uma Ordem de Compra. Para fazer isso, defina Ordem de Compra
+Necessaria como “Não” nas configurações de Compra.
 
-To access the Purchase Receipt list, go to:
-> Home > Stock > Stock Transactions > Purchase Receipt
+Para acessar a lista de Recibo de Compra, va para:
+> Home > Inventario > Transações de Stock > Recibo de Compra
 
-![Purchase Receipt flow](/docs/assets/img/stock/purchase-receipt-flow.png)
+![Fluxo de Recibo de Compra](/docs/assets/img/stock/purchase-receipt-flow.png)
 
-## 1. Prerequisites
-Before creating and using a Purchase Receipt, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar um Recibo de Compra, é aconselhavel que crie os seguintes antes:
 
-* [Purchase Order](/docs/user/manual/en/buying/purchase-order)
+* [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra)
 
-> Note: From version-13 onwards we have introduced immutable ledger which changes the rules for cancellation of stock entries and posting backdated stock transactions in ERPNext. [Learn more here](/docs/user/manual/en/accounts/articles/immutable-ledger-in-erpnext).
+> Nota: Apartir da versão-13 para frente nós introduzimos razão imutavel que muda as regras para cancelamente dos registo de stock e postagem de datas anteriores de transações de stock no ERPNext. [Aprenda mais aqui](/docs/user/manual/pt/contabilidade/artigos/razão-imudavel-erpnext).
 
 
-## 2. How to create a Purchase Receipt
-A Purchase Receipt is usually created from a [Purchase Order](/docs/user/manual/en/buying/purchase-order). In the Purchase Order, click on Create > Purchase Receipt.
+## 2. Como criar um Recibo de Compra
+Um Recibo de Compra é normalmente criado para uma [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra). Na Ordem de Compra, clique em Criar > Recibo de Compra.
 
-To create a Purchase Receipt _manually_ (not recommended), follow these steps:
+Para criar uma Ordem de Compra _manualmente_ (não recomendado), siga estes passos:
 
-1. Go to the Purchase Receipt list, click on New.
-1. The Supplier name and the Items can be fetched from the Purchase Order by clicking on 'Get Items from > Purchase Order'.
-1. You can set the Accepted Warehouse for all items in this Purchase Receipt. This is fetched if set in Purchase Order.
-1. In case any Items are defective, set the Rejected Warehouse where those Items will be stored.
-1. Select the Item and enter the quantity in the Items table.
-1. The rate will be fetched and the amount will be calculated automatically.
-1. You can expand the item row to change the Accepted Warehouse for an Item.
-1. Save and submit.
+1. Va para a lista de Recibo de Compra, clique em Novo.
+1. O nome do Fornecedor e Itens podem ser procurados apartir da Ordem de Compra fazendo o clique em 'Obter Itens apartir > Ordem de Compra'.
+1. Voce pode definir os Armazens Aceites para todos os itens neste Recibo de Compra. Este é procurado se for definido na Ordem de Compra.
+1. Caso qualquer Item estiver defeituoso, defina o Armazem Rejeitado aonde este Itens serão guardados.
+1. Selecione o Item e digite a quantidade na tabela dos Itens.
+1. O preço sera procurado e o valor será automaticamente.
+1. Voce pode expandir a linha do item e mudar o Armazem de Aceitação para um Item.
+1. Salve e Submeta.
 
     <img class="screenshot" alt="Purchase Receipt" src="{{docs_base_url}}/assets/img/stock/purchase-receipt.png">
 
-You can also add a 'Supplier Delivery Note' to the Purchase Receipt if your Supplier has added some notes.
-Using the 'Edit Posting Date and Time' checkbox you can edit the posting time and date of the Purchase Receipt. By default, the date and time are set when you click on the New button.
+Voce pode tambem adiconar uma 'Guia de Remessa do Fornecedor' para o Recibo de Compra se o seu Fornecedor adicionou algumas notas.
+Usando a caixinha 'Editar Data e Hora de Postagem' voce pode editar a hora e data de postagem do Recibo de Compra. Por defeito, a data e hora são definidos quando voce clique no botão Novo.
 
-Is Return: Tick this checkbox if you're returning Items that were not accepted to your Warehouse.
+É Retorno: Selecione esta caixinha se voce estiver a devolver Itens que não foram aceites no seu Armazem.
 
-### 2.1 Statuses
+### 2.1 Estados
 
-These are the statuses a Purchase Receipt can be in:
+Estes são os status um Recibo de Compra pode ter:
 
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **To Bill**: Yet to be billed using a [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice).
-* **Completed**: Submitted and received all the Items.
-* **Canceled**: Canceled the Purchase Receipt.
-* **Closed**: The purpose of the Close is to manage short-closing. For example, you ordered 20 qty, but closing at 15 qty. The remaining 5 is not to be received or billed.
+* **Rascunho**: Um rascunho é salvo mas ainda não foi submetido no sistema.
+* **Para Combrar**: Ainda por ser combrado usando uma [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra).
+* **Completado**: Submetido e todos os Itens recebidos.
+* **Cancelado**: Cancelado o Recibo de Compra.
+* **Fechado**: O motivo do Fecho é para gerir fechos pequenos. Por exemplo, voce solicitou 20 qtds, mas fechou em 15 qtds. Os restantes 5 não seram recebidos ou cobrados.
 
-## 3. Features
-### 3.1 Currency and Price List
-The currency of the Purchase Receipt is shown in this section, it is fetched from the Purchase Order. The item prices will be fetched from the set Price list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+## 3. Funcionalidades
+### 3.1 Moeda e Lista de Preço
+A moeda do Recibo de Compra é mostrado nesta secção, é procurado apartir de uma Ordem de Compra. Os preços do item serao procurados pela lista de Preços criada. Selecionando em Ignorar Regra de Preço será ignorado as Regras de Preço definidos em Contabilidades > Regra de Preço.
 
-Since the incoming Item affects the value of your inventory, it is important to convert it into your base currency if you have ordered in another Currency. You will need to update the Currency Conversion Rate if applicable.
+Vendo que os itens recebidos afectam o valor do seu inventario, é importante converter na sua moeda base se fez a solicitação foi feita numa outra Moeda. Voce ira precisar actualizar a Taxa de Conversão de Moedas se necessario.
 
-To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
+Para saber sobre Listas de Preço, [clique aqui](/docs/user/manual/pt/inventario/lista-preços).
 
-### 3.2 Warehouse details
-The following Warehouses set will apply to all Items in the Items table of the Purchase Receipt. You can change the Warehouses for individual Items via the table.
+### 3.2 Detalhes de Armazem
+Os seguintes Armazens definidos serao definidos em todos o Itens na tabela de Itens do Recibo de Compra. Voce pode mudar os Armazens dos Itens individuais via tabela.
 
-* **Accepted Warehouse**: This is the Warehouse in which you'll accept and store the incoming Items. Usually, this is the 'Stores' Warehouse.
-* **Rejected Warehouse:** This is the Warehouse in which you'll keep the rejected Items which were either defective or not up to the quality mark.
+* **Armazens Aceite**: Este é o Armazem no qual voce irá aceitar e guardar os Itens recebidos. Normalmente, este é o armazem 'Armazem'.
+* **Armazens Rejeitados:** Este é o Armazem no qual voce irá guardar todos os Itens que estavam defeituosos ou não tem a qualidade requerida.
 
-#### Subcontracting
+#### Subcontratação
 
-* **Raw Materials Consumed**: In case you're subcontracting, select 'Yes' to consume the Raw Materials from the vendor. To know more about subcontracting, [click here](/docs/user/manual/en/manufacturing/subcontracting).
+* **Materias Primas Consumidas**: Caso estiver a subcontractar, selecione 'Sim' para consumir as Materias Primas apartir do vendedor. Para saber mais sobre subcontratação, [clique aqui](/docs/user/manual/pt/fabrico/subcontratação).
 
-### 3.3 Items table
+### 3.3 Tabela de Itens
 
-* **Barcode**: You can track Items using [barcodes](/docs/user/manual/en/stock/articles/track-items-using-barcode).
+* **Codigo de Barras**: Voce pode rastrear Itens usando [Codigo de Barra](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras).
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+* **Scan Codigo de Barras**: Voce pode adiconar Itens na tabela de Itens fazendo o scan dos seus condigos de barra se voce tiver um leitor de codigos de barra. Saiba mais como rastrear [aqui](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the Item master.
+* O Codigo do Item, nome, descrição, Imagem, e Fabrico irá ser procurado apartir da tabela do Item.
 
-* **Received and Accepted**: Set the received, accepted and rejected quantity. The UoM is fetched from the Item master. You will need to update the “UOM Conversion Factor” if your Purchase Order for an Item is in a different Unit of Measure (UOM) than what you stock (Stock UOM).
+* **Recebido e Aceite**: Defina o recebido, aceite e quantidade rejeitada. A UdM sera procurada apartir da tabela Item. Voce irá precisar actualizar o “Factor de Conversor de UDM” se a sua Ordem de Compra para um Item na qual a Unidade de Medida (UDM) é diferente que voce tem em Stock (UDM Stock).
 
-    ![Purchase Receipt Items table](/docs/assets/img/stock/purchase-receipt-item.png)
+    ![Tabela de Recibo de Compra dos Itens](/docs/assets/img/stock/purchase-receipt-item.png)
 
-* **Rate**: The Rate is fetched if set in the [Price List](/docs/user/manual/en/stock/price-lists) and the total Amount is calculated.
+* **Preço**: O Preço é procurado se definido na [Lista de Preços](/docs/user/manual/pt/inventario/lista-preços) e o Total geral é calculado.
 
-* **Item Tax Template**: You can set an Item Tax Template to apply a specific Tax amount to this particular Item. To know more, visit [this page](/docs/user/manual/en/accounts/item-tax-template).
+* **Modelo de Imposto do Item**: Voce pode definir o Modelo de Imposto de Item para aplicar um valor especifico do valor do Imposto para este Item em particular. Para saber mais, visite [esta pagina](/docs/user/manual/pt/contabilidade/modelo-imposto-item).
 
-* The Item Weight details per unit and Weight UOM are fetched if set in the Item master.
+* Os detalhes do Peso do Item por unidade e UDM do Peso são procurados se definidos na tabela do Item.
 
-* **Warehouse and Reference**: You can set the accepted and rejected Warehouses and also add a Quality Inspection, see next section.
+* **Referencia e Armazem**: Voce pode definir os Armazens aceites ou rejeitados e tambem adicionar a Inspeção de Qualidade, veja a proxima secção.
 
-* **Serial No, Batch No, and BOM**: If your Item is serialized or batched, you will have to enter Serial Number
-and Batch in the Items table. You are allowed to enter multiple Serial Numbers
-in one row (each on a separate line) and you must enter the same number of
-Serial Numbers as the quantity.
+* **Nº de Serie, Nº do Lote, e LDM**: Se o seu Item for serializado ou tem lotes, voce irá que digitar um Numero de Serie
+e Lotes na tabel do Item. Voce pode digitar varios Numeros de Serie
+numa linha (em linhas separadas) e voce deve digitar os mesmos Numeros
+de Serie de acordo as quantidades.
 
-    There are separate fields for entering Serial Numbers of both accepted and rejected Items here. A Batch Number can also be set if you're storing a batch of plastic medicines for example.
+    Tem campos diferentes para digitar Numreos de Serie para ambos Itens aceites e rejectados aqui. Um Numero de Lote pode tambem ser definido se estiver a guardar lotes de plastico medico por exemplo.
 
-    Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+    Selecionando 'Permitir Taxa de Avaliação Zero' irá permitir submeter o Recibo de Compra mesmo que a Taxa de Avaliação do Item seja 0. Este pode ser uma amostra do item ou devido a um entendimento mutuo como o seu Fornecedor.
 
-* You can link a BOM here if the Item is being [subcontracted](/docs/user/manual/en/manufacturing/subcontracting). Linking the BOM here will affect the Stock ledger, i.e. the raw material stock will be deducted from the Supplier Warehouse.
+* Voce pode ligar uma LDM aqui se o Item esta a ser [subcontratado](/docs/user/manual/pt/fabrico/subcontratação). Ligando a LDM aqui irá afectar o Razão do Stock, i.e. a materia prima do stock irá ser reduzida apartir do Armazem do Fornecedor.
 
-    **Note**: The Item has to be serialized or batched for these features to work. If the Item is serialized a popup will appear where you can enter the Serial Numbers.
+    **Nota**: O Item tem que ser serializado ou ter lotes para esta funcionalidade funcionar. Se o Item for serializado uma janela irá aparecer aonde voce pode digitar os Numeros de Series.
 
-* Accounting Dimensions help to tag each transaction with different Dimensions without the need for creating new Cost Centers. You need to create Accounting Dimensions first, to know more, visit [this page](/docs/user/manual/en/accounts/accounting-dimensions).
+* Dimensões Contabeis ajudam a marcar cada transação com diferentes dimensões sem a necessidade de criar um novo Centro de Custo. Voce precisa criar primeiro Dimensões Contabei, para saer mais, visite [esta pagina](/docs/user/manual/pt/contabilidade/dimensao-contabil).
 
-* Page Break will create a page break just before this item when printing.
+* Quebra de Pagina irá criar uma quebra de pagina antes de imprimir este item.
 
-### 3.4 Tracking Quality Inspection
-If for certain Items, it is mandatory to record Quality Inspections (if you have set it in your Item master), you will need to update the “Quality Inspection" field. The system will only allow you to “Submit” the
-Purchase Receipt if you update the “Quality Inspection”.
+### 3.4 Restreando a Inspeção de Qualidade
+Se para alguns Itens, for obrigatorio registar a Inspeção de Qualidade (se voce definiu na tabela do Item), voce irá precisar actualizar o campo “Inspeção de Qualidade". O sistema irá somente permitir “Submeter” o
+Recibo de Compra se voce actualizar a “Inspeção de Qualidade”.
 
-After enabling Inspection Criteria in the [Item form](/docs/user/manual/en/stock/item#216-inspection-criteria) for Purchase and attaching a Quality Inspection Template there, Quality Inspections can be recorded in Purchase Receipts.
+Depois de activar o Criteio de Inspeção no [Formulario do Item](/docs/user/manual/pt/inventario/item#317-criterio-de-inspeção) para Compra e anexando o Modelo de Inspeção de Qualidade aqui, Inspeção de Qualidade pode ser gravado nos Recibos de Compra.
 
-To know more, visit the [Quality Inspection](/docs/user/manual/en/stock/quality-inspection) page.
+Para saber mais, visite a pagina [Inspeção de Qualidade](/docs/user/manual/pt/inventario/inspecao-de-qualidade) .
 
-![Quality Inspection](/docs/assets/img/stock/quality-inspection.png)
+![Inspeção de Qualidade](/docs/assets/img/stock/quality-inspection.png)
 
 
-### 3.5 Raw Materials Consumed
-* The **Consumed Items** table contains the Raw Materials consumed by the Supplier in order to receive the Finished Item.
-* The **Get Current Stock** button will fetch the current stock of the Consumed Items from the Supplier Warehouse.
+### 3.5 Materias Primas Consumidas
+* Na tabela **Itens Consumidos** contem as Materias Primas consumidas pelo Fornecedor de formas a receber os Produtos Acabados.
+* O Botão **Obter Stock Corrente** ira procurar o stock corrente dos Itens Consumidos pelo Armazem do Fornecedor.
     <img class="screenshot" alt="Purchase Receipt" src="{{docs_base_url}}/assets/img/stock/purchase-receipt-consumed-items.png">
 
-### 3.6 Taxes and Valuation
-The Taxes and Charges will be fetched from the [Purchase Order](/docs/user/manual/en/buying/purchase-order).
+### 3.6 Impostos e Avaliações
+Os Impostos e Taxa sao procurados pela [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra).
 
-Visit the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template) page to know more about taxes.
+Visite a pagina [Impostos de Compra e Modelo de Taxas](/docs/user/manual/pt/compras/modelo-impostos-taxas-compra) para saber mais sobre impostos.
 
-The total taxes and charges will be displayed below the table.
+O total dos Impostos e taxas sera mostrado em baixo da tabela.
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+Para adicionar impostos automaticamente via Categoria de Impostos, visite [esta pagina](/docs/user/manual/pt/contabilidade/categoria-imposto).
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+Tenha a certeza de marcar todos os impostos na tabela de Impostos e Taxas correctamente para uma Avaliação correcta.
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### Regras de Envio
+Uma Rgra de Envio ajuda a definir os custo do Envio dos Itens. O custo normalmente irá aumentar com a distancia do envio. Para saber mais, visite a pagina[Regras de Envio](/docs/user/manual/pt/vendas/regra-envio).
 
 
-### 3.7 Additional Discount
-Any additional discounts to the whole order can be set in this section.
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+### 3.7 Disconto Adicional
+Qualquer desconto adicional para a Ordem completa pode ser definida nestea secção.
+Leia [Aplicar Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto) para mais detalhes.
 
-### 3.8 More Information
-The Status of the Purchase Receipt is shown here and at the top. The various statuses are: Draft, To Bill, Completed, Canceled, and Closed. This section also shows % Amount Billed, i.e. the percentage of amount for which [Sales Invoices](/docs/user/manual/en/accounts/sales-invoice) are created.
+### 3.8 Mais Informação
+O Status do Recibo de Compra é mostrado aqui no topo. Os varios estados são: Rascunho, Para Cobrar, Completado, Cancelado, e Fechado. Esta secção tambem mostra % Valor Cobrado, i.e. o valor da percentagem no qual [Factura de Venda](/docs/user/manual/pt/contabilidade/factura-venda) são criados.
 
-### 3.9 Printing Settings
+### 3.9 Configurações de Impressão
 
-#### Letterhead
-You can print your Purchase Receipt on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+#### Cabeçalho
+Voce pode imprimir o Recibo de Compra com o cabeçalho da sua Empresa. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'Agrupar Itens iguais' irá agrupar os itens iguais adiconados varias vezes na tabela de itens. Pode ser visto ao Imprimir.
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalho
+Cabeçalhos de Recibo de Compra podem ser trocados ao imprimir o documento. Voce pode fazer isso ao selecionar **Imprimir Cabeçalho**. Para criar um novo Imprimir Cabeçalho va para: Home > Configurações > Impressão > Imprimir Cabeçalho. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/imprimir-cabeçalhos).
 
-### 3.10 After Submitting
+### 3.10 Depois de Submeter
 
-A Stock Ledger Entry is created for each Item adding the Item in the Warehouse
-by the “Accepted Quantity” If you have rejections, a Stock Ledger Entry is
-made for each Rejection. The “Pending Quantity” is updated in the Purchase
-Order.
+Um Registo do Razão do Stock é criado para cada Item adicionado no Armazem pela
+“Quantidade Aceite” se tiver rejeições, um Registo do Razão de Stock é feito
+para cada Rejeição. As “Quantidades Pendentes” são actualizadas na Ordem de Compra.
 
-After submitting the Purchase Receipt, the following can be created:
+Depois de submeter o Recibo de Compra, o seguinte é criado:
 
-* [Purchase Return](/docs/user/manual/en/stock/purchase-return)
-* [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-* [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-* [Retaining Sample Stock](/docs/user/manual/en/stock/retain-sample-stock)
+* [Devolução de Compras](/docs/user/manual/pt/inventario/retorno-compras)
+* [Registo de Stock](/docs/user/manual/pt/inventario/entrada-stock)
+* [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra)
+* [Reter Amostra de Stock](/docs/user/manual/pt/inventario/reter-amostra-stock)
 
-![Purchase Receipt submit](/docs/assets/img/stock/purchase-receipt-submit.png)
+![Submeter Recibo de Compra](/docs/assets/img/stock/purchase-receipt-submit.png)
 
-### 3.11 Returning a Purchase Order
-Once you've received a Purchase Order using a Purchase Receipt, you can create a return entry in case the Item needs to be returned to the [Supplier](/docs/user/manual/en/buying/supplier). To know more, visit the [Purchase Return](/docs/user/manual/en/stock/purchase-return) page.
+### 3.11 Devolução de um Ordem de Compra
+Uma vez que recebeu a Ordem de Compra usnado um Recibo de Compra, voce pode criar um registo de devolução no caso do Item deve ser devolvido ao [Fornecedor](/docs/user/manual/pt/compras/fornecedor). Para saber mais, visite a pagina [Devolução de Compras](/docs/user/manual/pt/inventario/retorno-compras).
 
-### 3.12 Skipping Purchase Receipt
+### 3.12 Pulando o Recibo de Compra
 
-If you don't want to create a Purchase Receipt after a Purchase Order and directly want to create a Purchase Invoice, enable the feature for it in [Buying Settings](/docs/user/manual/en/buying/buying-settings#23-purchase-receipt-required).
+Se voce não quer criar um Recibo de Compra depois de uma Ordem de Compra e quiser criar directamente uma Factura de Compra, active a funcionalidade para tal em [Configurações de Compra](/docs/user/manual/pt/compras/configuração-compras#23-recibo-de-compras-obrigatorio).
 
 * * *
 
-#### Changing the value of Items post Purchase Receipt:
+#### Alterando o valor dos Itens apos Recibo de Compra:
 
-Sometimes, certain expenses that add to the total of your purchased Items are known
-only after a while. Common example is, if you are importing the Items, you
-will come to know of Customs Duty, etc only when your “Clearing Agent” sends
-you a bill. If you want to attribute this cost to your purchased Items, you
-will have to use the [Landed Cost Voucher](/docs/user/manual/en/stock/landed-cost-voucher). Why “Landed Cost”? Because it represents the charges that you paid when it landed in your possession.
+Algumas vezes, algumas despesas que adicionados ao total das compras dos Itens são conhecidos somente depois.
+Exemplo practico é, se voce estiver a importar Itens, voce
+irá ter Despesas de Alfandega, etc somente quando o seu “Clearing Agent” enviar
+a Factura. Se voce quiser atribuir este custo aos Itens comoprados, voce
+tera de usar o [Voucher de Custo de Entrega](/docs/user/manual/pt/inventario/landed-cost-voucher). O porque "Custo de Entrega"? Porque representa os impostos que voce pagou quando chegou até si.
 
-## 4. Related Topics
-1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Landed Cost Voucher](/docs/user/manual/en/stock/landed-cost-voucher)
+## 4. Topicos Relacionados
+1. [Guia de Remessa](/docs/user/manual/pt/inventario/guia-de-remessa)
+1. [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra)
+1. [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra)
+1. [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+1. [Voucher de Custo de Entrega](/docs/user/manual/pt/inventario/landed-cost-voucher)
