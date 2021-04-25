@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-# Unit of Measure (UoM)
+# Unidade de Medida (UdM)
 
-**A UoM is a unit using which an Item is measured.**
+**Uma UdM é uma unidade usada no qual um Item é medido.**
 
-By default, there are many UoMs created in  ERPNext. However, more can be added depending on your business use case. 
-In the UoM there is an option 'Must be Whole Number'. If this is checked, you cannot use fraction numbers in this UoM. To know more about fractions and UoMs, check out [this page](/docs/user/manual/en/stock/articles/managing-fractions-in-uom).
+Por defeito, tem muitas UdMs criadas no ERPNext. Contudo, mais podem ser adicionadas dependendo do seu negocio. 
+Na UdM tem uma opção 'Deve ser um Numero Inteiro'. Se estiver selecionado, voce não pode usar frações nesta UdM. Para saber mais sobre frações e UdMs, verifique [esta pagina](/docs/user/manual/pt/inventario/artigos/gerindo-fracoes-em-udm).
 
-The UoM list by itself only stores the name. The actual conversion rates are stored in a document called 'UoM Conversion Factor'. If you add new UoMs and plan to use it in transactions where it'll be converted to other UoMs, it is advised that you add it to this list.
+A lista de UdM somente guarda nomes. As taxas actuais de conversão são guardadas num documento chamado 'Factor de Conversão da UdM'. Se voce adiconar uma nova UdM e pleanear usar em transações aonde será convertido para outra UdM, é aconselhavel que adicione a lista.
 
-For example, here 1 Kg is approximately 2.2 Pounds and the exact conversion factor is stored:
+Por exemplo, aqui 1 Kg é aproximadamente 2.2 de Libras e o factor exacto de conversão é guardado:
 
-![UoM conversion factor](/docs/assets/img/stock/uom_convert.png)
+![Factor de Conversão da UdM](/docs/assets/img/stock/uom_convert.png)

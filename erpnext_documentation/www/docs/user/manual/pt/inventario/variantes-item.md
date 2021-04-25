@@ -1,73 +1,73 @@
 <!-- add-breadcrumbs -->
-# Item Variants
+# Variantes de Item
 
-**An Item Variant is a version of an Item with different attributes like sizes or colors.**
+**Uma Variante de Item é uma versão de um Item com diferentes atributos como tamanhos e cores.**
 
-Eg: Suppose t-shirt is an Item and it comes in different sizes and colors like small, medium, large and red, blue, green. In ERPNext the t-shirt will be considered as an Item template and each of the variations will be an Item Variant. 
+Eg: Vamos supor uma Casmia é um Item e vem em tamanhos diferentes e cores como pequeno, medio, grande, vermelho, azul, verde. No ERPNext a camisa será considerada como um Modelo de Item e cada uma das variações será uma Variante do Item. 
 
-A _blue_ t-shirt in size _small_ rather than just a t-shirt. Item variants let you treat the _small_, _medium_, and _large_ versions of a t-shirt as variations of one Item 't-shirt'.
+Uma camisa _azul_ em tamanho _pequeno_ em vez de somente um camisa. As Variantes dos Itens permitem tratar as versões _pequeno_, _medioa_, e _grande_ de uma camisa como variações de um Item 't-shirt'.
 
-Without Item variants, you would have to treat the _small_, _medium_ and _large_ versions of a t-shirt as three separate Items.
+Sem as Variantes do Item, voce teria que tratar as versões _pequeno_, _medio_ and _grande_ de uma camisa como três Itens separados.
 
-## 1. Using Item Variants
+## 1. Usando Variantes de Item
 
-Variants can be based on two things:
+Variantes podem ser com em duas coisas:
 
-1. Item Attributes
-1. Manufacturers
+1. Atributo dos Itens
+1. Fabricantes
 
-> Tip: Once an item template is created, when you update this template, all the variants are also updated accordingly.
+> Dica: Uma vez um modelo d item for criado, quando actualizar este modelo, todas as variantes tambem são actualizadas.
 
-### 1.1 Creating the Item Variant Template
+### 1.1 Criando um Modelo de Variante de Item
 
-1. To use Item Variants in ERPNext, create an Item and tick 'Has Variants' under Variants. 
+1. Para usar Variantes de Item no ERPNext, crie um Item e selecione 'Tem Variantes' em baixo de Variantes. 
 
-1. The Item then shall be referred to as a so-called 'Template'. Such a Template is not identical to a regular 'Item' any longer. For example, it (the Template) cannot be used directly in any transaction (Sales Order, Delivery Note, Purchase Invoice) itself.
+1. O Item depois sera referenciado com o 'Modelo'. Tal Modelo não é identico ao 'Item' normal. Por exemplo, o (Modelo) não pode ser usado directamente em qualquer transação (Ordem de Vendas, Guia de Remessa, Factura de Compra).
  
-1. Only the Variants of the Item (_blue_ t-shirt in size _small)_ can be practically used. Therefore it would be ideal to decide whether an item 'Has Variants' or not directly when creating it.
+1. Somente as Variantes de Item (camisa _azul_ em tamanho _pequeno)_ podem ser usados. Assim sendo seria bom decidir se vai usar um item 'Tem Variantes' ou não ao cirar.
     <img class="screenshot" alt="Has Variants" src="{{docs_base_url}}/assets/img/stock/item-has-variants.png">
 
-1. On selecting 'Has Variants' a table will appear. Specify the variant attributes for the Item in the table. In case the attribute has Numeric Values, you can specify the range and create intervals based on the increment values.
+1. Ao selecionar a tabela 'Tem Variantes' irá aparecer. Especifique os atributos da variante para o Item na tabela. Em caso o atributo ter Valores Numericos, especifique o intervalo e crie intervalos com base nos valores incrementados.
     <img class="screenshot" alt="Valid Attributes" src="{{docs_base_url}}/assets/img/stock/item-attributes.png">
-> Note: You cannot make Transactions against a 'Template'.
+> Nota: Voce não pode fazer Transações contra um 'Modelo'.
 
-### 1.2 Creating the Item Variants Based on Item Attributes
-To create 'Item Variants' against a 'Template' click on 'Create'. From there, choose whether to create a single variant or multiple. Single is simple where you create just one or more attributes and one Item will be created. When choosing multiple variants, tick the attributes and multiple items will be created. For example, if you choose Color: Red, Green and Size: Small, Medium, Large, 6 variants will be created.
+### 1.2 Criando Variantes de Item com base em Atributos de Item
+Para criar 'Variantes de Item' contra um 'Modelo' clique me 'Criar'. Apartir daí, escolha criar uma unica variante ou varias. Singular é aonde voce cria somente um ou mais atributos para um unico Item. Ao escolher varioas variantes, selecione os atributos e varios itens seram criados. Por exemplo, se escolher a Cor: Vermelha, Verda e Tamanho: Pequeno, Medio, Grande, 6 variantes serao criadas.
 
-Creating multiple variants in ERPNext:
+Criando varias variantes no ERPNext:
 
 <img class="screenshot" alt="Make Variants" src="{{docs_base_url}}/assets/img/stock/make-multiple-variants.png">
 
-To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/item-attribute)
+Para aprender mais sobre configurando atributos verifique [Atributos do Item](/docs/user/manual/pt/inventario/atributo-item)
 
-### 1.3 Item Variants Based on Manufacturers
+### 1.3 Variantes de Item com Base em Fabricante
 
-To setup variants based on Manufacturers, in your Item template, set "Variants Based On" as "Manufacturers"
-In this case, to create variants, click on Create > Make Variant. The system will prompt you to select a Manufacturer. You can also optionally put in a Manufacturer Part Number.
+Para configurar variantes com base nos Fabricantes, no seu modelo de Item, defina "Variantes com Base em" como "Fabricantes"
+Neste caso, para criar variantes, cliquem em Criar > Criar Variante. O sistem irá perguntar para selecionar o Fabricante. Voce pode opcionalmente por um Numero de Peça do Fabricante.
 
 <img class='screenshot' alt='Setup Item Variant by Manufacturer' src='{{docs_base_url}}/assets/img/stock/select-mfg-for-variant.png'>
 
-The naming of the variant will be based on the name (ID) of the template Item with a number suffix. e.g. "Screwdriver" will have variant "Screwdriver-1".
+O nome de uma variante sera com base no nome (ID) do modelo de Item com um sufixo de numero. e.g. "Chave de Fenda" terá uma variante "Chave de Fenda-1".
 
-## 2. Update Item Variants Based on Template
-Go to: **Home > Stock > Items and Pricing > Item Variant Settings**. The fields displayed here will be copied over to the variants as well. By default, all fields are shown, delete any rows you don't want to be updated from the item template to the variants.
+## 2. Actualizar Variantes de Item com Base no Modelo
+Va para: **Home > Inventario > Itens e Preços > Configurações de Variante de Item**. Os campos mostrados aqui vão ser copiados para as variantes tambem. Por defeito, todos os campos são mostrados, apague qualquer linha que não queira actualizar apartir do modelo do item para as variantes.
 
 ## 3. Video
 
-### 3.1 Creating Item Variant one by one
+### 3.1 Criando Variantes de Item um por um
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/kogIricF40I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 3.2 Creating Item Variants in bulk
+### 3.2 Criando Variantes de Item em Volumes
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/SngZtDIMdiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
 </div>
 
-### 4. Related Topics
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
+### 4. Topicos Relacionados
+1. [Grupo de Item](/docs/user/manual/pt/inventario/grupo-item)
+1. [Atributo de Item](/docs/user/manual/pt/inventario/atributo-item)
+1. [Preço de Item](/docs/user/manual/pt/inventario/preço-item)
+1. [Codificação de Item](/docs/user/manual/pt/inventario/artigos/codificacao-item)
