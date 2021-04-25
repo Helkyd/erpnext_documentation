@@ -1,44 +1,44 @@
 <!-- add-breadcrumbs -->
-# Sales Return
+# Devolução de Vendas
 
-**A sold Item being returned is known as a Sales Return.**
+**Um Item vendido sendo devolvido é conhecido como Devolução de Venda.**
 
-Goods sold being returned happens commonly in business. They could be returned by the customer due to quality issues, non-delivery on the agreed date, or any other reason. 
+Bens vendidos sendo devolvidos é normal. Eles podem ser devolvidos pelo cliente por questões de qualidade, não entrega na data acordada, ou qualquer outra razão. 
 
-## 1. Prerequisites
-Before creating and using a Sales Return, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar a Devolução de Venda, é aconselhavel criar os seguintes:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
+* [Item](/docs/user/manual/pt/inventario/item)
+* [Devolução de Vendas](/docs/user/manual/pt/contabilidade/retorno-vendas)
     
-    Or
+    Ou
 
-    [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+    [Guia de Remessa](/docs/user/manual/pt/inventario/guia-de-remessa)
 
-## 2. How to create a Sales Return
+## 2. Como criar uma Devolução de Venda
 
-1. First open the original Delivery Note / Sales Invoice, against which Customer returned the Items.
+1. Primeiro abra a Guia de Remessa / Factura de Venda original, no qual o Cliente devolveu os bens.
 
     <img class="screenshot" alt="Original Delivery Note" src="{{docs_base_url}}/assets/img/stock/sales-return-original-delivery-note.png">
 
-1. Then click on 'Create > Sales Return', it will open a new Delivery Note with 'Is Return' checked, Items, Rate, and taxes will negative numbers.
+1. Depois faça o clique em 'Criar > Retorno de Vendas', que irá abrir uma nova Guia de Remessa com 'É um Retorno' selecionado, Itens, Preços e impostos ficam a negativo.
 
     <img class="screenshot" alt="Return Against Delivery Note" src="{{docs_base_url}}/assets/img/stock/sales-return-against-delivery-note.png">
 
-1. You can also create the return entry against the original Sales Invoice, to return stock along with credit note, check "Update Stock" option in Return Sales Invoice.
+1. Voce pode tambem criar um registo de retorno contra uma Factura de Venda, para devolver o stock com uma Nota de Credito, selecione a opção "Actualizar Stock" na Devolução da Factura de Vendas.
 
     <img class="screenshot" alt="Return Against Sales Invoice" src="{{docs_base_url}}/assets/img/stock/sales-return-against-sales-invoice.png">
 
-1. On submission of Return Delivery Note / Sales Invoice, the system will increase stock balance in the mentioned Warehouse. To maintain correct stock valuation, stock balance will go up according to the original purchase rate of the returned items.
+1. Ao submeter a devolução de uma Guia de Remessa / Factura de Vendas, o sistema irá aumentar o balanço de stock no Armazem mencionado. Para manter a avaliação do correcta, balanço de stock irá aumentar de acordo a taxa de compra original dos itens devolvidos.
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/sales-return-stock-ledger.png">
 
-1. In case of Return Sales Invoice, Customer account will be credited and associated income and tax account will be debited as shown in the Accounting Ledger.
+1. No de devolução de Factura de Vendas, a conta do Cliente será creditada e o valor de entrada associado e conta de imposto seram debitados como mostra no Razão de Contabilidade.
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/sales-return-general-ledger.png">
 
-If Perpetual Inventory is enabled, the system will also post accounting entry against warehouse account to sync warehouse account balance with stock balance as per Stock Ledger.
+Se o Inventario Perpetuo estiver activo, o sistema irá tambem postar registos contabilisticos contra a conta do armazem para sincronizar a conta de balanço do stock como o Razão do Stock.
 
-## 3. Related Topics
-1. [Purchase Return](/docs/user/manual/en/stock/purchase-return)
-1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
+## 3. Topicos Relacionados
+1. [Devolução de Compras](/docs/user/manual/pt/inventario/retorno-compras)
+1. [Inventario Perpetuo](/docs/user/manual/pt/inventario/inventario-perpetual)

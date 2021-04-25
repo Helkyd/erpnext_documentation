@@ -1,41 +1,41 @@
 <!-- add-breadcrumbs -->
-# Retaining Sample Stock
+# Reter Amostra de Stock
 
-**Sample stock is a batch of any Items stored for analyzing should the need arise later.**
+**Amostra de stock é um lote de mujitos Itens guardados para analizar caso necessario mais tarde.**
 
-The Item for which sample stock is stored can be raw material, packaging material, or finished product.
+O Item pelo o qual a amostra é guardada pode ser materia prima, material para empacotar, ou produto fabricado.
 
-## 1. Prerequisites
-Before using sample retention, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de usar a retenção de amostra, é aconselhavel criar os seguintes:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Batch](/docs/user/manual/en/stock/batch)
-* [Warehouse](/docs/user/manual/en/stock/warehouse)
+* [Item](/docs/user/manual/pt/inventario/item)
+* [Lotes](/docs/user/manual/pt/inventario/lote)
+* [Armazem](/docs/user/manual/pt/inventario/armazem)
 
-## 1. How to Set Sample Retention Warehouse in Stock Settings
+## 1. Como Definir o Armazem de Retenção da Amostra em Configurações de Stock
 
-It is advised to create a new Warehouse separately for retaining samples and not use it in production.
+É aconselhavel criar um novo Armazem separado para manter as amostras e não usar em produção.
 
 <img class="screenshot" alt="Sample Retention Warehouse" src="{{docs_base_url}}/assets/img/stock/sample-warehouse.png">
 
-### 1.2 Enable Retain Sample in Item master
-Retain Sample is based on Batch hence Has Batch No should be enabled first. Check Retain Sample and set the Maximum allowed samples for a batch. 
+### 1.2 Activar Retenção de Amostra na tabela Item
+Reter Amostra é com base no Lote daí o Numero de Lote ser activado primeiro. Verifique Reter Amostra e defina o Maximo de Amostras permitidas para o Lote. 
 
 <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/retain-sample.png">
 
-### 1.3 Make Stock Entry
+### 1.3 Fazer Entrada de Stock
 
-* Whenever a [Stock Entry](/docs/user/manual/en/stock/stock-entry) is created with the purpose as Material Receipt, for items which have Retain Sample enabled, the Sample Quantity can be set during that Stock Entry. You need to select the Batch Number for the Item/Items. Sample quantity cannot be more than the Maximum sample quantity set in Item Master.
+* Sempre que uma [Entrada de Stock](/docs/user/manual/pt/inventario/entrada-stock) é criada com o motivo de Recepção de Material, para itens que tenham Reter Amostra activa, a Quantidade da Amostra pode ser definida durante o Registo de Entrada do Stock. Voce precisa selecionar o Numero do Lote para o Item/Itens. Quantidade de Amostra não pode ser mais que o Maximo de Amostra definido na tabela de Item.
 
     <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/material-receipt-sample.png">
 
-* On submission of this Stock Entry, button 'Make Retention Stock Entry' will be available to make another Stock Entry for the transfer of sample items from the mentioned batch to the retention warehouse set in Stock Settings.
+* Ao submeter este Registo de Stock, o botão 'Fazer Registo de Retenção de Stock' ficará visivel para fazer outra Entrada de Stock para fazer a transferencia das amostras dos itens do lote mencionado para o armazem de retenção definido nas Configurações de Stock.
 
-    ![Sample Retention Button](/docs/assets/img/stock/sample-retention-button.png)
+    ![Botão de Retenção de Amostra](/docs/assets/img/stock/sample-retention-button.png)
 
-* Clicking this button will direct you to new Stock Entry of type 'Material Transfer'. This entry is transfering your sample retention from your Target Warehouse (Stores) to the Sample Retention Warehouse. It will contain all the information, verify and click Submit.
+* Fazendo o clique neste botão irá direcionar-lhe para uma nova Entrada de Stock do tipo 'Transferencia de Material'. Esta entrada irá transferir as amostras de retenção so seu Armazem Alvo (Stores) para o Armazem de Retenção de Amostras. Irá conter todas as informações, verifique e faça o clique em Submeter.
 
     <img class="screenshot" alt="Retain Sample" src="{{docs_base_url}}/assets/img/stock/material-transfer-sample.png">
 
-### 2. Related Topics
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
+### 2. Topicos Relacionados
+1. [Armazem](/docs/user/manual/pt/inventario/armazem)

@@ -1,42 +1,42 @@
 <!-- add-breadcrumbs -->
-# Purchase Return
+#Devolução de Compra
 
-**A purchased Item being returned is known as a Purchase Return.**
+**Um Item comprado sendo devolvido é conhecido como Retorno de Compra.**
 
-With the Purchase Return feature, you can return products to the
-Supplier. This may be on account of a number of reasons like defects in goods,
-quality not matching, the buyer not needing the stock, etc.
+Com a funcionalidade de Retorno de Compra, voce pode devolver produtos para o 
+seu Fornecedor. Este pode ter varios motivos como defeito nos bens, 
+ma qualidade, o comprador não precisa do item, etc.
 
-## 1. Prerequisites
-Before creating and using a Purchase Return, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar um Devolução de Compra, é aconselhavel criar os seguintes:
 
-* [Item](/docs/user/manual/en/stock/item)
-* [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
+* [Item](/docs/user/manual/pt/inventario/item)
+* [Factura de Compras](/docs/user/manual/pt/contabilidade/factura-compra)
     
-    Or
+    Ou
 
-    [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
+    [Recibo de Compras](/docs/user/manual/pt/inventario/recibo-compra)
 
 
-## 2. How to create a Purchase Return
-1. First open the original Purchase Receipt, against which supplier delivered the Items.
+## 2. Como criar um Devolução de Compra
+1. Primeiro abra o Recibo de Compra original, no qual o fornecedor entregou os Bens.
 
     <img class="screenshot" alt="Original Purchase Receipt" src="{{docs_base_url}}/assets/img/stock/purchase-return-original-purchase-receipt.png">
 
-1. Click on 'Create > Return', it will open a new Purchase Receipt with 'Is Return' checked. Items, Rate, and taxes will negative numbers.
+1. Clique em 'Criar > Devolução de Compra', irá abrir um novo Recibo de Compras com 'É um Retorno' activo. Itens, Preços, e impostos ficam a negativo.
 
     <img class="screenshot" alt="Return Against Purchase Receipt" src="{{docs_base_url}}/assets/img/stock/purchase-return-against-purchase-receipt.png">
 
-1. On submission of Return Purchase Return, the system will decrease item quantity from the mentioned Warehouse. To maintain correct stock valuation, stock balance will also go up according to the original purchase rate of the returned items.
+1. Ao submeter o Retorno das Compras, o sistema irá reduzir a quantidade do Armazem mencionado. Para manter avaliação correcta do stock, o balanço de stock irá tambem irá subir de acordo o preço da compra original dos bens devolvidos.
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/purchase-return-stock-ledger.png">
 
-1. In the Accounting Ledger, the Stock In Hand account will be credited and the Stock Received but Not Billed account will be debited.
+1. No Razão da Contabilidade, a conta do Stock em Mão será creditado e a conta dos Stocks Recebidos mas não Cobrados será debitada.
 
     <img class="screenshot" alt="Return Stock Ledger" src="{{docs_base_url}}/assets/img/stock/purchase-return-general-ledger.png">
 
-If Perpetual Inventory enabled, the system will also post accounting entry against warehouse account to sync warehouse account balance with stock balance as per Stock Ledger.
+Se o Inventario Perpetuo estiver activo, o sistema irá tambem postar um registo contabilistico contra a conta do Armazem para sincronizar o balanço da conta do armazem com o balanço de stock de acordo o Razão do Stock.
 
-### 3. Related Topics
-1. [Sales Return](/docs/user/manual/en/stock/sales-return)
-1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
+### 3. Topicos Relacionados
+1. [Devolução de Vendas](/docs/user/manual/pt/inventario/retorno-vendas)
+1. [Inventario Perpetuo](/docs/user/manual/pt/inventario/inventario-perpetual)

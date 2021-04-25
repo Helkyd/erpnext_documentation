@@ -1,106 +1,106 @@
 <!-- add-breadcrumbs -->
-# Stock Reconciliation
+# Reconciliação de Stock
 
-**Stock Reconciliation is the process of counting and evaluating material/products, periodically at the year end.**
+**Reconciliação de Stock é o processo de contagem e avaliação do material/produtos, periodicamente no fim do ano.**
 
-This is done in order to:
+Isto é feito para:
 
-* Keep the actual physical stock count and book stock count in sync
-* Value the stock for preparation of the accounting statements
+* Manter a contagem fisica actual e alocar a contagem do stock sincronizado
+* Valor do stock preparado para declarações de contabilidade
 
-The Stock Reconciliation feature in ERPNext is used for:
+A funcionalidade Reconciliação de Stock no ERPNext é usado para:
 
-* Posting opening stock
-* Reconciling book and actual stock
+* Postar a abertura do stock
+* Reconciliar o alocado e o stock actual
 
-To access the Stock Reconciliation list, go to:
-> Home > Stock > Tools > Stock Reconciliation
+Para acessar a lista de Reconciliação de Stock, va para:
+> Home > Inventario > Ferramentas > Reconciliação de Stock
 
-## 1. How to Create a Stock Reconciliation to Post Opening Stock
+## 1. Como Criar uma Reconciliação de Stock para Abertura do Stock
 
-Using stock reconciliation you can update the number of specific items in a warehouse as of specific time.
-You can also add Items in the stock which have Serial Numbers or the Batch Numbers.
+Usnado Reconciliação de Stock voce pode actualizar o numero de itens especificos no armazem num tempo especifico.
+Voce pode tambem adiconar Itens no stock para os que tenham Numeros de Serie ou Numeros de Lote.
 
-1. Go to the Stock Reconciliation list, click on New.
-1. Select the Purpose as 'Opening Stock'. You can edit the posting Date and Time.
-1. Select Item Code, Warehouse, Quantity, and Valuation Rate. If there is a Serial / Batch No involved, add it.
-1. If you want to auto-generate Serial No / Batch No then keep those fields blank.
-    * For auto-generation of Serial No, you need to set "Serial Number Series" in the Item master.
-    * For auto-generation of Batch no, you need to enable "Automatically Create New Batch" checkbox in the item master.
-1. The Difference Account will be set as 'Temporary Opening'.
-1. Save and Submit.
+1. Va para lista Reconciliação de Stock, clique em Novo.
+1. Selecione o Motivo como 'Abertura de Stock'. Voce pode editar a Data e Hora de postagem.
+1. Selecione o Codigo do Item, Armazem, Quantidade, e Taxa de Avaliação. Se existe um Numero de Serie / Numero de Lote envolvido, adicione.
+1. Se voce quiser gerar-automaticamente Numero de Serie / Numero do Lote então mantenha esses campos em branco.
+    * Para auto-gerar Numeros de Serie, voce precisa definir "Serie de Numeros de Serie" na tabela do Item.
+    * Para auto-gerar Numeros de Lote, voce precisar activar a caixinha "Criar Numeros de Lote Automatico" na tabela item.
+1. A Conta de Diferença sera definida como 'Abertura Temporaria'.
+1. Salvar e Submeter.
 
-    ![Opening Stock](/docs/assets/img/stock/opening_stock.png)
+    ![Abertura de Stock](/docs/assets/img/stock/opening_stock.png)
 
-> Note: Maintain Stock option should be enabled in Item master for this to work.
+> Nota: A opção Actualizar Stock deve estar activa na tabela Item para que funcione.
 
-## 2. How to Create a Stock Reconciliation to Reconcile Book and Physical Stock Count
+## 2. Como Criar uma Reconciliação de Stock para Reconciliar o Alocado e a Contagem Fisica do Stock
 
-Stock Reconciliation is the process of counting and evaluating stock-in-trade, periodically and at year-end in order to value the total stock for preparing accounting statements. In this process, the actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the Stock Reconciliation tool to reconcile stock balance and value with actuals.
+Reconciliação de Stock é um process de contagem e avaliação do stock-para-comercializar, periodicamente no fim do ano de formas a dar valor ao stock total e preparar para as declarações de contabilidade. Neste process, o stock fisico actual são verificados e ordenados no sistema. O stock atual no sistema deve estar de acordo e certo. Caso não estejam, voce pode usar a ferramenta Reconciliação de Stock para reconciliar o balanço de stock e o valor com o fisico.
 
-To reconcile the stock:
+Para reconciliar o stock:
 
-1. Go to the Stock Reconciliation list, click on New
-1. Select the Purpose as 'Stock Reconciliation'. You can edit the posting Date and Time.
-1. Set Item Code, Warehouse.
-1. The current Quantity and Valuation Rate will be fetched, change the quantity as required.
-1. The expense account in Difference Account will be set to 'Stock Adjustment' by default.
-1. The Cost Center default will be 'Main', change if needed.
-1. Save and Submit.
+1. Va para a lista Reconciliação de Stock, clique em Novo
+1. Selecione o Motivo como 'Reconciliação de Stock'. Voce pode editar a Data e Hora de Postagem.
+1. Defina o Codigo do Item, Armazem.
+1. A Quantidade corrente e a Taxa de Avaliação serao procurados, muda a quantidade caso necessario.
+1. A conta de despesa na Conta de Diferença sera definida para 'Ajuste de Stock' por defeito.
+1. O Centro de Custo padrão será 'Principal', troque caso necessario.
+1. Salvar e Submeter.
   
-    ![Stock Reconciliation](/docs/assets/img/stock/stock_recon.png)
+    ![Reconciliação de Stock](/docs/assets/img/stock/stock_recon.png)
 
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1 Upload Data Through Spreadsheet
+### 3.1 Carregar Dados Via Folha de Calculo
 
-If you have a lot of items, you can upload the details via a spreadsheet.
+Se voce tem muitos itens, voce pode carregar os detalhes via uma folha de calculos.
 
-1. Download Template
+1. Decarregue o Modelo
 
-  Open new Stock Reconciliation and click on Download button to download the template in CSV format.
+  Abra uma nova Reconciliação de Stock e clique no botão Descarregar para puxar o modelo no formato CSV.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-1.png">
 
-2. Enter Data in CSV Template.
+2. Digite os Dados no Modelo CSV.
 
-  The CSV format is case-sensitive. Do not edit the headers which are pre-set in the template. In the Item Code and Warehouse column, enter exact Item Code and Warehouse as created in your ERPNext account. For quantity, enter the stock level you wish to set for that item, in a specific warehouse.
+  O formato CSV é Maiusculas e Minusculas (case-sensitive). Não edite o cabeçalho que estão pre-definidos no modelo. Na coluna Codigo do Item e Armazem, digite o Codigo do Item e Armazem exactamente como criado no seu ERPNext. Para quantidade, digite o nivel de stock que pretende definir para o item, no armazem especificado.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-data.png">
 
 
-3. Upload the CSV file with the data by clicking on 'Upload' button.
+3. Carregue o ficheiro CSV com os dados fazendo o clique no botão 'Carregar'.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-2.png">
 
 
-4. Review, Save and Submit.
+4. Faça a Revisão, Salve e Submeta.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-upload.gif">
 
-5. Check Stock Ledger Report for updated stock balance.
+5. Verifique o Relatorio de Razão do Stock para o balanço actualizado do stock.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-reco-ledger.png">
 
-### 3.2 Get Stock Balance and Valuation as of Specific Date and Time
+### 3.2 Obtenha o Balanço de Stock e Avaliação apartir de uma Data e Hora Especifica
 
-You can import the stock balance and valuation as of specific date and time from a selected Warehouse by clicking on **Items** button. You can update the Quantity and Valuation Rate as needed.
+Voce pode importar o balanço de stock e avaliação apartir de uma data e hora especifica de um Armazem selecionado fazendo o clique no botão **Itens** . Voce pode actualizar a Quantidade e Taxa de Avaliação quando necessario.
 
 <img class="screenshot" alt="Stock Reconciliation Items Button" src="{{docs_base_url}}/assets/img/stock/stock_reconciliation_items_button.gif">
 
-## 4. How Stock Reconciliation Works
+## 4. Como Funciona a Reconciliação de Stocks
 
-Once a stock reconciliation is posted to update the quantity on specific date and time for an item in a warehouse, it will not be modified by subsequent stock transactions even if such transactions have a posting date which is prior to the stock reconciliation date. In other words, backdated entries will not change the stock numbers after a Stock Reconciliation entry is posted.
+Uma vez a reconciliação de stock for inserida para actualizar as quantidades numa data e hora especifica para um item no armazem, não irá modificar transações subsequentes de stock mesmo que estas transações tenham uma data que seja inferior a data de reconciliação. Em outras palavras, registos antigos ou com datas anteriores não vão mudar o numero de stock depois de uma Reconciliação de Stock ter sido feita.
 
-Examples are as follows.
+Exemplos de seguida.
 
-### 4.1 For non-serialized Items
-Consider an item with code 'ABC001' in a 'Mumbai' warehouse.
-Let's assume that stock as on 10th January is 100 units.
-Stock Reconciliation is made on 12th January to set stock balance to 150 units.
+### 4.1 Para Itens não serializados
+Considere um item com o codigo no armazem 'Mumbai'.
+Vamos assumir que o stock no dia 10 de Janeiro é de 100 unidades.
+Reconciliação de Stock é feito no dia 12 de Janeiro para ajustar o balanço para 150 unidades.
 
-Stock Ledger would look as shown below:
+Razão do Stock deve ser como em baixo:
 <html>
 <style>
     td {
@@ -117,94 +117,94 @@ Stock Ledger would look as shown below:
  <table border="1" cellspacing="0px">
             <tbody>
                 <tr align="center" bgcolor="#EEE">
-                    <td><b>Posting Date</b>
+                    <td><b>Data de Postagem</b>
                     </td>
-                    <td><b>Qty</b>
+                    <td><b>Qtd</b>
                     </td>
-                    <td><b>Balance Qty</b>
+                    <td><b>Qtd Disponivel</b>
                     </td>
-                    <td><b>Voucher Type</b>
+                    <td><b>Tipo de Voucher</b>
                     </td>
                 </tr>
                 <tr>
                     <td>10/01/2014</td>
                     <td align="center">100</td>
                     <td>100&nbsp;</td>
-                    <td>Purchase Receipt</td>
+                    <td>Recibo de Compra</td>
                 </tr>
                 <tr>
                     <td>12/01/2014</td>
                     <td align="center">150</td>
                     <td>150</td>
-                    <td>Stock Reconciliation</td>
+                    <td>Reconciliação de Stock</td>
                 </tr>
             </tbody>
         </table>
 </html>
 
-If a new Purchase Receipt entry is made on 5th January 2014, which is prior to the date of Stock Reconciliation entry, Stock Ledger would look as shown below.
+Se um novo Recibo de Compra for feito no dia 5 de Janeiro 2014, que é anterior a data do registo de Reconciliação de Stock, o Razão de Stock irá ficar como em baixo.
 <html>
     <table border="1" cellspacing="0px">
         <tbody>
             <tr align="center" bgcolor="#EEE">
-                <td><b>Posting Date</b></td>
-                <td><b>Qty</b></td>
-                <td><b>Balance Qty</b></td>
-                <td><b>Voucher Type</b></td>
+                <td><b>Data de Postagem</b></td>
+                <td><b>Qtd</b></td>
+                <td><b>Qtd Disponivel</b></td>
+                <td><b>Tipo de Voucher</b></td>
             </tr>
             <tr>
                 <td>05/01/2014</td>
                 <td align="center">20</td>
                 <td style="text-align: center;">20</td>
-                <td>Purchase Receipt</td>
+                <td>Recibo de Compra</td>
             </tr>
             <tr>
                 <td>10/01/2014</td>
                 <td align="center">100</td>
                 <td style="text-align: center;">120</td>
-                <td>Purchase Receipt</td>
+                <td>Recibo de Compra</td>
             </tr>
             <tr>
                 <td>12/01/2014</td>
                 <td align="center"><br></td>
                 <td style="text-align: center;"><b>150</b></td>
-                <td>Stock Reconciliation<br></td>
+                <td>Reconciliação de Stock<br></td>
             </tr>
         </tbody>
     </table>
 </html>
 
-As you can see, the Balance Qty as on 10th January got updated from 100 to 120. But the Balance Qty as on 12th January did not get updated from 150 to 170.
+Como pode ver, a Qtd Disponivel no dia 10 de Janeiro foi actualizada de 100 para 120. Mas a Qtd Disponivel no dia 12 de Janeiro não foi actualizado de 150 para 170.
 
 
-### 4.2 For Serialized Items
+### 4.2 Para Itens Serializados
 
-For an Item, ITEM-00225 that has has the 6 serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 with valuation rate as 530 per serial no. At the end of the year, the user has come to know that they have only 3 Serial Nos against that item with Valuation Rate 620. So to remove the old serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 and add the new serial nos with new Valuation Rate, Stock Reconciliation can be used as follows:
+Para um Item, ITEM-00225 que tem 6 numeros de serie HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 com a taxa de avaliação 530 por numero de serie. No fim do ano, o usuario vem a saber que tem somente 3 Numeros de Serie para este item com a Taxa de Avaliação de 620. Então para remover os Numeros de Serie antigos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 e adiconar os novos Numeros de Series com a nova Taxa de Avaliação, Reconciliação de Stock pode ser feito da seguinte forma:
 
-Select the item ITEM-00225 in the stock reconciliation, on the selection of the Item the system will auto pull the existing serials nos. Then set Qty as 3, Valuation Rate as 530 and serial no as HJF00026, HJF00027, HJF00028.
+Selecione o item ITEM-00225 na reconciliação de stock, na seleção do Item o sistema ira puxar automaticamente os numeros de serie existentes e depois defina 3 como Qtd, Taxa de Avaliação como 530 e numeros de serie como HJF00026, HJF00027, HJF00028.
 
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock-recon-for-serialized.png">
 
-Before reconciliation, the valuation rate was 530 and the available qty was 6, so the total stock value was 3,180. After reconciliation, the valuation rate has changed to 620 and available qty changed to 3, so the new stock value becomes 1,860. To adjust the stock value in the accounting, the system has credited extra amount 3,180 - 1,860 = 1,320 to Warehouse's account and debited to stock adjustment account. The GL entries for the above entry is as follows:
+Antes da reconciliação, a taxa de avaliação era 530 e a qtd disponivel era 6, então o valor total do stock erá de 3,180. Depois da reconciliação, a taxa de avaliação mudou para 620 e a qtd disponivel mudou para 3, então o novo valor do stock passa para 1,860. Para ajustar o valor do stock na contabilidade, o sistema creditou um valor extra de 3,180 - 1,860 = 1,320 na conta do Armazem e debitou na conta de ajuste de stock. Os registos do GL (Razão Geral) para as entradas acima citadas são as seguintes:
 
-To view GL entries, click on button View > Accounting Ledger
+Para ver os Registo do Razão Geral, clique no botão Visão > Livro Contabilistico
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/gl_entry_for_serialized_items.png">
 
-The stock balance after submission of the stock reconciliation:
+O balanço do stock depois de submetida a reconciliação de stock:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/stock_balance_after_stock_reco_submission.png">
 
-The general ledger for the warehouse account Nagpur after submission of the stock reconciliation:
+O razão geral para a conta do armazem Nagpur depois de submitida a reconciliação de stock:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/general_ledger_after_stock_reco_submission.png">
 
-### 4.3 For Batch Items
+### 4.3 Para Itens com Lote
 
-Stock reconciliation for batch items will be used to add a new batch or to update the quantity of the existing batch. For example, the batch JHGJH00003 has the current quantity as 60 but if the user wants to make it 100 then by using stock reconciliation, user can update the batch quantity.
+Reconciliação de Stock para itens com lote sera usado para adicionar um novo lote ou para actualizar a quantidade existente de lotes. Por exemplo, o lote JHGJH00003 tem a quantidade actual como 60 mas se o usuario quiser tornar 100 utilizando a reconciliação de stock, o usuario podera actualizar a quantidade de lotes.
 
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/for_batch_item_after_stock_reco_submission.png">
 
-Batch-Wise Balance History report after submission of the stock reconciliation:
+Relatorio de Balanço do Lotes-Inteligentes depois da submissão da reconciliação de stock:
 <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/stock/batchwise_balance_history_after_stock_reco_submission.png">
 
 ## 5. Video
@@ -214,9 +214,9 @@ Batch-Wise Balance History report after submission of the stock reconciliation:
     </iframe>
 </div>
 
-### 6. Related Topics
-1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
-1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
+### 6. Topicos Relacionados
+1. [Entrada de Stock](/docs/user/manual/pt/inventario/entrada-stock)
+1. [Contabilidade do Inventario de Stock](/docs/user/manual/pt/inventario/accounting-of-inventory-stock)
 
 
 {next}

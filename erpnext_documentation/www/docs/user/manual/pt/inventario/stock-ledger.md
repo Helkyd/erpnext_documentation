@@ -1,38 +1,38 @@
 <!-- add-breadcrumbs -->
 
-# Stock Ledger Report
+# Relatorio do Razão de Stock
 
-**A Stock Ledger Report is a detailed record that keeps track of stock movements for a company.**
+**Um Relario do Razão de Stock é um registo detalhado que guarda informações dos movimentos de stock da empresa.**
 
-Inward or outward transactions related to Manufacturing, Purchasing, Selling, and Stock Transfers are recorded in the Stock Ledger which then is reflected in the Stock Ledger Report.
+Transações de Entrada e Saida relacionadas com Fabrico, Compras, Vendas e Transferencias de Stock são registados no Razão do Stock que depois são reflectidos no Relatorio do Razão de Stock.
 
-It reflects the quantity and value of stock **issued, received, or transferred** along with the stock item and its warehouse details.
+Reflecte a quantidade e o valor do stock **solicitado, recebido, ou transferido** com o item do stock os se detalhes dos armazens.
 
-It can be referred when the **Perpetual Inventory** system is enabled, as this report reflects the history of all your stock transactions. It presents a more granular view of the stock transactions.
+Pode ser referenciado quando o **Inventario Perpetuo** no sistema estiver activo. vendo que o relatorio reflecte o historico de todas as transações do seu stock. Mostra uma visão gradual das transações de stock.
 
-## Stock Ledger Report Attributes
+## Atributos do Relatorio do Razão de Stock
 
-* **Incoming Rate**: It reflects the actual value of the stock at which it was brought under your inventory.
-It reflects the same value as entered in the *Rate* field of the document.
+* **Preço de Entrada**: Reflecte o valor actual do stock no qual foi inserido no seu inventario.
+Reflecte o mesmo valor digitado no campo *Preço* do documento.
 
-* **Balance Value**: It represents the total value of the remainder stock in the inventory. It is the product of Valuation Rate and Balance Quantity of a stock item.
+* **Valor do Balanço**: Representa o valor total do stock restante no seu inventario. É o produto da Taxa de Avaliação e Quantidade do Balanço de um item de stock.
 
-* **Valuation Rate**: It is calculated based upon the valuation method selected.
+* **Taxa de Avaliação**: É calculado com base no metodo de avaliação escolhido.
 
-Here is how Stock Ledger Report represents a **Stock Entry** of type *Material Receipt*.
+Aqui esta como o Relatorio do Razão de Stock representa uma **Entrada de Stock** do tipo *Recepção de Material*.
 
-![Stock Ledger Report](/docs/assets/img/stock/stock-ledger.png)
+![Relatorio de Razão do Stock](/docs/assets/img/stock/stock-ledger.png)
 
-It reflects an item **Chair** of quantity *1000 units* with Incoming Rate (Basic Rate) as *Rs.3000* received in warehouse *Stores - L* along with calculating Valuation Rate and Balance Value.
+Reflecte um item **Cadeira** com *1000 unidades* com o Preço de Entrada (Preço Base) como *Rs.3000* rececibod no armazem *Stores - L* com a Taxa de Avaliação e Valor do Balanço.
 
-You can click on **Voucher #** to open the document this transaction was created from.
+Voce pode fazer o clique em **Voucher #** para abrir o documento no qual esta transação foi criada.
 
-Stock Ledgers are generated from the following transactions:
+Razão dos Stocks são gerados pelas seguintes transações:
 
--   Sales Invoice, Purchase Invoice (with *Update Stock* checked)
--   Delivery Note
--   Purchase Receipt
--   Stock Entry
--   Stock Reconciliation
+-   Factura de Vendas, Factura de Compra (como o *Actualizar Stock* activado)
+-   Guia de Remessa
+-   Recibo de Compra
+-   Entrada de Stock
+-   Reconciliação de Stock
 
-You can add fields from the previously mentioned Document Types by clicking on Menu > Add Column.
+Voce pode adicionar campos do Tipo de documentos anteriormente mencionados fazendo o clique em Menu > Adicinar Coluna.

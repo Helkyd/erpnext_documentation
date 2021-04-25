@@ -1,25 +1,25 @@
 <!-- add-breadcrumbs -->
-#Stock Level Report
+#Relatorio do Nivel de Stock
 
-Stock Level report list stock item's quantity available in a particular warehouse.
+Relatorio do Nivel do Stock lista as quantidades de stock dos itens existentes num armazem em particular.
 
-There are multiple reports available you can check for item's stock level.
+Existem varios relatorios disponiveis aonde pode verificar o nivel de stock dos itens.
 
-####Stock Projected Quantity Report
+####Relatorio de Quantidade de Stock Projectado
 
-You can access this report from `Stock > Main Report > Stock Projected Quantity`
+Voce pode acessar este relatorio `Inventario > Relatorios de Stock > Qtd Projectada de Stock`
 
-This report list item wise - warehouse wise stock level of an item considering all the stock transactions. With Actual Quantity of an item, it also provide other details like:
+Este relatorio lista nivel de stock de itens inteligentes - armazens de um item considerando todas as transações de stock. Com a Quantidade Actual de um Item, tambem mostra outros detalhes como:
 
-1. Actual Qty: Quantity available in the warehouse.
-2. Planned Qty: Quantity, for which, Work Order has been raised, but is pending to be manufactured.
-3. Requested Qty: Quantity requested for purchase, but not ordered.
-4. Ordered Qty: Quantity ordered for purchase, but not received.
-5. Reserved Qty: Quantity ordered for sale, but not delivered.
-6. Project Qty: Project Quantity is calculated as
+1. Qtd Actual: Quantidade disponivel no Armazem.
+2. Qtd Planeada: Qunatidade, pelo qual, Ordem de Trabalho foi criada, mas está pendente para ser fabricado.
+3. Qtd Solicitada: Quantidade solicitada para comprar, mas ainda não foi criada.
+4. Qtd Pedida: Quantidade pedida para comprar, mas ainda não foi recebida.
+5. Qtd Reservada: Quantidade pedida para vender, mas ainda não foi entregue.
+6. Qtd Projectada: Quantidade Projectada é calculada como 
 
-<div class="well">Projected Qty = Actual Qty + Planned Qty + Requested Qty + Ordered Qty - Reserved Qty</div>
+<div class="well">Qtd Planeada = Qtd Actual + Qtd Planeada + Qtd Solicidada + Qtd Pedida - Qtd Reservada</div>
 
-The projected inventory is used by the planning system to monitor the reorder point and to determine the reorder quantity. The projected Quantity is used by the planning engine to monitor the safety stock levels. These levels are maintained to serve unexpected demands.
+O inventario projectado é usado pelo sistema de planeamento para monitorizar o ponto de encomenda e determinar a quantidade de encomenda. A Quantidade projectada é usado pelo sistem de planeamento para monitorizar os niveis de segurança do stock. Estes niveis são mantidos para servir pedidos inesperados.
 
-Having a tight control of the projected inventory is crucial to determine shortages and to calculate the right order quantity.
+Tendo um control rigido do inventario projectado é crucial para determinar escassez e calcular a quantidade certa para encomenda.

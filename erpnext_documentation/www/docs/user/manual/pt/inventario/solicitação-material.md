@@ -1,102 +1,102 @@
 <!-- add-breadcrumbs -->
-# Material Request
+# Solicitação de Material
 
-**A Material Request is a simple document identifying a requirement of a set of Items (products or services) for a particular reason.**
+**Uma Solicitação de Material é um simples documento indentificando a necessidade de um conjunto de Itens (produtos ou serviços) por uma razão em particular.**
 
-A Material Request can have the following purposes:
+Uma Solicitação de Material pode ter varios motivos:
 
-* **Purchase**: If the material being requested is to be purchased.
-* **Material Transfer**: If the material being requested is to be shifted from one Warehouse to another.
-* **Material Issue**: If the material being requested is to be Issued for some purpose like manufacturing.
-* **Manufacture:** If the material being requested is to be produced.
-* **Customer Provided**: If the material being requested is to be provided by Customer. To know more about this, visit the [Customer Provided Item](/docs/user/manual/en/manufacturing/articles/customer-provided-items) page.
+* **Compras**: Se o material sendo pedido é para ser comprado.
+* **Transferencia de Material**: Se o material sendo pedido é para ser mudado de armazem.
+* **Pedido de Material**: Se o material sendo pedido for requisitado por motivos como fabrico.
+* **Fabrico:** Se o material pedido é para ser produzido.
+* **Providenciado pelo Cliente**: Se o material pedido é para ser entregue pelo Cliente. Para saber mais sobre isto, viste a pagina [Item Providenciado pelo Cliente](/docs/user/manual/pt/fabrico/artigos/customer-provided-items) .
 
 <img class="screenshot" alt="Material Request" src="{{docs_base_url}}/assets/img/buying/material-request-flowchart.png">
 
-To access the Material Request list, go to:
-> Home > Stock > Stock Transactions > Material Request
+Para acessar a lista de Solicitação de Material, va para:
+> Home > Inventario > Transações de Stock > Solicitação de Material
 
-## 1. How to create a Material Request
-1. Go to the Material Request list, click on New.
-1. Enter the required by date.
-1. Select from one of the purposes as listed above.
-1. You can fetch Items from a BOM, Sales Order, or Product Bundle.
-  ![MR fetch from](/docs/assets/img/stock/mr-fetch-from.png)
-1. Select the Item and set the quantity.
-1. Select the Warehouse for which Items are required.
-1. You can change the Required By date for individual Items in this table.
-1. Save and Submit.
+## 1. Como criar uma Solicitação de Material
+1. Va para a lista de Solicitação de Material, clique em Novo.
+1. Digite a Data necessaria.
+1. Selecione um dos motivos listados.
+1. Voce pode procurar Itens de uma LDM, Ordem de Venda, ou Pacote de Produtos.
+  ![Procura SM apartir de](/docs/assets/img/stock/mr-fetch-from.png)
+1. Selecione o Item e defina a quantidade.
+1. Selecione o Armazem para os Itens necessarios.
+1. Voce pode mudar a Data Necessario até para cada Item na tabela.
+1. Salvar e Submeter.
 
-### 1.1 Alternate ways of creating a Material Request
-A Material Request can be generated automatically:
+### 1.1 Maneiras Alternativas de criar uma Solicitação de Material
+Uma Solicitação de Material pode ser gerado automaticamente:
 
-* From a [Sales Order](/docs/user/manual/en/selling/sales-order).
-* When the Projected Quantity of an Item in Stores (Warehouses) reaches a particular level.
-* From your a [Production Plan](/docs/user/manual/en/manufacturing/production-plan) to plan your manufacturing activities.
+* Apartir de [Ordem de Vendas](/docs/user/manual/pt/vendas/ordem-vendas).
+* Quando a Quantidade Projecta de um Item em Armazem (Warehouses) atinge um certo nivel de stock.
+* Apartir do seu [Plano de Produção](/docs/user/manual/pt/fabrico/plano-de-producao) para planificar as suas actividade de fabrico.
 
-If your Items are inventory items, you must also mention the Warehouse where you expect these Items to be delivered. This helps to keep track of the [Projected Quantity](/docs/user/manual/en/stock/projected-quantity) for this Item.
+Se os seu Itens são itens de inventario, voce deve tambem mencionar o Armazem aonde voce espera estes Itens serem entregues. Isto ajuda a rastrear a [Quantidade Projectada](/docs/user/manual/pt/inventario/quantidade-projectada) para este Item.
 
-> Info: Material Request is not mandatory. It is ideal if you have centralized
-buying so that you can collect this information from various departments.
+> Info: Solicitação de Material não é obrigatorio. Ẽ ideal se voce tem compras
+centralizadas no qual pode recolher as informações de varios departamentos.
 
-### 1.2 Statuses
+### 1.2 Estados
 
-These are the statuses a Material Request can be in:
+Estes são os estados que uma Solicitação de Material pode ter:
 
-* **Draft**: A draft is saved but yet to be submitted to the system.
-* **Submitted**: Document is submitted to the system.
-* **Stopped**: If no more materials are needed the Material Request can be stopped.
-* **Canceled**: The materials are not needed at all and the request is canceled.
-* **Pending**: The Purchase/Manufacture is pending to complete the Material Request.
-* **Partially Ordered**: Purchase Orders for some Items from the Material Request are made and some are pending.
-* **Ordered**: All Items in the Material Request are ordered via Purchase Orders.
-* **Issued**: The materials are issued using a Material Issue Stock Entry.
-* **Transferred**: The required materials are transferred from one Warehouse to another using a Stock Entry.
-* **Received**: The materials were ordered and have been received at your Warehouse using a Purchase Receipt.
+* **Rascunho**: Um rascunho é salvo mas ainda não foi submetido no sistema.
+* **Submetido**: Documento submetido no sistema.
+* **Parado**: Se os materiais não forem mais necessarios a Solicitação de Material pode ser parada.
+* **Cancelados**: Os materiais não são necessarios e o pedido é cancelado.
+* **Pendente**: A Compra/Fabrico está pendente para completar a Solicitação de Material.
+* **Parcialmente Pedido**: Ordens de Compra para alguns Itens apartir de uma Solicitação de Material foram feito e alguns estão pendentes.
+* **Pedido**: Todos os Itens na Solicitação de Material foram pedidos via Ordem de Compra.
+* **Solicitado**: Os materiais foram solicitados usando um Registo de Solicitação de Material.
+* **Transferido**: Os materiais necessarios são transferidos de um Armazem para outro usando a Entrada de Stock.
+* **Recebido**: Os materiais foram pedido e foram recebidos no seu Armazem usando o Recibo de Compra.
 
-## 2. Features
-### 2.1 Items table
-* **Barcode**: You can track Items using [barcodes](/docs/user/manual/en/stock/articles/track-items-using-barcode).
+## 2. Funcionalidades
+### 2.1 Tabel de Itens
+* **Codigo de Barras**: Voce pode rastrear os Itens usando [Codigo de Barras](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras).
 
-* The Item Code, name, description, Image, and Manufacturer will be fetched from the Item master.
+* O Codigo do Item, nome, descrição, Imagem, e Fabricante serao procurados na tabela do Item.
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+* **Scan Codigo de Barras**: Voce pode adiconar Itens na tabela de Itens fazendo o scan dos Codigos de Barra se voce tiver um leitor. Saiba mais [aqui](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
 
-* The UoM, Conversion Factor, and Amount will be fetched. You change the Warehouse for which the material is being requested.
+* A UdM, Factor de Conversão, e Valor serao procurados. Voce pode trocar o Armazem no qual o material esta a ser solicitado.
 
-* Accounting details like Expense Account and Accounting Dimensions can be set for the Items.
+* Detalhes de contabilidade como Conta de Despesas e Dimensão Contabil pode ser definidos para os Itens.
 
-* Page Break will create a page break just before this item when printing.
+* Quebra de Pagina irá criar uma quebra de pagina antes de imprimir o item.
 
-### 2.2 Setting Warehouses
-* **Set Warehouse**: Optionally, you can set the Warehouse where the requested Items will arrive. This will be fetched into the 'For Warehouse' fields in the Item table rows.
+### 2.2 Configurando Armazens
+* **Definir Armaze**: Opcionalmente, voce pode definir o Armazem aonde os Itens soclicitados ficaram. Este sera procurado no campo 'Para Armazem' na linha da tabela do Item.
 
-### 2.3 More Information
-In the 'Requested For' field, you can set a Reference from where Material Request was generated.
+### 2.3 Mais Informações
+No campo 'Solicitado para ', voce pode definir um Referencia de onde a Solicitação de Material foi gerada.
 
-### 2.4 Printing Details
-#### Letterhead
-You can print your Material Request on your company's letterhead. [Click here](/docs/user/manual/en/setting-up/print/letter-head) to learn more.
+### 2.4 Detalhes de Impressão
+#### Cabeçalho
+Voce pode imprimr a Solicitação de Material com o cabeçalho da sua Empresa. [Clique aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta) para saber mais.
 
-#### Print Headings
-Purchase Receipt headings can also be changed when printing the document. You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalhos
+Cabeçalhos de Recibo de Compras pode ser alterados ao imprimir o documento. Voce pode fazer selecionando **Imprimir Cabeçalho**. Para criar um novo Imprimir Cabeçalho va para: Home > Configurações > Impressão > Imprimir Cabeçalho. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/imprimir-cabeçalhos).
 
-### 2.5 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 2.5 Termos e Condições
+Em transações de Vendas/Compras pode have a necessidade de certos Termos e Condições com base no Fornecedor que presta os serviços ou bens ao Cliente. Voce pode aplicar Termos e Condições a transações e eles vão aparecer ao imprimir o documento. Para saber sobre Termos e Condições, [clique aqui](/docs/user/manual/pt/configuração/imprimir/termos-e-condições)
 
-### 2.6 After Submitting
-You can create the following documents:
+### 2.6 Depois de Submeter
+Voce pode criar os seguintes documentos:
 
-* [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-* [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-* [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+* [Solicitação de Cotação](/docs/user/manual/pt/compras/solicitação-cotação)
+* [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra)
+* [Cotação do Fornecedor](/docs/user/manual/pt/compras/cotação-do-fornecedor)
 
 <img class="screenshot" alt="Material Request" src="{{docs_base_url}}/assets/img/stock/material-request.png">
 
 
-### 2.7 Automatically generate Material Requests
+### 2.7 Gerar Solicitação de Material Automaticamente
 
-Material Requests can be generated automatically by enabling the setting in [Stock Settings](/docs/user/manual/en/stock/stock-settings#9-automatic-material-request) and setting the level in the [Item form](/docs/user/manual/en/stock/item#34-automatic-reordering). When the stock level dips below a certain quantity, setting a reorder will automatically create material requests for the Item.
+Solicitação de Material pode ser gerado automaticamente activando a configuração em [Configurações de Stock](/docs/user/manual/pt/inventario/configuracoes-stock#9-requisição-de-material-automatica) e definindo o nivel no [formulario do Item](/docs/user/manual/pt/inventario/item#34-encomenda-automatica). Quando o nivel de stock estiver abaixo de um certa quantidade, configurando uma encomenda irá automaticamente criar uma Solicitação de Material para este Item.
 
 ## 3. Video
 <div>
@@ -106,10 +106,10 @@ Material Requests can be generated automatically by enabling the setting in [Sto
   </div>
 </div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
-1. [Auto Creation Of Material Request](/docs/user/manual/en/stock/articles/auto-creation-of-material-request)
-1. [Pick List](/docs/user/manual/en/stock/pick-list#23-create-pick-list-from-material-request)
-1. [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+### 4. Topicos Relacionados
+1. [Item](/docs/user/manual/pt/inventario/item)
+1. [Auto Criação da Solicitação de Material](/docs/user/manual/pt/inventario/artigos/auto-criacao-solicitacao-material)
+1. [Lista de Escolhas](/docs/user/manual/pt/inventario/lista-de-escolhas#23-crie-a-lista-de-escolha-apartir-da-solicitação-de-material)
+1. [Solicitação de Cotação](/docs/user/manual/pt/compras/solicitação-cotação)
+1. [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra)
+1. [Cotação do Fornecedor](/docs/user/manual/pt/compras/cotação-do-fornecedor)
