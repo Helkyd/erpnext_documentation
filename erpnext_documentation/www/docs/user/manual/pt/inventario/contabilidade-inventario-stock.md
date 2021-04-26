@@ -3,9 +3,9 @@
 
 O valor do inventario disponivel é tratado como um Activo Corrente no [Plano de Contas](/docs/user/manual/pt/contabilidade/plano-de-contas). Para prepara uma Folha de Balanço, você deve criar os registos contabilisticos destes activos. Existem dois metodos diferentes para contabilidade do inventario.
 
-## 1. Auto/Perpetual Inventory
+## 1. Auto/Inventario Perpetuo
 
-Neste processo, para cada transação de stock, o sistema posta os registos relavantes para sincronizar o balanço do stock e balanço de contabilidade. Este é a configuração padrão no ERPNext para novas contas. Por defeito, Perpetual Inventory é activo em [Empresa](/docs/user/manual/pt/configuração/configuração-empresa#23-configurações-de-stock).
+Neste processo, para cada transação de stock, o sistema posta os registos relavantes para sincronizar o balanço do stock e balanço de contabilidade. Este é a configuração padrão no ERPNext para novas contas. Por defeito, Inventario Perpetuo é activo em [Empresa](/docs/user/manual/pt/configuração/configuração-empresa#23-configurações-de-stock).
 
 Quando você compra e recebe os itens, estes itens são alocados como activos da empresa
 (stock-em-mão). Quando você vende e entrega estes itens, uma despesa
@@ -15,13 +15,13 @@ Entradas do Razão Geral são criadas apos cada transação de stock. Como resul
 Para verificar os registos de contabilidade para uma transação de stock em particular,
 [clique aqui](/docs/user/manual/pt/inventario/perpetual-inventory)
 
-### 1.2 Vantagens do Perpetual Inventory
+### 1.2 Vantagens do Inventario Perpetuo
 
-O sistema Perpetual Inventory irá tornar facil para manter a precisão dos activos da empresa e os custos de despesas. Balanço de Stock será sempre sincronizado com as contas de balanço, então não será necessário mais entradas manuais mensais para balanciar.
+O sistema Inventario Perpetuo irá tornar facil para manter a precisão dos activos da empresa e os custos de despesas. Balanço de Stock será sempre sincronizado com as contas de balanço, então não será necessário mais entradas manuais mensais para balanciar.
 
 No caso de uma nova transação de stock com data-antiga or cancelamento/correção de um uma transação existente, todos os registo do Razão de stock e Registos do GL serão recalculadas em todos os itens dessa transação. O mesmo é aplicavel se qualquer custo for adicionado aos Recibos de Compra submetidos depois pelo Voucher de Custo de Entrega.
 
-> Nota: Perpetual Inventory depende completamente da taxa de avaliação.
+> Nota: Inventario Perpetuo depende completamente da taxa de avaliação.
 Daí, você precisar ter muito cuidade ao digiar a taxa de avaliação quando estiver a criar qualquer Entrada de stock como Recibo de Compra, Recepção de Material, ou Fabrico/Reembalar.
 
 * * *
@@ -42,9 +42,9 @@ adicionado aos activos (stock-em-mão). Se negativo, um entrada contraria é fei
 
 Este processo completo é chamado de **Inventario Periodico**.
 
-Se você for um usuario existente a usar o Inventario Periodico e quiser usar o Perpetual
-Inventory, você precisa seguir [alguns passos](/docs/user/manual/pt/inventario/artigos/migrate-to-perpetual-inventory) para migrar. 
+Se você for um usuario existente a usar o Inventario Periodico e quiser usar o Inventario Perpetuo,
+você precisa seguir [alguns passos](/docs/user/manual/pt/inventario/artigos/migrate-to-perpetual-inventory) para migrar. 
 
 ### 3. Topicos Relacionados
-1. [Inventario Perpetual](/docs/user/manual/pt/inventario/inventario-perpetual)
-1. [Emigrar para Inventario Perpetual](/docs/user/manual/pt/inventario/artigos/emigrar-para-inventario-perpetual)
+1. [Inventario Perpetuo](/docs/user/manual/pt/inventario/inventario-perpetual)
+1. [Emigrar para Inventario Perpetuo](/docs/user/manual/pt/inventario/artigos/emigrar-para-inventario-perpetual)

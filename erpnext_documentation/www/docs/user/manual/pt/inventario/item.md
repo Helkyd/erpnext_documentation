@@ -15,7 +15,7 @@ Antes de criar e usar o Item, é aconselhavel que voce crie primeiro:
 
 * [Grupo de Item](/docs/user/manual/pt/inventario/grupo-item)
 * [Armazem](/docs/user/manual/pt/inventario/armazem)
-* Uma Unida de Medida é necessaria
+* Uma Unidade de Medida é necessaria
 
 ## 2. Como criar um Item
 1. Va para a lista de Itens, clique em novo.
@@ -148,7 +148,7 @@ Para saber mais, visita a pagina [Reconciliação de Stock](/docs/user/manual/pt
 ### 3.8 Variantes
 Uma Variante do Item é uma versão diferente de um Item. Para aprender mais sobre gerir variantes [Variantes de Item](/docs/user/manual/pt/inventario/variantes-item).
 
-### 3.9 Padroẽs do Item
+### 3.9 Padrões do Item
 
 Nesta secção, voce pode definir as transações relacionadas com a Empresa para este Item.
 

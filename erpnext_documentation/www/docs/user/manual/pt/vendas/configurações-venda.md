@@ -1,89 +1,89 @@
-# Selling Settings
+# Definições de Vendas
 
-Selling Settings is where you can define properties and validations which will be applied to the masters and transactions involved in the sales cycle.
+Definições de Vendas é aonde voce pode definir propriedades e validações que vao ser aplicadas nas tabelas e transações envolvidas no ciclo de vendas.
 
-Let's see each option available under Selling Settings in ERPNext.
+Vamos ver cada opção disponivel em Definições de Vendass no ERPNext.
 
 <img class="screenshot" alt="Selling Settings" src="{{docs_base_url}}/assets/img/selling/selling-settings.png">
 
-To access Selling Settings, go to:
-> Home > Selling > Settings > Selling Settings
+Para acessar as Definições de Vendass, va para:
+> Home > Vendas > Configurações > Definições de Vendas
 
-## 1. Naming Series
-###1.1 Customer Naming By
+## 1. Serie dos Nomes
+###1.1 Nome do Cliente por
 
-When a customer is saved, a unique ID is generated for that Customer.
+Quando um cliente é salvo, um ID unico é gerado para este Cliente.
 
-By default, Customer ID is generated based on Customer Name. If you wish to save Customer using a naming series, in the field Customer Naming Series, set value as "Naming Series". Example of Customer ID's saved in Naming Series - "CUST00001, CUST00002, CUST00003..." and so on.
+Por defeito, o ID do Cliente é gerado com base no Nome do Cliente. Se voce quiser salvar o Cliente usando um Nome de Serie, no campo Nome de Series do Cliente, defina o valor "Nome de Series". Exemplo de um ID de Cliente salvo no Nome de Series - "CUST00001, CUST00002, CUST00003..." e assim por diante.
 
-You can set Naming Series for Customers from:
+Voce pode definr o Nome de Series para Clientes apartir:
 
-**Setup > Data > Naming Series**
+**Configurações > Dados > Serie de Atrib. de Nomes**
 
-### 1.2 Campaign Naming By
+### 1.2 Campanha de Nome por
 
-Just like for Customer, you can also configure the naming methodology for the Campaign master. By default, a campaign will be saved with Campaign Name.
+Tal como o Cliente, voce pode tambem configura o metodo do nome para a Campanha. Por defeito, uma campanha será salva com o Nome da Campanha.
 
-## 2. Defaults
-### 2.1 Default Customer Group and Territory
+## 2. Padrões
+### 2.1 Grupo de Cliente e Territorios Padrão
 
-Select a default Customer Group which will be auto-updated when creating a new Customer.
+Selecione o GRupo de Cliente Padrão no qual sera auto-actualizado quando criar um novo Cliente.
 
-Quotations can be created for the Customers as well as for the Leads. When converting a Quotation into a Sales Order, which is created for a Lead, the system attempts to convert that Lead into a Customer. While creating Customer in the backend, values for Customer Group and Territory is picked from Selling Settings. If no default values are found for Customer Group or Territory, then you will receive a validation message asking for Customer Group or Territory. You can also manually convert a Lead into a Customer.
+Cotações podem ser criadas para os Clientes como para as Leads. Ao converter uma Cotação em Ordem de Vendas, que foi criado para uma Lead, o sistema tenta converter essa Lead em Cliente. Ao criar um Cliente, valores para o Grupo de Cliente e Territorio são procurados nas Configurações de Vendas. Se não tiver valores padrões para o Grupo de Cliente e Territorio, então irá receber uma mensagem de validação pedindo o Grupo do Cliente e Territorio. Voce pode tambem converter manualmente uma Lead para Cliente.
 
-### 2.2 Default Price List
+### 2.2 Lista de Preços Padrão
 
-Price List set in this field will be auto-updated in the Price List field of sales transactions like Quotation, Sales Order, Delivery Note, and Sales Invoice.
+Lista de Preços definidos neste campo será auto-actualizado no campos de Lista de Preços das transações de vendas como Cotações, Ordem de Vendas, Guia de Remessa e Factura de Vendas.
 
-### 2.3 Close Opportunity After Days
+### 2.3 Fechar Oportunidade Depois de Dias
 
-If there are many Opportunities having a status other than Open, then they will be auto-closed after the no. of days mentioned in this field.
+Se existem Oportunidade com o status diferente de Aberto, então eles vao ser auto-fechados depois do Numero de Dias mencionado neste campo.
 
-### 2.4 Default Quotation Validity Days
+### 2.4 Dias de Validação Padrão da Proforma
 
-Quotations to the customer are valid only for certain days. In the Quotation, you can update Valid Till Date manually. By default, the Valid Till date is auto-set as 30 days from the Quotation's Posting Date. You can change the no. of days in this field as per your business case.
+Cotações para o cliente são validas somente por alguns dias. Na Cotação, voce pode actualizar a Data Valida Até manualmente. Por defeito, a Data de Validade até é auto posta por 30 dias apartir da Data de Postagem da Cotação. Voce pode mudar o numero de dias deste campo de acordo o seu tipo de negocio.
 
-## 3. Requirement checks
-### 3.1 Sales Order Required
+## 3. Verificação de Requisitos
+### 3.1 Ordem de Vendas Obrigatorio
 
-If you wish to make Sales Order creation mandatory before the creation of a Sales Invoice, then you should set the 'Sales Order Required' field as 'Yes'. By default, this will be 'No'.
+Se voce quiser tornar uma Orde de Venda obrigatoria antes de criar uma Factura de Venda, então deve definir o campo 'Ordem de Vendas Obrigatorio' como  'Sim'. Por defeito, estará como 'Não'.
 
-This configuration can be overridden for a particular customer by enabling the "Allow Sales Invoice Creation Without Sales Order" checkbox in customer master
+Esta configuração pode ser ultrapassada para um cliente em particular activando a caixinha "Permitir Criar Factura de Vendas sem uma Ordem de Venda" na tabela do cliente
 
 <img alt="Sales Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/selling/so-required.png">
 
 ### 3.2 Guia de Remessa Necessaria
 
-To make Delivery Note creation as mandatory before Sales Invoice creation, you should set this field as 'Yes'. By default, this will be 'No'.
+Para tornar uma Guia de Remessa obrigatoria antes da criação de uma Factura de Vendas, voce deve definir este campo como 'Sim'. Por defeito, estará como 'Não'.
 
-This configuration can be overridden for a particular customer by enabling the "Allow Sales Invoice Creation Without Delivery Note" checkbox in customer master
+Esta configuração pode ser ultrapassada para um cliente em particular activando a caixinha "Permitir Criar Factura de Vendas sem uma Guia de Remessa" na tabela do cliente
 
 <img alt="Delivery Note Required" class="screenshot" src="{{docs_base_url}}/assets/img/selling/dn-required.png">
 
-### 3.3 Sales Update Frequency
-The frequency at which project progress and company transaction details will be updated. By default it is for Each Transaction, you can also set it to Daily or Monthly if you have a lot of transactions every day.
+### 3.3 Actualização Frequente das Vendas
+A frequencia no qual um projecto e os detalhes de transação de uma empresa são actualizados. Por defeito é para cada Transação, voce pode tambem definir para ser Diario ou Mensal se voce tiver muitas transações todos os dias.
 
-## 4. Other checks
-### 4.1 Maintain Same Rate Throughout Sales Cycle
+## 4. Outras Verificações
+### 4.1 Manter a mesma Taxa dentro do Ciclo de Vendas
 
-The system by default validates that item price will be the same throughout the sales cycle (Sales Order -> Delivery Note -> Sales Invoice). If your item price will be changing within the cycle and you need to bypass validation of the same rate maintained in the cycle, let this checkbox be unchecked.
+O sistema por defeito valida o preço do item e que será o mesmo durante o ciclo de vendas (Ordem de Venda -> Guia de Remessa -> Facturas de Venda). Se o preço do item será mudado dentro do ciclo e voce precisa passar a validação com o mesmo preço posto no ciclo, deixe esta caixinha não activada.
 
-### 4.2 Allow User to Edit Price List Rate in Transaction
+### 4.2 Permitir Usuario Editar Taxa de Lista de Preço em Transação
 
-The item table in sale transactions has a field called Price List Rate. This field is non-editable by default in all the sales transactions. This is to ensure that the price of an item is fetched from Item Price record and the user is not able to edit it.
+A tabel do item nas transações de venda tem u mcampo chamado Taxa de Lista de Preço. Este campo não é editado por defeito em todas as transações de vendas. Isto é para ter a certeza que o preço de um item é procurado apartir do registo Preço do Item e o usuario não tenha a possibilidade de editar.
 
-If you need the Item Price fetched from Price List of an item to be editable, you should uncheck this field.
+Se voce precisa procurar o Preço do Item apartir da Lista de Preço de um item para ser editado, voce deve não selecionar esta campo.
 
-### 4.3 Allow Item to be added multiple times in a transaction
-This is a validation check which prevents an item from being added multiple times in the same transaction when unchecked. In some cases, this might be an explicit need if so check this box.
+### 4.3 Permitir adiconar o Item varias vezes numa transação
+Este é um ponto de validação que previne um item em ser adiconado varias vezes na mesma transação quando não selecionado. Em alguns caso, poderá haver a necessidade de selecionar esta caixa.
 
 ### 4.4 Permitir Ordens de Venda Multiplas contra Ordem de Compra de Clientes
-When creating a Sales Order, you can update the Purchase Order ID and Date received from the Customer. You can create only one Sales Order against the Customer's PO No. and Date. However, if you wish to allow the creation of multiple Sales Orders against the same PO No. of the Customer, tick the checkbox "Allow multiple Sales Orders against a Customer's Purchase Order".
+Ao criar Ordens de Venda, voce pode actualizar o ID da Ordem de Venda e a Data de recepção pelo Cliente. Voce pode criar somente Ordens de Venda contra um Numero de PO e Data de um Cliente. Contudo, se voce quiser permiir a criação de uma Ordem de Venda contra um Numero de PO do Cliente, selecione esta caixinha "Permitir Ordens de Venda Multiplas contra Ordem de Compra de Clientes".
 
-### 4.5 Validate Selling Price for Item against Purchase Rate or Valuation Rate
-When making sales, it's important to know that you're not making losses. Enabling this validation will validate the item's Selling Price with its valuation/buying price. If an item's selling price is found to be less than it's buying price, then you will get a prompt when this checkbox is ticked.
+### 4.5 Validar o Preço de Venda para um Item contra um Preço de Compra ou Taxa de Avaliação
+Ao fazer vendas, é importante saber que voce não está perdido. Activando esta validação ira permitir o Preço de Venda do item com o seu preço de Avaliação/compra. Se o preço de venda do item encontrado for menor que o preço de compra, então irá receber uma janela se esta caixinha estiver activa.
 
-### 4.6 Hide Customer's Tax ID from Sales Transactions
-As per the statutory requirement, most of the Customers have unique Tax ID assigned to them. They also need to have this tax ID fetched in the selling transactions. However, if you don't wish to use this functionality, you can disable by checking this property.
+### 4.6 Esconder o NIF do Cliente nas Transações de Vendas
+Como obrigação, muitos do Clientes lhes é atribuido um unico ID NIF. Eles tambem precisam ter este NIF nas transações de vendas. Contudo, se não quiser usar esta funcionalidade, voce pode desactivar esta propriedade.
 
 {next}

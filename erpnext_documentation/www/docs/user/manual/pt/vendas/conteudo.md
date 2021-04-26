@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Selling
+# Vendas
 
 Selling is the communication that happens with the customer prior to and
 during the sale. You might be managing all the communication yourself or you

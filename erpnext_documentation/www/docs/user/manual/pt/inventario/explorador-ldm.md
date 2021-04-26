@@ -5,6 +5,6 @@ O Relatorio de Explorador de LDM mostra uma hieraquia completa de Lista de Mater
 
 Você precisa selecionar o LDM no filtro que o relatorio irá mostrar a quantidade de material raw e scraps necessários para produzir o item. É a arvore completa de assemblies, sub-assemblies i.e. todos itens exploded.
 
-Usando o Explorador de LDM, o usuario pode ver a quantidade de raw materials and scraps from all exploded items and print it.
+Usando o Explorador de LDM, o usuario pode ver a quantidade de materias primas e restos de todos os itens e imprimir.
 
 <img alt="reorder level" class="screenshot" src="{{docs_base_url}}/assets/img/articles/bom_explorer.png">
