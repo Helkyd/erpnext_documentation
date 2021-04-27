@@ -1,192 +1,191 @@
 <!-- add-breadcrumbs -->
-# Ordens de Venda
+# Ordem de Venda
 
-**A Sales Order is a confirmation of an order from your customer.**
+**Uma Ordem de Venda é a confirmação de um pedido do seu cliente.**
 
-It is usually a binding Contract with your Customer. Once your customer confirms the Quotation you can convert your Quotation into a Sales Order.
+Normalmente é um Contracto com o seu Cliente. Uma vez a confirmação da Cotação pelo Cliente voce pode converter a Cotação em uma Ordem de Venda.
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/selling-flow-so.png">
 
-To access Sales Order, go to:
-> Home > Selling > Sales > Sales Order
+Para acessar Ordens de Venda, va para:
+> Home > Vendas > Vendas > Ordem de Venda
 
-## 1. Prerequisites
-Before creating and using a Sales Order, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar uma Ordem de Venda, é aconselhavel criar os seguintes:
 
-* [Customer](/docs/user/manual/en/CRM/customer)
-* [Item](/docs/user/manual/en/stock/item)
+* [Cliente](/docs/user/manual/pt/CRM/cliente)
+* [Item](/docs/user/manual/pt/inventario/item)
 
-## 2. How to create a Sales Order
-1. Go to the Sales Order list, click on New.
-1. Select the Customer.
-1. Set the 'Delivery Date' - applied to the whole order.
-1. With Order Type, you can set whether it's a Sales order, Maintenance order, or from the online [Shopping Cart](/docs/user/manual/en/website/shopping-cart) of your website. By default, this value is set to "Sales".
-1. In the "Customer's Purchase Order" you can enter the Customers Purchase Order No. or other details which may be useful as a reference.
-1. Enter the items and quantities to be delivered in the Item table. If Item Prices are set for the items, the Rate field will be populated automatically. If not, enter the item Rate manually. You can also overwrite the auto-populated Item Rate in case you want to change that value.
-1. Click "Save" to save a draft of the Sales Order.
-1. "Submit" to submit the Sales Order to the System.
+## 2. Como criar uma Ordem de Venda
+1. Va para a lista de Ordem de Venda, clique em Novo.
+1. Selecione o Cliente.
+1. Defina a 'Data de Entrega' - aplicada em toda a ordem.
+1. Com o Tipo de Ordem, voce pode definir se é uma Ordem de Venda, Ordem de Manutenção, ou Online [Shopping Cart](/docs/user/manual/pt/website/shopping-cart) na sua pagina. Por defeito, este valor esta definido para "Vendas".
+1. Na "Ordem de Compra do Cliente" voce pode digitar o Numero de Ordem de Compra do Cliente ou outros detalhes no qual podem ser uteis como referencia.
+1. Digite os itens e quantidades a serem entregues na tabela de Item. Se o Preço do Item estiver definido para os itens, o campo Preço irá ser preenchido automaticamente. Se não, digite o Preço manual. Voce pode escrever por cima dos Preços do Item preenchidos caso queira trocar o valor.
+1. Clique "Salvar" para salvar em rascunho a Ordem de Venda.
+1. "Submeter" para submeter a Ordem de Venda no Sistema.
 
-### 2.1 Other ways to create a Sales Order
-1. You can also create a Sales Order from a submitted Quotation via the Create button on the top right.
+### 2.1 Outras formas de criar uma Ordem de Venda
+1. Voce pode tambem criar uma Ordem de Venda apartir de uma Cotação submetida pelo botão Criar no topo a direita.
 
   <img class="screenshot" alt="Make Sales Order from Quotation" src="{{docs_base_url}}/assets/img/selling/make-SO-from-quote.png">
 
-1. Or you can create a new Sales Order and pull details from a Quotation.
+1. Ou pode criar uma Nova Ordem de Venda e puxar os detalhes aparti de uma Cotação.
 
   <img class="screenshot" alt="Make Sales Order from Quotation" src="{{docs_base_url}}/assets/img/selling/so-from-quote.gif">
 
-To allow for per-Customer, per-Item Pricing Rules, ("Customer A" pays $1.00 for "Item 1" but "Customer B" pays $1.25 for "Item 1"), there's a check box called 'Allow User to Edit Price List Rate in Transaction' in [Selling Settings](/docs/user/manual/en/selling/selling-settings). This enables saving the specific item price per customer when you change a price in the Sales Order.
+Para permitir por Cliente, por Regra de Preço, ("Cliente A" paga $1.00 por "Item 1" mas "Cliente B" paga $1.25 por "Item 1"), tem uma caixinha 'Permitir Usuario Editar a Lista de Preço numa Transação' em [Configurações de Venda](/docs/user/manual/pt/vendas/configurações-venda). Este permite salvar o preço especifico do item por cliente quando voce muda o preço na Ordem de Venda.
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1 Currency and Price List
-You can set the currency in which the quotation/sales order is to be sent. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on 'Ignore Pricing Rule' will ignore the [Pricing Rules](/docs/user/manual/en/accounts/pricing-rule) set in Accounts > Pricing Rule.
+### 3.1 Moeda e Lista de Preço
+Voce pode definir a moeda no qual a cotação/ordem de venda sera enviada. Se voce definir uma Lista de Preço, então os preços do item vao ser procurados apartir desta lista. Selecionando 'Ignorar Regra de Preço' irá ignorar as [Regras de Preço](/docs/user/manual/pt/contabilidade/regras-preço) definido em Contabilidade > Regras de Preço.
 
-To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
+Para saber mais sobre Listas de Preço, [Clique aqui](/docs/user/manual/pt/inventario/lista-preços).
 
-To know about managing transactions in multiple currencies, [click here](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
+Para saber como gerir transações em varias moedas, [clique aqui](/docs/user/manual/pt/contabilidade/artigos/gerir-transações-multiplas-moedas).
 
-### 3.1 Set Source Warehouse
-If you have the same stock in multiple warehouses, setting a warehouse here will cause all the items from the item table to be fetched from this warehouse. You need to have stock available in this 'source warehouse' you're setting. Note that this option will override the 'Default Warehouse' you've set in the Item master.
+### 3.1 Definir Armazem Fonte Padrão
+Se voce o mesmo stock em varios armazens, definindo um armazem aqui irá fazer com que todos os itens da tabela de itens procurem neste armazem. Voce precisar ter stock disponiveil no 'armazem fonte' que estiver a escolher. Note que esta opção irá subscrever o 'Armazem Padrão' que definiu na tabela Item.
 
-### 3.2 The Items Table
+### 3.2 A tabela de Itens
 
-* **Delivery Date against each item**: If there are multiple items and if you enter a delivery date in the first row, the date will be copied to other rows as well where it is blank. You'll have to set these if not set globally at the top of the Sales Order.
+* **Data de Entrega para cada item**: Se existem varios itens e voce digitou uma data de entrega na primeira linha, a data será copiada para todas as outras linhas até aonde estiver vazio. Voce tera de definir estes se não estiver definido no top da Ordem de Venda.
 
-    A Sales Order displays the billed amount, valuation rate, and gross profit in the items table when you click on the inverted triangle to expand a row.
+    Uma Ordem de Venda mostra o Valor cobrado, taxa de avaliação, e o lucro na tabela de itens quando voce faz um clique no triangulo invetido para alargar a linha.
 
-    You can also add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+    Voce pode tambem adiconar Itens na tabela de Itens fazendo o scan dos codigos de barra se voce tiver um leitor. Saiba como rastrear [aqui](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
 
-* **Delivery Warehouse**: This is the warehouse from where the stock will be picked to be delivered to your customer.
+* **Armazem de Entrega**: Este é o armazem no qual o stock sera levantado para ser entregue ao seu cliente.
 
-* **Drop Ship**: This is a situation where you do not keep items in stock in your own Warehouse but deliver items directly to a customer from a distributor. To enable drop shipping for an item tick on the 'Supplier delivers to Customer'. When you tick on this, the Delivery Warehouse option will disappear since you're not shipping the item. Select your supplier in the 'Supplier' field.
+* **Drop Ship**: Esta é uma situação aonde voce não guarda itens em armazem mas faz a entrega dos itens directamente ao cliente apartir do seu distribuidor. Para activar o drop shipping para um item selcione o 'Fornecedor entrega ao Cliente'. Quando voce activa isto, a opção do Armazem de Entrega ira desaparecer vendo que não a enviar o item. Selecione o fornecedor no campo 'Fornecedor'.
 
-    Further, if you create a purchase order from this sales order, it'll be created for the supplier you selected here and only the items which are valid for drop shipping.
+    Se voce criar uma Ordem de compra apartir desta ordem de venda, ela será criada para o fornecedor que voce selecionar aqui e somente os itens são validos para uma drop shipping.
 
-* **Planning**: To know about the fields under planning [click here](/docs/user/manual/en/stock/projected-quantity).
+* **Planeamento**: Para saber mais sobre os campos aqui no plano [clique aqui](/docs/user/manual/pt/inventario/quantidade-projectada).
 
-The other fields in the item table are similar as explained in [Quotation](/docs/user/manual/en/selling/quotation#23-the-items-table).
+Os outros campos na tabela de itens são similares como explicados em [Contações](/docs/user/manual/pt/vendas/proforma#33-os-itens-da-tabela).
 
-### 3.3 Packing List
+### 3.3 Lista de Pacotes
 
-This is linked to the [Product Bundle](/docs/user/manual/en/selling/product-bundle) and appears only when the transaction involves a product bundle.
+Este esta ligado a [Pacote de Produtos](/docs/user/manual/pt/vendas/pacode-de-produtos) e aparece somente quando a transação envolve um pacote de produto.
 
-The “Packing List” table will be automatically updated when you “Save” the Sales Order. If any Items in your table are Product Bundle (packets), then the “Packing List” will contain the exploded (detailed) list of your Items.
+A tabela “Lista de Pacote” sera actualizada automaticamente quando voce “Salva” a Ordem de Venda. Se algum Item na tua tabela for Pacote de Produto (pacotes), então a “Lista de Pacote” irá conter a lista (detalhada) dos seu Itens.
 
-You will be asked to select a Delivery Warehouse even for a product bundle item, this warehouse will be then updated in the Packing List items. You can change the warehouse, serial number, and batch in the packing list items in case items in your product bundle come from different warehouses.
+Sera pedido para selcionar o Armaem de Entrega mesmo para um item de pacote, este armazem sera actualizado depois na Lista de Pacotes do item. Voce pode mudar o Armazem, numero de serie e lote para os itens na lista de pacote no caso os itens no seu pacote de produtos forem diferentes que do armazem.
 
-Here is what a Packing List looks like:
+Aqui esta como a Lista de Pacotes fica:
 
 <img class="screenshot" alt="Packing List" src="{{docs_base_url}}/assets/img/selling/so-packing-list.png">
 
-### 3.4 Taxes and Charges
-To add taxes to your Quotation, you can select a [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template) or add the taxes manually in the Sales Taxes and Charges table.
+### 3.4 Impostos e Taxas
+Para adicionar impostos a sua Cotação, voce pode selecionar um [Modelo de Impostos de Vendas e Taxas](/docs/user/manual/pt/vendas/modelo-impostos-taxas-vendas) ou adiconar os impostos manualmente na tabela de Impostos de Vendas e Taxas.
 
-The total taxes and charges will be displayed below the table. Clicking on Tax Breakup will show all the components and amounts.
+O total das taxas e impostos vao ser mostrados na tabela. Clique em Tax Breakup para mostrar todos os componentes e valores.
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/sales-order-taxes.png">
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### Regra de Envio
+Uma Regra de Envio ajuda a definir o custo do envio de um Item. O custo normalmente irá aumentar com a distancia do envio. Para saber mais, visite a pagina [Regra de Envio](/docs/user/manual/pt/vendas/regra-envio).
 
-If a Tax Category is selected, the template and tax table will be automatically populated. To know more, visit [this page](/docs/user/manual/en/accounts/tax-category).
+Se uma Categoria de Imposto for selecionada, o modelo e a tabel de imposto sera automaticamente preenchida. Para saber mais, visite [esta pagina](/docs/user/manual/pt/contabilidade/categoria-imposto).
 
-### 3.5 Additional Discount
-Other than offering discount per item, you can add a discount to the whole sales order in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
+### 3.5 Desconto Adicional
+Para alem de oferecer desconto por item, voce pode adiconar um desconto para a ordem de venda completa nesta secção. Este desconto pode ser com base no Total Geral  i.e., depois do imposto/taxas ou Total Liquido i.e., antes imposto/taxas. O desconto adicoinar pode ser aplicado como percentagem ou valor.
 
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+Leia [Aplicando Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto) para mais detalhes.
 
-### 3.6 Payment Terms
-Sometimes payment is not done all at once. Depending on the agreement, half of the payment may be made before shipment and the other half after receiving the goods/services. You can add a Payment Terms template or add the terms manually in this section.
+### 3.6 Termos de Pagamento
+As vezes o pagamento não é feito na totalidade. Dependendo do acordo, metade do pagamento pode ser feito antes do envio e a outra metadad apos recepção dos bens/serviços. Voce pode adicionar modelo de Termos de Pagamento ou adiconar os termos manualmente nesta secção.
 
-To know more about Payment Terms, [click here](/docs/user/manual/en/accounts/payment-terms).
+Para saber sobre os Termos de Pagamento, [clique aqui](/docs/user/manual/pt/contabilidade/termos-pagamento).
 
-### 3.7 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.7 Termos e Condições
+Em transações de Vendas/Compras podem ter certos Termos e Condições com base no qual o Fornecedor fornece bens ou serviços ao Cliente. Voce pode aplicar os Termos e Condições a transações que vão aparecer ao imprimir o documento. Para saber sobre Termos e Condições, [clique aqui](/docs/user/manual/pt/configuração/imprimir/termos-e-condições)
 
-### 3.8 Print Settings
-#### Letterhead
-You can print your quotation/sales order on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 3.8 Configurações de Impressão
+#### Cabeçalho
+Voce pode imprimir a sua Cotação/Ordem de Venda com o cabeçalho da sua empresa. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'Agrupar itens iguais' irá agrupar os itens iguais adiconados varias vezes na tabela. Este pode ser visto quando imprimir.
 
-#### Print Headings
-Quotations can also be titled as “Proforma Invoice” or “Proposal”.
-You can do this by selecting a **Print Heading**. To create new Print Headings go to: Home > Settings > Printing > Print Heading. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalho
+Cotações podem ter o titulo de “Factura Proforma” ou “Proposta”.
+Voce pode fazer isso selecionando **Imprimir Cabeçalho**. Para criar um novo Imprimir Cabeçalho va para: Home > Configurações > Impressão > Imprimir Cabeçalho. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/imprimir-cabeçalhos).
 
-### 3.9 More Information
-* **Campaign:** A Sales campaign can be associated with the quotation. A set of quotations can be part of a sales campaign.
-* **Source:** A Lead Source type can be linked if quoting to a lead, whether from a campaign, from a supplier, an exhibition etc,. Select Existing Customer if quoting to a customer.
-* **Inter Company Order Reference**: If two of your companies are part of the same organization or have a parent-child relationship, you can link a Purchase Order to this Sales Order. Know more about inter-company invoicing [here](/docs/user/manual/en/accounts/inter-company-invoices).
-* **Project**: If your Sales Order is part of a project, you can link it here and the Project progress will be updated.
+### 3.9 Mais Informações
+* **Campanha:** Uma campanha de vendas pode ser associada com a cotação. Um conjunto de cotações podem fazer parte de uma campanha de vendas.
+* **Fonte:** O tipo de Fonte da Lead pode ser ligada se a cotação for para uma lead, uma campanha, apartir de um fornecedor, uma exibição,etc,. Selecionando um Cliente existente se for para um cliente.
+* **Referencia de Solicitação Entre Empresa**: Se duas ou mais empresa fazem parte da mesma organização ou tem uma relação, voce pode ligar a Ordem de Compra a esta Ordem de Venda. Saiba mais sobre facturas inter-empresas [aqui](/docs/user/manual/pt/contabilidade/facturas-inter-empresa).
+* **Projecto**: Se a Ordem de Venda fizer parte de um projecto, voce pode ligar aqui e o Progresso do Projecto ira actualizar.
 
-### 3.10 Billing and Delivery Status
+### 3.10 Cobrança e Status de Entrega
 
-* **Status**: The status of the Sales Order whether a Draft, On Hold, To Deliver and Bill, To Bill, To Deliver, Completed, Cancelled, or Closed.
-* **Amount Billed and Delivered percent**: The percentage of amount billed and the items delivered from the Sales Order.
+* **Status**: O status de Ordem de Vendas quer seja Rascunho, Em Espera, Para Entregar e Cobrar, Para Cobrar, Para Entregar, Completado, Cancelado ou Fechado.
+* **Valor Cobrado e Percentagem Entregue**: A percentagem do valor cobrado e os itens entregues apartir da Ordem de Venda.
 
-### 3.11 Commission
-If the sale took place via one of your Sales Partners, you can add their commission details here. Enter the commission rate and the commission amount will be displayed below.
+### 3.11 Comissão
+Se a venda teve lugar por intermedio de uma dos seus Parceiros de Venda, voce pode adicionar os detalhes de comissão aqui. Digite a taxa de comissão e o valor da comissão sera visivel.
 
-### 3.12 Sales Team
-**Sales Persons:** ERPNext allows you to add multiple Sales Persons who may have worked on this deal. You can change the contribution percentage of the Sales Persons and track how much incentives they earned on this deal.
+### 3.12 Equipes de Venda
+**Vendedor:** O ERPNext permite que voce adicione varios Vendedores que tenham trabalhado neste negocio. Voce pode mudar a percentagem de contribuição do Vendedor e rastrear o valor do incentivo que ganharam neste negocio.
 
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
-### 3.13 Auto Repeat Section
-Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/automation/auto-repeat).
+### 3.13 Secção Auto Repetição
+Auto repetir Ordens de Venda é como uma subscrição. Defina uma data de inicio e fim para a auto-repetição. Selecione a Auto repetição criada. Para saber mais sobre auto repetição [clique aqui](/docs/user/manual/pt/automação/repetição-automatica).
 
-### 3.14 After Submitting
-Sales Order is a “Submittable” transaction. You will be able to execute further steps (like making a Delivery Note) only after “Submitting” a Sales Order.
+### 3.14 Depois de Submeter
+Ordem de Venda é uma transação que pode ser “Submetida”. Voce poderá fazer mais passos (como criar uma Guia de Remessa) somente depois de “Submeter” a Ordem de Venda.
 
-Once you “Submit” your Sales Order, you can trigger actions from the Sales Order:
+Assim que “Submeter” a Ordem de Venda, voce pode acionar acções apartir da Ordem de Venda:
 
-* You can Add, Update, Delete items in the Sales Order by clicking on the **Update Items** button. However you cannot delete items which has already been delivered or has work order assigned to it.
+* Voce pode Adiconar, Actualizar, Apagar Itens na Ordem de Venda fazendo o clique no botão **Actualizar Itens**. Contudo voce não pode apagar itens que ja tenham sido entregues ou tenham ordem de trabalho atribuidas.
 
-* Status: Once submitted, you can hold a Sales Order or Close it.
+* Status: Uma vez submetido, voce pode por em espera ou Fechar.
 
-* Create: From a submitted Sales Order, you can create the following:
+* Criar: Apartir de uma Ordem de Venda Submetida, voce pode criar o seguinte:
 
-    * Delivery Note - To make a shipment entry. You can also make Delivery Note for selected items based on the delivery date.
-    * Work Order - To start a Work Order with the raw materials.
-    * Sales Invoice - To bill the Order.
-    * Material Request - To request re-stocking materials if out of stock.
-    * Request for Raw Materials - To request raw materials required for manufacturing.
-    * Project - To create a project based on the Sales Order.
-    * Subscription - To auto repeat the Sales Order, i.e., make it a subscription.
-    * Payment Request - To make a Payment Request.
-    * Payment - To record payment against the Sales Order.
+    * Guia de Remessa - Para dar entrada. Voce pode tambem criar uma Guia de Remessa para os itens selcionados com base na Data de Entrega.
+    * Ordem de Trabalho - Para começa a Ordem de Trabalho com as materias primas.
+    * Factura de Vendas - Para cobrar a Ordem.
+    * Solicitação de Material - Para pedir estocagem de materias se ja não tiver em armazem.
+    * Solicitação de Materias Primas - Para pedir materias primas necessarias para o fabrico.
+    * Projecto - Para criar um projecto com base em um Ordem de Venda.
+    * Subscrição - Para auto repetir uma Ordem de Venda, i.e., tornar uma subscrição.
+    * Pedido de Pagamento - Para criar uma Solicitação de Pagamento.
+    * Pagamento - Para registar um pagamento contra uma Ordem de Venda.
 
-These actions can also be seen at the top of the Dashboard. You can also make an accounting Journal Entry based on the Sales Order from the dashboard.
+Estas acções podem ser vistas tambem no topo do Dashboard. Voce pode tambem criar um Registo Contabilistico com base na Ordem de Venda apartir do dashboard.
 
 <img class="screenshot" alt="Actions from Submitted Sales Order" src="{{docs_base_url}}/assets/img/selling/submit-so.png">
 
-### 3.15 Sales Order with Order type 'Maintenance'
-When the 'Order Type' of the Sales Order is 'Maintenance' follow these steps:
+### 3.15 Ordem de Vendas com tipo de Ordem 'Manutenção'
+Quando o 'Tipo de Ordem' de uma Ordem de Venda for 'Manutenção' siga estes passos:
 
-1. Enter Currency, Price list, and Item details.
-2. Mention taxes and other information.
-3. Save and Submit the form.
-4. Once the form is submitted, the Create button will provide these choices specific to the maintenance Order Type.
+1. Digite a Moeda, Lista de Preço, e detalhes do Item.
+2. Mencione impostos e outras informações.
+3. Salve e Submeta o formulario.
+4. Uma vez o formulario submetido, o botão Criar irá mostrar estas opções para o Tipo de Ordem Manutenção.
 
-    i) Maintenance Visit ii) Maintenance Schedule.
+    i) Visita de Manutenção ii) Agendamento de Manutenção.
 
-  ![Sales Order Maintenance Type](/docs/assets/img/selling/so-maintenance.png)
+  ![Ordem de Venda do Tipo Manutenção](/docs/assets/img/selling/so-maintenance.png)
 
-> **Note 1:**
-By clicking on the Action button and selecting 'Maintenance Visit' you can directly fill the visit form. The Sales Order details will be fetched directly.
+> **Nota 1:**
+Ao fazer o clique no botão Acção e selecionando 'Visita de Manutenção' voce pode directamente preencher o formulatio de visita. Os detalhes da Ordem de Venda seram procurados directamente.
 
-> **Note 2:**
-By clicking on the Action button and selecting 'Maintenance Schedule' you can fill the schedule details. The Sales Order details will be fetched directly.
+> **Nota 2:**
+Ao fazer o clique no botão Accão e selecionando 'Agendamento de Manutenção' voce podera preencher os detalhes do agendamento. Os detalhes da Ordem de Venda seram procurados directamente.
 
-> **Note 3:**
-By clicking on the Invoice button you can make an Invoice for your
-services. The sales orders details will be fetched directly.
+> **Nota 3:**
+Ao fazer o clique no botão Factura voce pode criar a sua Factura de serviços. Os detalhes da Ordem de Venda seram procurados directamente.
 
-### 4. Related Topics
-1. [Quotation](/docs/user/manual/en/selling/quotation)
-1. [Close Sales Order](/docs/user/manual/en/selling/articles/close-sales-order)
-1. [Amending Sales Order After Submit](/docs/user/manual/en/selling/articles/amending-sales-order-after-submit)
-1. [Pick List](/docs/user/manual/en/stock/pick-list#21-create-pick-list-from-sales-order)
+### 4. Topicos Relacionados
+1. [Cotação](/docs/user/manual/pt/vendas/proforma)
+1. [Fechar Ordem de Vendas](/docs/user/manual/pt/vendas/artigos/fechando-ordens-vendas)
+1. [Corrigindo Ordens de Venda depois de Submetida](/docs/user/manual/pt/vendas/artigos/emendando-ordens-de-vendas-depois-de-submetido)
+1. [Lista de Escolhas](/docs/user/manual/pt/inventario/lista-de-escolhas#21-criar-a-lista-de-escolha-pela-ordem-de-vendas)
 
 {next}

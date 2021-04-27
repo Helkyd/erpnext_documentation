@@ -67,7 +67,7 @@ To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
 
 To know about managing transactions in multiple currencies, [click here](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
 
-### 3.3 The Items Table
+### 3.3 Os Itens da Tabela
 This table can be expanded by clicking on the inverted triangle present rightmost of the table.
 
 * On selecting Item Code, the following will be fetched automatically: item name, description, any image if set, quantity default as 1, the rates. You can add discounts in the Discounts and Margin section. 
