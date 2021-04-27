@@ -70,7 +70,7 @@ O sistema por defeito valida o preço do item e que será o mesmo durante o cicl
 
 ### 4.2 Permitir Usuario Editar Taxa de Lista de Preço em Transação
 
-A tabel do item nas transações de venda tem u mcampo chamado Taxa de Lista de Preço. Este campo não é editado por defeito em todas as transações de vendas. Isto é para ter a certeza que o preço de um item é procurado apartir do registo Preço do Item e o usuario não tenha a possibilidade de editar.
+A tabela do item nas transações de venda tem u mcampo chamado Taxa de Lista de Preço. Este campo não é editado por defeito em todas as transações de vendas. Isto é para ter a certeza que o preço de um item é procurado apartir do registo Preço do Item e o usuario não tenha a possibilidade de editar.
 
 Se voce precisa procurar o Preço do Item apartir da Lista de Preço de um item para ser editado, voce deve não selecionar esta campo.
 

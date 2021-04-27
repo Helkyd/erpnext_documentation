@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Sales Order
+# Ordens de Venda
 
 **A Sales Order is a confirmation of an order from your customer.**
 

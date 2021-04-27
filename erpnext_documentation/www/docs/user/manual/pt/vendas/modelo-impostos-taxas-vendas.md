@@ -1,57 +1,57 @@
 <!-- add-breadcrumbs -->
-# Sales Taxes and Charges Template
+# Impostos de Vendas e Modelo de Encargos
 
-**Sales Taxes and Charges may be applied to any item you sell.**
+**Impostos de Vendas e Taxas podem ser aplicadas a qualquer item que voce venda.**
 
-The templates created from this form can be used in Sales Orders and Sales Invoices.
+Os modelos criados apartir deste formulario podem ser usados em Ordens de Venda e Facturas de Venda.
 
-For Tax Accounts that you want to use in the tax templates, you must set the Account Type field as 'Tax' for that particular account. The way ERPNext sets up taxes is via templates. Other types of charges that
-may apply to your invoices (like shipping, insurance etc.) can also be configured as taxes.
+Para Contas de Impostos que voce quiser usar nos modelos de impostos, voce deve definir no campo Tipo de Conta como 'Imposto' para essa conta em particular. A forma como o ERPNext define os impostos é por via de modelos. Outros tipos de taxas que podem ser aplicadas as suas facturas 
+(como envio, seguro, etc.) tambem podem ser configurados como impostos.
 
-To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes).
+Para saber mais sobre configuração de impostos visite [esta pagina](/docs/user/manual/pt/configuração/configurar-impostos).
 
-To access Sales Taxes and Charges Template, go to:
-> Home > Selling > Settings > Sales Taxes and Charges Template
+Para acessar Impostos de Vendas e Modelo de Encargos, va para:
+> Home > Vendas > Configurações > Impostos de Vendas e Modelo de Encargos
 
-To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes)
+Para saber mais sobre impostos visite [esta pagina](/docs/user/manual/pt/configuração/configurar-impostos)
 
-## 1. How to add Sales Taxes/Charges via a template
-Before creating a new template, note that templates are already created for many of the commonly used taxes.
+## 1. Como adicionar Imposto de Vendas/Taxas via um modelo
+Antes de criar um novo modelo, note que os modelos ja foram criados para outros impostos.
 
-1. Go to the Sales Taxes and Charges Template list, click on New.
-2. Enter a title name for the Tax.
-3. Under type, set on what the tax will be calculated and the tax rate. There are five options under type for which tax will be calculated.
-  1. Actual: You can directly enter the amount for the expense.
-  1. On Net Total: On the net total of all the items.
-  1. On Previous Row Amount: This is for compounding the charges. For example, cess charges over the amount to which tax was already applied in the previous row.
-  1. On Previous Row Total: Same as above but applied on the total bill and not just the amount of an item.
-  1. On Item Quantity: Tax will be calculated as Tax Rate * Item Quantity. For example, if Tax Rate is 2% and number of Items is 1, then Tax Rate will be 4, if number of Items are 5, Tax Rate will be 10, and so on.
-4. Select an account head which has pre set tax rates or create your own.
-1. Selecting default will apply this template by default for new Sales transactions.
-5. Save.
-  ![Sales taxes](/docs/assets/img/selling/sales-taxes.png)
+1. Va para a lista Impostos de Vendas e Modelo de Encargos, clique em Novo.
+2. Digite o nome do titulo do Imposto.
+3. No Tipo, defina que imposto irá calcular e a valor. Tem cinco opções no tipo no qual o imposto será calculado.
+  1. Actual: Voce pode directamente digitar o valor das despesas.
+  1. No Total Liquido: No total liquido de todos os itens.
+  1. Na Linha do Valor Anterior: Este é para compor imopstos. Por exemplo, cess cobra o valor no qual o imposto ja foi aplicando na linha anterior.
+  1. Na Linha do Total Anterior: O mesmo que em cima mas aplicado no total cobrado e não somente no valor de um item.
+  1. Na Quantidade do Item: Imposto será calculado como Preço de Imposto * Quantidad do Item. Por exemplo, se o Preço do Imposto for 2% e o numero de Itens for 1, então o Preço do Imposto será 4, se o numero de Itens for 5, Preço do Imposto será 10, e assim por diante.
+4. Selecione uma Conta que tenha pre taxas de imposto ou crie as suas.
+1. Selecionando padrão irá aplicar o modelo por defeito para todas as novas transações de Vendas.
+5. Salve.
+  ![Impostos de Vendas](/docs/assets/img/selling/sales-taxes.png)
 
-**Is Inter State**: For India. On selection of a customer in Sales Invoice or Delivery Note, if the GST codes of place of supply and customer shipping address don't match, the template with 'Is Inter State' ticked will be set as the taxes template. If the place of supply and shipping address are the same, the default taxes template will be applied. This also applies to Purchase Invoice, on selection of Supplier, the templates are set depending on the addresses. For example, IGST.
+**Esta entre os estados**: Para India. Ao selcionar um cliente na Factura de Vendas ou Guia de Remessa, se o codigo GST do lugar de entrega e endereço de envio do cliente não forem iguais, o modelo com 'Esta entre os Estados' selecionado será definido como o modelo de impostos. Se o lugar de entrega e envio de endereço forem iguais, o modelo padão sera usado. Este é tambem aplicado a Facturas de Compra, a selecionar o Fornecedor, os modelos são definidos de acordo os endereços. Por exemplo, IGST.
 
-## 2. Features
-### 2.1 Sales Taxes and Charges table
+## 2. Funcionalidades
+### 2.1 Impostos de Vendas e Tabela de Taxas
 
-* **Consider Tax or Charge for**: Total - for the total of all items. Valuation - for each item. Valuation and total - apply tax/charge to both. [Check out this article](/docs/user/manual/en/accounts/articles/what-is-the-differences-of-total-and-valuation-in-tax-and-charges) to know the difference.
+* **Considere Imposto ou Cobre por**: Total - para o total de todos os itens. Avaliação - para cada item. Avaliação e total - aplica imposto/taxa para ambos. [verifique este artigo](/docs/user/manual/pt/contabilidade/artigos/qual-diferença-total-valuação-impostos-taxas) para saber a diferença.
 
-* **Reference Row #**: If tax is based on "Previous Row Total" you can select the row number which will be taken as a base for this calculation (default is the previous row).
-    ![Sales taxes table](/docs/assets/img/selling/sales-taxes-table.png)
+* **Linha de Referencia #**: Se o imposto for com base em "Linha do Total Anterior" voce pode selcionar o numero da linha no qual sera tido como base para este calculo (padrão é a linha anterior).
+    ![Tabela de Imposto de Vendas](/docs/assets/img/selling/sales-taxes-table.png)
 
-* **Is this Tax included in Basic Rate?**: If checked, the tax amount will be considered as already included in the Print Rate / Print Amount in the Item table of a transaction. This is useful when you want to give tax inclusive price to your customers. To account for tax inclusive rates, the system calculates the Net Amount by deducting the amount of tax to be applied then calculates the tax on it.
-* **Account Head:** The Account ledger under which this tax will be booked. If you select VAT or any other preset heads, the rate will be automatically filled.
-* **Cost Center:** If the tax/charge is an income (like shipping) or expense it needs to be booked against a Cost Center.
-* **Description:** Description of the tax (that will be printed in invoices/quotes).
-* **Rate:** The Tax rate, eg: 14 = 14% tax.
-* **Amount:** The Tax amount to be applied, eg: 100.00 = ₹100 tax.
+* **Esta o Imosto incluido no Preço Base?**: Se selecionado, o valor do imposto será considerado as ja incluido na Preço de Impressão / Valor de Impressão na tabela do Item de uma transação. Este é util quando voce quer dar preços incluindo imposto aos clientes. Para levar em conta os impostos incluidos nos preços, o sistema calcula o Valor Liquido por deduzindo o valor do imposto a ser aplicado e depois calcula o imposto sobre o mesmo.
+* **Cabeçalho de Conta:** A Conta do Razão no qual este imposto será alocado. Se voce selecionar VAT ou qualquer cabeçalho, o preço sera preenchido automaticamente..
+* **Centro de Custo:** Se o Imposto/Taxa for receita (como envio) ou despesa vai precisar ser alocado contra um Centro de Custo.
+* **Descrição:** Descrição do imposto (que sera impresso nas facturas/proformas).
+* **Taxa:** O preço da Taxa, eg: 14 = 14% imposto.
+* **Valor:** O valor da Taxa a ser aplicado, eg: 100.00 = ₹100 imposto.
 
-The tax rates you define in the template be the standard tax rate for all Items. If there are Items that are supposed have different rates, you can override the standard tax rate by setting an Item Tax Template to the Item or Item Group.
+As taxas do imposto voce define no modelo para ser a taxa padrão para todos os Itens. Se houver Itens que devem ter uma taxa diferente, voce pode passar por cima da taxa padrão do imposto definindo o Modelo de Imposto do Imte para o Item ou Grupo de Item.
 
-### 3. Related Topics
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Selling Settings](/docs/user/manual/en/selling/selling-settings)
+### 3. Topicos Relacionados
+1. [Ordens de Venda](/docs/user/manual/pt/vendas/ordem-vendas)
+1. [Configurações de Venda](/docs/user/manual/pt/vendas/configurações-venda)
 
 {next}
