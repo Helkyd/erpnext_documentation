@@ -1,33 +1,33 @@
 <!-- add-breadcrumbs -->
-#Applying a Discount
+#Aplicando um Desconto
 
-There are several ways to apply a Discount on an item in a sales transactions. This can be done in all sales and purchase transactions.
+Existem varias maneiras para aplicar um Desconto em um item em transações de vendas. Isto pode ser feito em todas as transações de vendas e compras.
 
-## 1. Discount on Price List Rate of an item
+## 1. Descontar na Lista de Preço de um item
 
-You can find the Discount field in the Item table of a transaction, click on the downward arrow at the righ-hand side of a row. A Discount can be applied as a percentage or a fixed amount related to the Price List Rate of the Item.
+Voce pode  encontrar o campo de Desconto na tabela do Item de uma transação, clique na seta para baixo no lado esquerdo de um linha. O Desconto pode ser aplicado cmoo percentagem or valor fixo relacionado a Lista de Preço de um Item.
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-1.png">
 
-The feature of Discount (%) is available in all sales and purchase transactions.
+A funcionalidade do Desconto (%) está disponivel em todas as transações de vendas e compras.
 
-If you want to apply a discount (as a Percentage) regularly for certain quantities you'd rather use a "Pricing Rule" [Click here to learn more about Pricing Rule  functionality](/docs/user/manual/en/accounts/pricing-rule).
+Se voce quiser aplicar um desconto (como uma Percentagem) regularmente para algumas quantidades voce pode usar "Regra de Preços" [clique aqui para aprender mais sobre a funcionalidade de Regra de Preços](/docs/user/manual/pt/contabilidade/regras-preço).
 
-## 2. Discount on Net Total or Grand Total
+## 2. Desconto no Total Liquido ou Total Geral
 
-In the "Additional Discount" section (of a "Sales Order" or "Sales Invoice" alike), you can apply a Discount as a fixed amount or a percentage on the total sum of the Sales.
+Na secção "Desconto Adicional" (de uma "Ordem de Vendas" ou "Facturas de Venda"), voce pode aplicar um Desconto como um valor fixo ou uma percentagem no total da soma das Vendas.
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-2.png">
 
-### 2.1 Discount on "Net Total"
+### 2.1 Desconto em "Total Liquido"
 
-If a Discount is applied on **Net Total**, then item's Net Rate and Net Amount is calculated as per the Discount Amount. Net Rate and Amount field will be visible only if Discount is applied using this feature.
+Se o Desconto for aplicado em **Total Liquido**, então o Preço Liquido e Valor Liquido dos itens é calculado pelo Valor do Desconto. O campo Preço Liquido e Valor sera visivel somente se o Desconto for aplicado para esta funcionalidade.
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-on-net-total.png">
 
-### 2.2 Discount on "Grand Total"
+### 2.2 Desconto no "Total Geral"
 
-If a Discount is applied based on the **Grand Total**, then with item's Net Rate, Net Amount as well as taxes are also re-calculated as per Discount Amount.
+Se o Desconto for aplicado com base no **Total Geral**, então com o Preço Liquido, Valor Liquido dos itens bem como os impostos são tambem recalculados pelo Valor do Desconto.
 
 <img alt="Discount Percentage" class="screenshot" src="{{docs_base_url}}/assets/img/articles/discount-on-grand-total.png">
 

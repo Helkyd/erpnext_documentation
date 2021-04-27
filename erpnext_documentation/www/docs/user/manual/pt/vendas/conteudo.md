@@ -1,59 +1,59 @@
 <!-- add-breadcrumbs -->
 # Vendas
 
-Selling is the communication that happens with the customer prior to and
-during the sale. You might be managing all the communication yourself or you
-may have a small team of sales people to handle this. ERPNext helps you track
-the communication leading up to the sale by keeping all your documents in an
-organized and searchable manner.
+Vender é a comunicação que acontece com o cliente antes e durante a venda.
+Voce pode estar a gerir todas as comunicações voce mesmo ou voce tem que
+ter um pequeno grupo de vendas de pessoas para girir. O ERPNext ajuda voce 
+gerir a comunicação das vendas gerindo todos os documentos de forma organizada
+e procurar de forma organizada.
 
-## 1. Topics
+## 1. Topicos
 
-### 1.1 Sales
-1. [Quotation](/docs/user/manual/en/selling/quotation)
-1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Brand](/docs/user/manual/en/selling/brand)
-1. [Blanket Order](/docs/user/manual/en/selling/blanket-order)
-1. [Sales Analytics](/docs/user/manual/en/selling/sales-analytics)
-1. [Sales Partner](/docs/user/manual/en/selling/sales-partner)
-1. [Territory](/docs/user/manual/en/selling/territory)
-1. [Coupon Code](/docs/user/manual/en/website/coupon-code)
+### 1.1 Vendas
+1. [Cotação](/docs/user/manual/pt/vendas/proforma)
+1. [Ordem de Vendas](/docs/user/manual/pt/vendas/ordem-vendas)
+1. [Marca](/docs/user/manual/pt/vendas/marca)
+1. [Ordem de Cobertura](/docs/user/manual/pt/vendas/pedido-cobertura)
+1. [Analise de Vendas](/docs/user/manual/pt/vendas/analise-vendas)
+1. [Parceiro de Vendas](/docs/user/manual/pt/vendas/parceiro-vendas)
+1. [Territorio](/docs/user/manual/pt/vendas/territorio)
+1. [Coupon Code](/docs/user/manual/pt/website/coupon-code)
 
-### 1.2 Setup
-1. [Selling Settings](/docs/user/manual/en/selling/selling-settings)
-1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Shipping Rule](/docs/user/manual/en/selling/shipping-rule)
-1. [Product Bundle](/docs/user/manual/en/selling/product-bundle)
-1. [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation)
-1. [Sales Taxes and Charges Template](/docs/user/manual/en/selling/sales-taxes-and-charges-template)
+### 1.2 Configurações
+1. [Configurações de Venda](/docs/user/manual/pt/vendas/configurações-venda)
+1. [Preço do Item](/docs/user/manual/pt/inventario/preço-item)
+1. [Regra de Envio](/docs/user/manual/pt/vendas/regra-envio)
+1. [Pacote de Produtos](/docs/user/manual/pt/vendas/pacote-de-produtos)
+1. [Sales Person Target Allocation](/docs/user/manual/pt/vendas/sales-person-target-allocation)
+1. [Modelo de Impostos de Venda e Taxas](/docs/user/manual/pt/vendas/modelo-impostos-taxas-vendas)
 
-## 2. Articles
-### 2.1 Sales
-1. [Sales Persons in the Sales Transactions](/docs/user/manual/en/selling/articles/sales-persons-in-the-sales-transactions)
-1. [Request for Raw Materials from Sales Order](/docs/user/manual/en/selling/articles/request-for-raw-materials-from-sales-order)
-1. [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount)
-1. [Close Sales Order](/docs/user/manual/en/selling/articles/close-sales-order)
+## 2. Artigos
+### 2.1 Vendas
+1. [Vendedores nas Transações de Vendas](/docs/user/manual/pt/vendas/artigos/vendedores-nas-transacoes-de-vendas)
+1. [Solicitação de Materias Primas Apartir das Ordens de Vendas](/docs/user/manual/pt/vendas/artigos/solicitacao-materias-primas-apartir-ordens-vendas)
+1. [Aplicando Descontos](/docs/user/manual/pt/vendas/artigos/aplicando-desconto)
+1. [Fechando Ordens de Vendas](/docs/user/manual/pt/vendas/artigos/fechando-ordens-vendas)
 
-### 2.2 Advanced
-1. [Selling in Different UOM](/docs/user/manual/en/selling/articles/Selling-in-different-UOM)
-1. [Adding Margin](/docs/user/manual/en/selling/articles/adding-margin)
-1. [Amending Sales Order After Submit](/docs/user/manual/en/selling/articles/amending-sales-order-after-submit)
-1. [Drop Shipping](/docs/user/manual/en/selling/articles/drop-shipping)
+### 2.2 Avançado
+1. [Vendendo em UDM Diferentes](/docs/user/manual/pt/vendas/artigos/vendendo-em-UDM-diferente)
+1. [Adicionando Margens](/docs/user/manual/pt/vendas/artigos/adicionando-margens)
+1. [Emendando Ordens de Vendas Depois de Submetido](/docs/user/manual/pt/vendas/artigos/emendando-ordens-de-vendas-depois-de-submetido)
+1. [Drop Shipping](/docs/user/manual/pt/vendas/artigos/drop-shipping)
 
-### 2.3 Other
-1. [ERPNext For Services Organization](/docs/user/manual/en/selling/articles/erpnext-for-services-organization)
-1. [Shipping Rule](/docs/user/manual/en/selling/articles/shipping-rule)
+### 2.3 Outros
+1. [ERPNext para Organização de Serviços](/docs/user/manual/pt/vendas/artigos/erpnext-para-organizacao-de-servicos)
+1. [Regras de Envio](/docs/user/manual/pt/vendas/artigos/regras-de-envio)
 
 ## 3. Videos
-### 3.1 Sales
-1. [Customer](/docs/user/videos/learn/customer-and-supplier.html)
-1. [Product Bundle](/docs/user/videos/learn/product-bundle.html)
-1. [Sales Cycle](/docs/user/videos/learn/sales-cycle.html)
+### 3.1 Vendas
+1. [Cliente](/docs/user/videos/learn/customer-and-supplier.html)
+1. [Pacote de Produtos](/docs/user/videos/learn/product-bundle.html)
+1. [Ciclo de Vendas](/docs/user/videos/learn/sales-cycle.html)
 
-### 3.2 Advanced
+### 3.2 Avançado
 1. [Drop Ship](/docs/user/videos/learn/drop-ship.html)
-1. [Pricing Rule](/docs/user/videos/learn/pricing-rule.html)
+1. [Regras de Preço](/docs/user/videos/learn/pricing-rule.html)
 
-### 3.3 Other
-1. [Discounts](/docs/user/videos/learn/discounts.html)
-1. [Taxes](/docs/user/videos/learn/taxes.html)
+### 3.3 Outros
+1. [Descontos](/docs/user/videos/learn/discounts.html)
+1. [Impostos](/docs/user/videos/learn/taxes.html)
