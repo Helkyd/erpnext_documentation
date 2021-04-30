@@ -7,5 +7,5 @@ configurações-venda
 preço-item
 regra-envio
 pacote-de-produtos
-sales-person-target-allocation
+alocacao-metas-vendedores
 modelo-impostos-taxas-vendas

@@ -1,62 +1,62 @@
 <!-- add-breadcrumbs -->
-#Product Bundle
+#Pacote de Produtos
 
-**A Product Bundle is a master where you can list existing items which are bundled together and sold as a set (or bundle).** 
+**Um Pacote de Produto é um ficheiro mestre aonde voce pode listar os itens existentes que estão agrupados e vendidos como um conjunto (ou pacote).** 
 
-For instance, when you sell a smartphone, you need to ensure that the charger, cable, and sim ejector pin are delivered with it and stock levels of these items get affected. 
-To address this scenario, you can create a Product Bundle for the main item, i.e. smartphone. Then list deliverable items i.e. smartphone + charger + cable + sim ejector pin as so-called "Child Items".
+Por exemplo, quando voce vende um telefone, voce precisa ter a certeza que o carregador, cabo, e injector do sim são entregues e que o nivel de stock destes itens são deduzidos. 
+Para endereçar este cenario, voce criar um Pacote de Produtos para o item principal, i.e. telefone. Depois lista itens a serem entregues i.e. telefone + carregador + cabo + injector do sim como são chamados de "Filho dos Itens".
 
-A Product Bundle can be seen as a "Bill-of-Materials" on the Sales side. 
+Um Pacote de Produtos pode ser visto como uma "Lista-de-Materiais" no lado das vendas. 
 
-Following are the steps to set up a Product Bundle and using it in sales transactions.
+De seguinda são os passos para configurar um Pacote de Produtos e usar nas transações de vendas.
 
-To access product bundle, go to:
-> Home > Selling > Items and Pricing > Product Bundle
+Para acessar Pacote de Produtos, va para:
+> Home > Vendas > Itens e Preços > Pacote de Produtos
 
-## 1. Prerequisites
-Before creating and using a Product Bundle, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar um Pacote de Produto, é aconselhavel que voce crie os seguintes:
 
-* [Item](/docs/user/manual/en/stock/item)
+* [Item](/docs/user/manual/pt/inventario/item)
 
-## 2. How to create a Product Bundle
-1. Go to the Product Bundle list, click on New.
-2. Select Parent Item, create one if not already created. Make sure Maintain Stock in unchecked when creating a Parent Item. eg: Dinner Set.
-1. Enter a price for the parent item, this will be fetched when making a transaction.
-1. You can enter a description for internal use.
-3. Enter the products to be bundled in the Items table and enter their quantities.
-4. Save.
+## 2. Como criar um Pacote de Produtos
+1. Va para a lista de Pacote de Produtos, clique em Novo.
+2. Selecione o Item principal (Pai), crie um se não estiver ja criado. Tenha a certeza de ter Actualizar Stock não activo ao criar um Item principal (Pai). eg: Conjunto de Jantar.
+1. Digite o preço para o parente do item, este será procurado ao criar a transação.
+1. Voce pode digitar uma descrição para uso interno.
+3. Digite os produtos para fazerem parte do pactoe na tabela de Itens e digite as quantidades.
+4. Salve.
 <img class="screenshot" alt="Product Bundle" src="{{docs_base_url}}/assets/img/selling/product-bundle.png">
 
-### 2.1 Selecting Parent Item
+### 2.1 Selecionando o Item Principal (Pai)
 
-In Product Bundle master, there are two sections. The "Parent Item" and a List of items to be shipped (Child Items).
+No Pacote de Produtos, tem duas secções. O "Item Principal" e a lista de itens a ser entregue (Child Items).
 
-The "Parent Item" should be seen more like a vessel or virtual item and not a physical product.
-The "Parent Item" must be a <b>non-stock item</b>. To create a <b>non-stock item</b> you have to unmark "Maintain Stock" in the Item Form.
-This is a non-stock item because there is no stock maintained for it but only for the "Child Items". 
-If you want to maintain stock for the Parent Item, then you must create a regular Bill of Material (BOM) 
-and package them using Stock Entry Transactions.
+O "Item Principal" deve ser visto como um navio ou item virtual e não como um produto fisico.
+O "Item Principal" deve ser um <b>item de não stock</b>. Para criar um <b>item de não stock</b> voce desmarcar "Manter Stocks" no Formulario do Item.
+Este é um item de não stock porque não tem em armazem somente os "Itens filhos". 
+Se voce quiser manter stock para Itens Principais, voce deve criar uma Lista de Material (LDM) 
+e empacotar usando Transações de Entrada de Stock.
 
-### 2.2 Selecting Child Items
+### 2.2 Selecionado Itens de Filho
 
-In the Items table, you will list all the child items for which we maintain stock and is delivered to customer.
-Remember: The "Parent Item" is just virtual, so your main product (a smartphone in our example here) also has to be listed on the List of Child (or Package) Items.
+Na tabel de Itens, voce irá listar todos os itens filho do qual nós mantemos o stock e são entregues ao cliente.
+Lembre-se: O "Item Principal" é somente virtual, então o seu produto principal (um telefone no exemplo aqui) tambem de ser ser listado na Lista de Itens filhos dos Itens (ou Pacote).
 
-## 3. Features
-### 3.1 Product Bundle in the Sales Transactions
+## 3. Funcionalidades
+### 3.1 Pacote de Produtos numa Transaçãode Vendas
 
-When making Sales transactions (Sales Invoice, Sales Order, Delivery Note) the Parent Item will be selected in the main item table.
+Ao fazer transações de Vendas (Factura de Vendas, Ordem de Vendas, Guia de Remessa) o Item Principal irá ser selecionado na tabela principal do item.
 
 <img class="screenshot" alt="Product Bundle" src="{{docs_base_url}}/assets/img/selling/product-bundle.gif">
 
-On selection of a Parent Item in the main item table, its child items will be fetched in Packing List table of the transaction. If child item is the serialized item, you will be able to specify its Serial No. 
-in packing List table itself. On submission of the transaction, the system will reduce the stock level of child items from warehouse specified in Packing List table.
+Na seleção de um Item Principal na tabel de itens, os itens filho serao procurados na tabela de Pacote de Produtos da transação. Se o iten filho tiver numero de serie, voce irá poder especificar o Numero de Serie
+na tabela de pacote. Ao submeter a transação, o sistema irá deduzir o nivel de stock dos itens filho apartir do armazem especificado na tabela de Pacote de Produtos.
 
-<div class="well"><b>Use Product Bundle to Manage Offers/Schemes:</b>
+<div class="well"><b>Utilizando Pacote de Produtos para Gerir Ofertas/Esquemas:</b>
 <br>
-This was discovered when a customer dealing into nutrition products asked for a feature to manage offers like "Buy One Get One Free". To manage the same, he created a non-stock item which was used as Parent Item. In description of item, he entered offer details with the item's image displaying the offer. The sellable product was selected in Package Item where qty was two. Hence every time they sold one qty of Parent item under this offer, the system deducted two quantities of product from Warehouse.</div>
+Este foi descoberto quando um cliente ao negociar produtos de nutrição pediu a funcionalidade para gerir ofertas como "Compre Um Leve mais Um". Para gerir o mesmo, ele criou um item não stock que foi usado como Item Principal. Na descrição do item, ele inseriu os detalhes da oferta com a imagem do item mostrando a oferta. O produto em venda foi selecionado no Pacote de Produtos aonde a quantidade foi dois. Assim sendo sempre que eles vendem uma quantidade do item principal dentro da oferta, o sistema deduz duas quantidades do produto no Armazem.</div>
 
-### 4. Related Topics
-1. [Item](/docs/user/manual/en/stock/item)
+### 4. Topicos Relacionados
+1. [Item](/docs/user/manual/pt/inventario/item)
 
 {next}
