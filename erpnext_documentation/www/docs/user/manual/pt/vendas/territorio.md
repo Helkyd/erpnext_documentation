@@ -1,40 +1,40 @@
 <!-- add-breadcrumbs -->
-# Territory
+# Territorio
 
-**A Territory is a geographical region you do business in.**
+**Um Territorio é uma região geografica aonde voce faz os negocios.**
 
-In ERPNext, a Territory is used to classify Customers, Addresses, in accounting report, and to allocated sales targets.
+No ERPNext, um Territorio é usado para classificar Clientes, Endereços, no relatorio de contabilidade, e para alocação de Metas de Vendas.
 
-To access the Territory list, go to:
-> Home > Selling > Settings > Territory
+Para acessar a lista de Territorios, va para:
+> Home > Vendas > Configurações > Territorio
 
-## 1. How to create a Territory
-1. Go to the Territory list, click on New.
-1. Tick 'Group Node' if there'll be sub-territories under this Territory. For example, France is a group Territory and Paris is a sub-territory.
-1. Save.
+## 1. Como criar um Territorio
+1. Va para a lista de Territorio, clique em Novo.
+1. Selecione 'No de Grupo' se houver sub-territorios em baixo deste Territorio. Por exemplo, França é um grupo de Territorio e Paris um sub-territorio.
+1. Salve.
 
-    ![Territory List](/docs/assets/img/selling/territory-list.png)
+    ![Lista de Territorios](/docs/assets/img/selling/territory-list.png)
 
-You can add multiple sub-territories under a parent territory. On saving, a territory can be selected in transactions and reports.
+Voce pode adicionar varios sub-territorios em baixo do territorio principal. A salvar, o territorio pode ser selecionado em transações e relatorios.
 
-## 2. Features
+## 2. Funcionalidade
 
-### 2.1 Assigning a Territory manager
-You can assign a Territory Manager who looks after the Sales of of this region. This isa
+### 2.1 Atribuindo um Gestor de Territorio
+Voce pode atribuir um Gestor de Territorio que irá tomar conta das vendas desta região. 
 
-### 2.2 Setting Sales Targets
-Here you can set specific sales targets based on the following fields:
+### 2.2 Configurando Metas de Vendas
+Aqui voce pode definir metas especificas de vendas com base nos seguintes campos:
 
-* Item Group
-* Fiscal Year
-* Target Qty
-* Target Amount
-* Target Distribution
+* Grupo do Item
+* Ano Fiscal
+* Qtd Alvo
+* Valor Alvo
+* Objectivo de Distribuição
 
-![Territory Target](/docs/assets/img/selling/territory-target.png)
+![Territorio Alvo](/docs/assets/img/selling/territory-target.png)
 
-To know more about setting sales targets, visit the [Sales Person Target Allocation](/docs/user/manual/en/selling/sales-person-target-allocation) page
+Para saber mais sobre configurando meta de vendas, visite a pagina [Alocação de Metas do Vendedor](/docs/user/manual/pt/vendas/alocacao-metas-vendedores).
 
-## 3. Related Topics
-1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Address](/docs/user/manual/en/CRM/address)
+## 3. Topicos Relacionados
+1. [Cliente](/docs/user/manual/pt/CRM/cliente)
+1. [Endereço](/docs/user/manual/pt/CRM/endereço)

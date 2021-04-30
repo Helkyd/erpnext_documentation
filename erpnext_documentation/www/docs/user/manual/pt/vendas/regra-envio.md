@@ -1,31 +1,31 @@
 <!-- add-breadcrumbs -->
-# Shipping Rule
+# Regra de Envio
 
-**Using Shipping Rule you can define the cost for delivering the product to the customer the supplier.**
+**Usando Regra de envio voce pode definir o custo da entrega do produto para o cliente.**
 
-You can define different shipping rules or a fixed shipping amount for the same item across different territories.
+Voce pode definir regras de envio diferentes ou um valor fixo de envio para o mesmo item para diferentes territorios.
 
-To access Shipping Rule, go to:
-> Home > Selling > Items and Pricing > Shipping Rule
+Para acess as Regras de Envio, va para:
+> Home > Vendas > Itens e Preços > Regras de Envio
 
-## 1. How to create a Shipping Rule
-1. Go to the Shipping Rule list, click on New.
-2. Enter the Shipping Rule label, for example 'Priority Shipping' or 'Next Day Shipping'.
-3. Proceed with accounting details like Shipping Account, Cost Center to which amount will be charged, and Shipping Amount.
-4. Under Calculate Based On, you can also change the calculation on which the Shipping Rule will be applied like net total quantity or net total weight, by default it is "Fixed".
-5. Save.
+## 1. Como criar uma Regra de Envio
+1. Va para a lista de Regras de Envio, clique em Novo.
+2. Digite o nome da Regra de Envio, por exemplo 'Envio com Prioridade' ou 'Enviar Dia Seguinte'.
+3. Proceda com os detalhes da conta como Conta de Envio, Centro de Custo no qual o valor será cobrado, e valor do Envio.
+4. Em baixo do Cacular Com base, voce poide tambem modificar o calculo no qual a Regra de Envio será aplicada a quantidade do total liquido ou peso do total liquido, por defeito é "Fixo".
+5. Salvar.
 
     <img class="screenshot" alt="Shipping Rule" src="{{docs_base_url}}/assets/img/selling/shipping-rule.png">
 
-## 2. Features
-### 2.1 Shipping Rule Conditions
-On selecting Net Total or Net Weight, a table will appear where you can set the from and to values for the amount or weight. Enter the Shipping Amount to be calculated for the entered range. Add more conditions as necessary. You can select only one of the three calculation methods in one Shipping Rule. 
+## 2. Funcionalidades
+### 2.1 Condições de Regras de Envio
+Ao selecionar o Total Liquido ou Peso Liquido, a tabela irá aparecer aonde poderá definir os valores DE e PARA para os valor ou peso. Digite o Valor do Envio para ser calculada pelo distancia digitada. Adicione condições se necessario. Voce pode selecionar somente um dos três metodos de calculo para uma Regra de Envio. 
 
-### 2.2 Restrict to Countries
-You can restrict the Shipping Rule to certain countries, add the countries in the table. By default, the Shipping Rule will be applicable globally.
+### 2.2 Restricto para Paises
+Voce pode restringir as Regras de Envio para certos Paises, adiones os paises na tabela. Por defeito, a Regra de Envio será aplicada no geral.
 
-### 3. Related Topics
-1. [Drop Shipping](/docs/user/manual/en/selling/articles/drop-shipping)
-1. [Customer](/docs/user/manual/en/CRM/customer)
+### 3. Topicos Relacionados
+1. [Drop Shipping](/docs/user/manual/pt/vendas/artigos/drop-shipping)
+1. [Cliente](/docs/user/manual/pt/CRM/cliente)
 
 {next}

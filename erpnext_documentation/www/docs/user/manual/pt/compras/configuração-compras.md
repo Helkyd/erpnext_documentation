@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Buying Settings
+# Configuração de Compras
 
 Buying Settings is where you can define properties which will be applied in the Buying module's transactions.
 You can find Buying Settings at:
