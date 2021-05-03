@@ -1,81 +1,81 @@
 <!-- add-breadcrumbs -->
-# Supplier Quotation
+# Proforma do Fornecedor
 
-**A Supplier Quotation is document by a potential supplier specifying the cost of goods or services they'll provide within a specified period.**
+**Uma Proforma do Fornecedor é o documento de um potencial fornecedor especificando os bens ou serviços que eles tem dentro de um periodo de tempo.**
 
-A Supplier Quotation may also contain terms of sale, terms of payment, and warranties. Acceptance of quotation by the buyer can be considered as an agreement binding on both parties.
+Uma Proforma de Fornecedor poide tambem ter termos de venda, termos de pagamento e garantias. Aceitação da proforma pelo comprador pode ser considerado como um acordo por ambas as partes.
 
-![Buying Flow](/docs/assets/img/buying/buying_flow_sq.png)
+![Fluxo de Compras](/docs/assets/img/buying/buying_flow_sq.png)
 
-To access Supplier Quotation, go to:
-> Home > Buying > Purchasing > Supplier Quotation
+Para acessar a Proforma do Fornecedor, va para:
+> Home > Comprar > Aquisição > Cotação do Fornecedor
 
-## 1. Prerequisites
-Before creating and using a Supplier Quotation, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar a Cotação de Fornecedor, é aconselhavel criar os seguintes:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* [Item](/docs/user/manual/en/stock/item)
+* [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+* [Item](/docs/user/manual/pt/inventario/item)
 
-## 2. How to create a Supplier Quotation
+## 2. Como criar uma Cotação de Fornecedor
 
-### 2.1 Supplier Quotation from Material Request
+### 2.1 Cotação de Fornecedor apartir de uma Solicitação de Material
 
-You can make a supplier quotation from a Material Request:
-![Supplier Quotation from Material Receipt]({{docs_base_url}}/assets/img/buying/supplier-quotation-from-mr.png)
+Voce pode criar uma cotação de fornecedor apartir de uma Solicitação de Material:
+![Cotação de Fornecedor apartir de um Recibo de Material]({{docs_base_url}}/assets/img/buying/supplier-quotation-from-mr.png)
 
-Or:
+Ou:
 
-A Supplier Quotation can be created from a [Supplier master](/docs/user/manual/en/buying/supplier).
+Uma Cotação de Fornecedor pode ser criado apartir do [Ficha do Fornecedor](/docs/user/manual/pt/compras/fornecedor).
 
-Or:
+Ou:
 
-The supplier can submit you a quotation himself via ERPNext. To know more about this, see section visit the [Request for Quotation page](/docs/user/manual/en/buying/request-for-quotation#4-creating-a-supplier-quotation-after-rfq).
+O fornecedor pode submeter uma proforma ele mesmo via ERPNext. Para saber mais sobre isto, visite a secção [pagina de Solicitção de Cotação](/docs/user/manual/pt/compras/solicitação-cotação#4-criando-uma-cotação-de-fornecedor-depois-de-um-sdq).
 
-### 2.2 Creating a Supplier Quotation manually
-1. You can also make a Supplier Quotation directly from:
+### 2.2 Criando uma Cotação de Fornecedor manual
+1. Voce pode tambem criar uma Cotação de Fornecedor directamente apartir de:
 
-    **Buying > Purchasing > Supplier Quotation > New**.
-1. Select the Supplier who sent you the quotation.
-1. The Address and Contact will be fetched if you've saved it in the supplier master.
-1. Enter the Item code, select the quantity. Rate will be fetched if you've set the Standard Buying rate for the item in [Item Price](/docs/user/manual/en/stock/item-price).
+    **Comprar > Aquisição > Cotação do Fornecedor > Novo**.
+1. Selecione o Fornecedor que enviou a proforma.
+1. O Endereço e Contacto sao procurados e voçe salvou na ficha do fornecedor.
+1. Digite o Codigo do Item, selecione a quantidade. Preço sera procurado se voce definiu o preço de Compra Padrão para o item em [Preço do Item](/docs/user/manual/pt/inventario/preço-item).
     <img class="screenshot" alt="Supplier Quotation" src="{{docs_base_url}}/assets/img/buying/supplier-quotation.png">
 
-If you have multiple Suppliers who supply you with the same Item, you
-usually send out a [Request for Quotation](/docs/user/manual/en/buying/request-for-quotation) to various Suppliers. In
-many cases, especially if you have centralized buying, you may want to record all the quotes so that:
+Se voce tem varios Fornecedores que fornecem o mesmo Item, voce normalmente
+envia uma [Solicitação de Cotação](/docs/user/manual/pt/compras/solicitação-cotação) para varios Fornecedores. Em muitos dos casos,
+especialmente se voce tem compras centralizadas, voce pode quere guardar registo de todas as cotações para que:
 
-  * You can easily compare prices in the future
-  * Audit whether all Suppliers were given the opportunity to quote.
+  * Voce pode facilmente comparar os preços no futuro
+  * Auditar para verificar se todos os Fornecedores foram dados a oportunidade.
 
-Supplier Quotations are not necessary for most small businesses. Always
-evaluate the cost of collecting information to the value it really provides!
-As a recommendation, you can do this only for high value items.
+Cotação de Fornecedores não necessario para os pequenos negocios. Avalie sempre o custo
+de recolher informação pelo valor que realmente vale!
+Como uma recomendação, voce pode fazer isto somente para itens de grande valor.
 
-## 3. Features
-### 3.1 Taxes and Charges
-If your Supplier is going to charge you additional taxes or charge like a shipping or insurance charge, you can add it here. This will help you accurately track your costs. Also, if some of these charges add to the value of the product you will have to mention them in the Taxes table. You can also use templates for your taxes. For more information on setting up your taxes see the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template).
+## 3. Funcionalidades
+### 3.1 Impostos e Taxas
+Se o seu Fornecedor lhe cobrar impostos adiconais ou taxas como envio e seguro, voce pode adicionar aqui. Isto vai ajudar a rastrear os custos de forma correcta. Tambem, se alguns destes impostos adicionam ao valor do produto voce irá ter que mencionar na tabela de Impostos. Voce pode tambem usar os modelos para os impostos. Para mais informações em configurar os seus impostos veja [Modelo de Impostoso de Compra e Taxas](/docs/user/manual/pt/compras/modelo-impostos-taxas-compra).
 
-### 3.2 More
-There are fields for Tax Category, Shipping Rule, Purchase Taxes and Charges Template, Discount, Terms and Conditions, Printing Settings. You can fill these fields for your record. Visit the [Quotation](/docs/user/manual/en/selling/quotation) page to know more about these sections. Note that the details you fill here like Shipping Rule, taxes, Discount, Terms and Conditions etc., are from your supplier and can be recorded for accurate tracking.
+### 3.2 Mais
+Existem campos para Categoria de Impostos, Regras de Envio, Modelo de Impostos de Compra e Taxas, Descontos, Termos e Condições, Configurações de Impressão. Voce pode preencher estes campos para o seu registo. Visite a pagina [Proforma](/docs/user/manual/pt/vendas/proforma) para saber mais sobre estas secções. De notar que os detalhes que voce preenche aqui como Regras de Envio, Impostos, Descontos, Termos e Condições etc., são do seu fornecedor e poidem ser guardados para um controle correcto.
 
-Note:
+Nota:
 
-- Tax Category will be fetched from supplier master if set
-- Print settings is for making changes to the supplier quotation print
-- The Terms and Conditions here are your supplier's
-- The supplier quotation can be linked to material requests using the 'Link to material requests' button
+- Categoria de Imposto sera procurado apartir do fornecedor caso definido
+- Configurações de Impressão é para fazer alterações a impressão da Proforma do Fornecedor
+- Os Termos e Condições aqui são dos fornecedores
+- A Cotação do Fornecedor pode estar ligada a solicitação de material usando o botão 'Ligar as solicitações de material'
 
-### 3.3 After Submitting
-The following items can be created after submitting a Supplier Quotation:
+### 3.3 Depois de Submeter
+Os seguintes itens podem ser criados depois de submeter uma Cotação de Fornecedor:
 
-* Purchase Order - A Purchase Order if you agree with the supplier's quotation.
-* Quotation - A quotation to your customer.
-* Auto Repeat - Auto Repeat the supplier quotation at specified intervals.
+* Ordem de Compra - Uma Ordem de Compra se voce concordar com as cotações de fornecedor.
+* Proforma - Uma cotação para o seu cliente.
+* Auto Repetição - Auto Repetir a cotação do fornecedor aos intervalos especificados.
 
-### 4. Related Topics
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Supplier Group](/docs/user/manual/en/buying/supplier-group)
-1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Request for Quotation](/docs/user/manual/en/buying/request-for-quotation)
+### 4. Topicos Relacionados
+1. [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+1. [Grupo de Fornecedor](/docs/user/manual/pt/compras/grupo-fornecedor)
+1. [Ordem de Compra](/docs/user/manual/pt/compras/ordem-de-compra)
+1. [Solicitação de Cotação](/docs/user/manual/pt/compras/solicitação-cotação)
 
 {next}

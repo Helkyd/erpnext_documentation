@@ -1,8 +1,8 @@
-request-for-quotation
-purchase-order
-purchase-taxes-and-charges-template
-supplier
-supplier-quotation
+solicitação-cotação
+ordem-de-compra
+modelo-impostos-taxas-compra
+fornecedor
+cotação-do-fornecedor
 supplier-scorecard
-buying-settings
-supplier-group
+configuração-compras
+grupo-fornecedor

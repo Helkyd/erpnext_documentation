@@ -1,59 +1,59 @@
 <!-- add-breadcrumbs -->
 # Configuração de Compras
 
-Buying Settings is where you can define properties which will be applied in the Buying module's transactions.
-You can find Buying Settings at:
-> Home > Buying > Settings > Buying Settings
+Configuração de Compras é aonde voce pode definir propriedades no qual serao aplicadas nas transações do Modulo de Compras.
+Voce pode encontrar as Configurações de Compra em:
+> Home > Comprar > Configurações > Definições de Compra
 
-![Buying Settings]({{docs_base_url}}/assets/img/buying/buying-settings.png)
+![Definições de Compra]({{docs_base_url}}/assets/img/buying/buying-settings.png)
 
-Let us look at the various options that can be configured:
+Vamos olhar as varias opções que podem ser configuradas:
 
-## 1. Supplier
-### 1.1 Supplier Naming By
+## 1. Fornecedor
+### 1.1 Nome do Fornecedor por
 
-When a Supplier is saved, system generates a unique identity or name for that Supplier which can be used to refer the Supplier in various Buying transactions.
+Quando um Fornecedor é salvo, o sistema gera uma identidade unica ou nome para esse Fornecedor que pode ser usado como referencia do Fornecedor em varias transações de Compra.
 
-If not configured otherwise, ERPNext uses the Supplier's Name as the unique name. If you want to identify Suppliers using names like SUPP-00001, SUPP-00002, or such other patterned series, select the value of Supplier Naming By as "Naming Series".
+Se não for configurado, o ERPNext usa o Nome do Fornecedor como um nome unico. Se voce quiser identificar Fornecedores usando nomes como SUPP-00001, SUPP-00002, ou talvez outro tipo de series, selecione o valor do Nome do Fornecedor por como "Series de Nome".
 
-You can define or select the Naming Series pattern from: **Settings > Data > Naming Series**
+Voce pode definir ou selecionar as Series de Nome apartir: **Configurações > Dados > Serie de Atrib. de Nomes**
 
-[Click here](/docs/user/manual/en/setting-up/settings/naming-series) to know more about defining a Naming Series.
+[clique aqui](/docs/user/manual/pt/configuração/configurações/nome-das-series) para saber mais sobre definindo Series de Nome.
 
-### 1.2 Default Supplier Group
+### 1.2 Grupo de Fornecedor Padrão
 
-Configure what should be the default value of Supplier Group when creating a new Supplier. For example, if most of your suppliers supply you hardware, you can set the default as 'Hardware'.
+Defina qual o Grupo de Fornecedor Padrão ao criar um novo Fornecedor. Por exemplo, se muito dos fornecedores somente vende hardware, voce pode definir o padrão como 'Hardware'.
 
-## 2. Purchasing
-### 2.1 Default Buying Price List
+## 2. Compras
+### 2.1 Lista de Preço de Compras Padrão
 
-Configure what should be the default Price List when creating a new Buying transaction, the default is set as 'Standard Buying'. Item prices will be fetched from this Price List. You can modify the 'Price List' by using the arrow at the right-end of the field to change the currency and country.
+Definia o qual deva ser a Lista de Preço Padrão quando criar uma nova transação de Compra, o padrão é definido como 'Standard Buying'. Preço de Itens sera procurado apartir desta Lista de Preço. Voce pode modificar a 'Lista de Preço' usando a seta no lado direito do campo para modificar a moeda e País.
 
-### 2.2 Purchase Order Required
+### 2.2 Ordem de Compra Obrigatorio
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt directly without creating a Purchase Order first. If retail transactions are involved where the order happens offline, then Purchase Orders can be skipped. If you're accepting sample Items, you can directly create a Purchase Receipt to receive the Items to your Warehouse.
+Se esta opção for configurado para "Sim", o ERPNext não irá permitir criar uma Factura de Compra ou um Recibo de Compra directamente sem criar uma Ordem de Compra primeiro. Se as transações de compra forem feitas offline, então as Ordens de Compra podem ser puladas. Se voce aceita amostra de Itens, voce pode criar directamente um Recibo de Compra para recebre os Itens no seu Armazem.
 
-This configuration can be overridden for a particular supplier by enabling the "Allow Purchase Invoice Creation Without Purchase Order" checkbox in supplier master
+Esta configuração pode ser passada por cima para um fornecedor em particular activando a caixinha "Permitir Criar Factura de Compra Sem Ordem de Compra" na ficha de fornecedor
 
 <img alt="Purchase Order Required" class="screenshot" src="{{docs_base_url}}/assets/img/buying/po-required.png">
 
 ### 2.3 Recibo de Compras Obrigatorio
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. In case the Item being transacted is a service, it'll not require a receipt, you can directly create an Invoice.
+Se esta opção for configurada como "Sim", o ERPNext não ira permitir criar uma Factura de Compra sem criar primeiro um Recibo de Compra. No caso do Item a ser usado na transação for um serviço, não será necessario um recibo, voce pode criar a Factura directamente.
 
-This configuration can be overridden for a particular supplier by enabling the "Allow Purchase Receipt Creation Without Purchase Receipt" checkbox in supplier master
+Esta configuração pode ser passada por cima para um fornecedor em particular bastando activar a caixinha "Permitir Criar Factura de Compra Sem Recibo de Compra" na ficha do fornecedor
 
 <img alt="Purchase Receipt Required" class="screenshot" src="{{docs_base_url}}/assets/img/buying/pr-required.png">
 
-### 2.4 Maintain Same Rate Throughout Purchase Cycle
+### 2.4 Manter Mesmo Preço no Ciclo de Compras
 
-If this is checked, ERPNext will stop you from changing an Item's price in a Purchase Invoice or Purchase Receipt created by a Purchase Order, i.e. it will maintain the same price throughout the purchase cycle. If there is a requirement where the Item's price can change, you should uncheck this option.
+Se estiver activo, o ERPNext não irá permitir que voce mude o preço do Item numa Factura de Compra ou Recibo de Comra criado pela Ordem de Copmra, i.e. irá manter o mesmo preço durante o ciclo de compras. Se tiver uma necessidade aonde o preço do Item poderá mudar, voce deve desactivar esta opção.
 
-## 3. Allow Item to be added multiple times in a transaction
+## 3. Permitir o Item ser adiconado varias vezes numa transação
 
-When this checkbox is unchecked, an item cannot be added multiple times in the same Purchase Order. However, you can still explicitly change the quantity. This is a validation checkbox for preventing accidental purchase of the same item. This can be checked for specific use cases where there are multiple sources for the same material, for example in manufacturing.
+Quanto não estiver activa esta opção, um item não poderá ser adicionado varias vezes numa Ordem de Compra. Contudo, voce pode mudar a quantidade. Isto é uma caixinha de validação para previnir comopras acidentais de um item. Este pode ser selecionado para casos especificos aonde existem varias fontes para o mesmo material, por exemplo facbrico.
 
-### 4. Related Topics
-1. [Supplier Group](/docs/user/manual/en/buying/supplier-group)
+### 4. Topicos Relacionados
+1. [Grupo de Fornecedor](/docs/user/manual/pt/compras/grupo-fornecedor)
 
 {next}

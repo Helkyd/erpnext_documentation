@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Purchase Taxes and Charges Template
+# Modelo de Impostos de Compra e Taxas
 
 **Purchase Taxes and Charges may be applied to any item you buy.**
 

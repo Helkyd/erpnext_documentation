@@ -1,58 +1,51 @@
 <!-- add-breadcrumbs -->
-# Supplier Group
-**Supplier Group is an aggregation of suppliers that are similar in some way.**
+# Grupo de Fornecedor
+**Grupo de Fornecedor é uma agregação de fornecedores que são similares de alguma forma.**
 
-A supplier may be distinguished from a contractor or subcontractor, who
-commonly adds specialized input to deliverables. A supplier is also known as a
-vendor. There are different types of suppliers based on the goods and
-products they supply.
+Um fornecedor pode ser destinguido pelo seu contratante ou subcontratado, que normalmente adiciona inputs para entregas especializados. Um fornecedor é tambem conhecido como um vendedor. Existem tipos de fornecedores com base em bens e produtos que eles providenciam.
 
-ERPNext allows you to create your own categories of suppliers. These
-categories are known as Supplier Groups. For example, if your suppliers are
-mainly pharmaceutical companies and FMCG distributors, you can create a new
-Supplier Groups for them and name the groups accordingly.
+O ERPNext permite que voce crie a sua propria categoria de fornecedores. Estas categorias são tambem conhecidas como Grupo de Fornecedores. Por exemplo, se o seu fornecedor for uma empresa farmaceutica e distribuidores FMCG, voce pode criar um novo Grupo de categorias.
 
-To access Supplier Group, go to:
-> Home Buying > Supplier > Supplier Group
+Para acessar o Grupo de Fornecedores, va para:
+> Home Comprar > Fornecedor > Grupo de Fornecedores
 
-## 1. Prerequisites
-Before creating and using a Supplier Group, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar o grupo de Fornecedores, é aconselhavel criar o seguinte:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
+* [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
 
-## 2. How to create a Supplier Group
-1. Go to the Supplier Group list, click on New.
-1. Type a name for your new Supplier Category.
-1. You can set a Parent Supplier Group for this Supplier Group.
-1. Ticking the Is Group checkbox will make it a Parent Supplier Group.
-1. You can also assign a default Payment Terms Template to the Supplier Group. Useful in a case where all your hardware suppliers take half payment on sales order and half post shipment.
-1. Save.
+## 2. Como criar um Grupo de Fornecedores
+1. Va para a lista de Grupo de Fornecedores, clique em Novo.
+1. Digite o nome para a sua nova Categoria de Fornecedor.
+1. Voce pode definr o Grupo de Fornecedor Principal para este Grupo de Fornecedores.
+1. Selecionando a caixinha de É Grupo irá fazer um Grupo de Fornecedores Principal.
+1. Voce pode tambem atribuir um Modelo de Termos de Pagamentos padrão para o grupo de Fornecedores. Util em casos aonde o seu fornecedor de hardware faz metade do pagamento na Ordem de Vendas e metade deois do Envio.
+1. Salvar.
 
 <img class="screenshot" alt="Supplier Group" src="{{docs_base_url}}/assets/img/buying/supplier-group.png">
 
-You can classify your suppliers from a range of choices available in ERPNext.
-Choose from a set of given options like Distributor, Electrical, Hardware, Local, Pharmaceutical, Raw Material, Services etc. Classifying your supplier into different types facilitates accounting and payments.
+Voce pode classificar os seu Fornecedores apartir de uma variedade de escolhas disponiveis no ERPNext.
+Escolha apartir de um conjunto de opções dadas como Fornecedor, Eletrico, Hardware, Local, Famaceutico, Materia Prima, Serviços etc. Classifique o seu Fornecedor em varios tipos de contas de facilidades e pagamentos.
 
-## 3. Supplier Group Tree
+## 3. Arvore de Grupo de Fornecedor
 
-You can also construct Supplier Group in the form of a tree hierarchy, similar
-to Chart of Accounts.
+Voce pode tambem construir o Grupo de Fornecedores em forma de Arvore Hierarquica, similar ao Plano de Contas.
 
-To view the Tree structure, click on **Tree** from the sidebar. To go back to the
-list view, simply select: **Menu > View List**.
+Para ver a estrutuda da Arvoce, clique em  **Arvore** no lado. Para voltar para a lista, simplesmente 
+selecione: **Menu > Ver Lista**.
 
 <img class="screenshot" alt="Supplier Group" src="{{docs_base_url}}/assets/img/buying/supplier-group-tree.png">
 
-With the new [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
-in place, you can now apply hierarchy based permissions.
-That is, if a User is permitted to view parent node of Supplier Group,
-he/she automatically qualifies to view the child nodes of that parent node.
+Com a nova [Permissão de Usuario](/docs/user/manual/pt/configuração/usuarios-e-permissões)
+a funcionar, voce pode aplicar permissões com base em Hierarquia.
+Isto é, se o Usuario for permitido ver o No principal de um Grupo de Fornecedores,
+ele/ela automaticamente está qualificada para ver os nos dos filhos de um No Principal.
 
-For example, in the above image, let's say that user permission is applied for a User to
-view 'Distributor' document. Then the user also gets permitted to view its
-child nodes 'Book Distributor', 'Electronic Distributor', etc.
+Por exemplo, se a imagem em cima, digamos que a permissão é aplicada ao usuario for para um Usuario no documento 
+'Distribuidor'. Então o usuario pode tambem ter permissão para visualizar os 
+nos dos filhos 'Distribuidor de Livros', 'Distribuidor de Electronicos', etc.
 
-### 4. Related Topics
-1. [Supplier](/docs/user/manual/en/buying/supplier)
+### 4. Topicos Relacionados
+1. [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
 
 {next}

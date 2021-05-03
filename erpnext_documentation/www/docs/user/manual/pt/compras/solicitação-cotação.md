@@ -69,7 +69,7 @@ Titles of your documents can be changed. Know more [here](/docs/user/manual/en/s
 Now, when the Request for Quotation is saved, you can see in the Dashboard that it is linked to the Material Request.
 If there are multiple Material Requests with the same items, then the link will be created with the newest Material Request.
 
-## 4. Creating a Supplier Quotation after RFQ
+## 4. Criando uma Cotação de Fornecedor depois de um SDQ
 After creation of Request for Quotation, there are two ways to generate Supplier Quotation from Request for Quotation.
 
 ### 4.1 Supplier Quotation by User
