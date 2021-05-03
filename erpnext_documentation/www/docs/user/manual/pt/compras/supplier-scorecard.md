@@ -1,98 +1,98 @@
 <!-- add-breadcrumbs -->
-# Supplier Scorecard
+# Scorecard do Fornecedor
 
-**A Supplier Scorecard is an evaluation tool used to assess the performance of suppliers.**
+**Um Scorecard do Fornecedor é uma ferramenta de evolução usado para avaliar o desempenho dos fornecedores.**
 
-Supplier scorecards can be used to keep track of item quality, delivery, and responsiveness of suppliers across long periods of time. This data is typically used to help in purchasing decisions.
-A Supplier Scorecard is manually created for each supplier.
+Scorecards do Fornecedores podem ser usado para rastrear a qualidade do item, entra, e tempo de resposta dos fornecedores ao longo de um periodo de tempo. Este dado é usado normalmente para ajudar nas decisões de compra.
+Um Scorecard do Fornecedor é manualmente criado para cada fornecedor.
 
-To access Supplier Scorecard, go to:
-> Home > Buying > Supplier Scorecard > Supplier Scorecard
+Para acesso Scorecard do Fornecedor, va para:
+> Home > Comprar > Scorecard Fornecedor > Scorecard Fornecedor
 
 
-## 1. Prerequisites
-Before creating and using a Supplier Scorecard, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar o Scorecard do Fornecedor, é aconselhavel criar estes:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
+* [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
 
-## 1. How to create Supplier Scorecard
+## 1. Como criar um Scorecard de Fornecedor
 
-1. Go to the Supplier Scorecard list, click on New.
-2. Select a Supplier to score.
-3. Select the evaluating period whether weekly, monthly, or yearly.
-4. Setup the scoring function (details in next section).
-5. A supplier scorecard is created for each supplier individually. Only one supplier scorecard can be created for each supplier. 
+1. Va para a lista de Scorecard do Fornecedor, clique em Novo.
+2. Selecione o Fornecedor para marcar.
+3. Selecione o periodo de avaliação caso seja semanal, mensal ou anual.
+4. Defina as funções de marcação (detalhes na proxima secção).
+5. Um scorecard de Fornecedor é criado para cada fornecedor individual. Somente um scorecard de fornecedor pode ser criado para cada fornecedor. 
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard.png">
 
-## 2. Features
-### 2.1 Scoring Setup
-The supplier scorecard consists of a set evaluation periods, during which the performance of a supplier is evaluated. This period can be weekly, monthly or yearly. The current score is calculated from the score of each evaluation period based on the weighting function. The default formula is linearly weighed over the previous 12 scoring periods. 
+## 2. Funcionalidades
+### 2.1 Configuração do Scoring
+O scorecard do fornecedor consiste num conjunto de periodos de avaliação, durante o qual o desempenho de um fornecedor é avaliado. Este periodo pode ser semanal, mensal ou anual. O score (pontuação) actual é calculado apartir do score do periodo de cada avaliação com base nas funções de peso. A formula pardrão é linearmente ponderada sobre os 12 periodos de marcação anteriores. 
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-weighing.png">
-This formula is customizable.
+Esta formula é customizada.
 
-#### Supplier Standings
+#### Classificação do Fornecedor
 
-The supplier standing is used to quickly sort suppliers based on their performance. These are customizable for each supplier. 
+A classificação do fornecedor é usado para rapidamente organizar os fornecedores com base nos seu desempenhos. Estes são customizaveis para cada fornecedor. 
 
-The scorecard standing of a supplier can also be used to restrict suppliers from being included in Request for Quotations or being issued Purchase Orders. The following screen can be seen on expanding a row in the 'Scoring Standings' table, click on the downward facing arrow.
+O scorecard que fica de um fornecedor pode ser usado para restringir fornecedores de serem incluidos nas Solicitações de Cotação ou de serem criadas Ordens de Compra. Os seguintes ecrã podem ser vistos ao expandir a linha na tabela 'Classificação de Pontuações', clique na seta virada para baixo.
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-standing.png">
 
-### 2.2 Criteria Setup
-A supplier can be evaluated on several individual evaluation criteria, including (but not limited to) quotation response time, delivered item quality, and delivery timeliness. These criteria are weighed to determine the final period score. 
+### 2.2 Configuração de Criterios
+Um fornecdor pode ser avaliado em varios criterios individuais de avaliação, incluindo (mas não limitado a) tempo de resposta de cotação, qualidade de entrega do tiem, e tempo das entregas. Estes criterios são pesados para determinar a pontuação do periodo final. 
 
-To create a  new Criteria, go to Buying > Supplier Scorecard > Supplier Scorecard Criteria:
+Para criar um novo Criterio, va para Comprar > Scorecard Fornecedor > Criterios do Scorecard do Fornecedor:
 <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/supplier-scorecard-criteria.png">
 
-Note: Criteria weights for a scorecard should add up to 100. 
+Nota: Peso dos Criterios para um scorecard deve somar até 100. 
 
-### 2.3 Supplier Scorecard Variables
-The method for calculating each criteria is determined through the Criteria Formula field, which can use a number of pre-established variables. This can be seen in the preceding screenshot.
+### 2.3 Variaveis do Scorecard do Fornecedor
+O metodo para calcular cada criterio é determinado pelo campo Formula do Criterio, que pode usar um numero de variaveis pre criadas. Este podem ser vistos no ecrã mais em baixo.
 
-The value of each of these variables is calculated over the scoring period for each supplier. Examples of such variables include:
+O valor de cada uma das variaveis é calculada sobre o periodo de pontuação para cada fornecedor. Exemplos de tais variaveis:
 
- - The total number of items received from the supplier
- - The total number of accepted items from the supplier
- - The total number of rejected items from the supplier
- - The total number of deliveries from the supplier
- - The total amount (in dollars) received from a supplier
+ - O total de itens recebidos de um fornecedor
+ - O total de itens aceites apartir de um fornecedor
+ - O total de itens rejeitados apartir de um fornecedor
+ - O total de entregas apartir de um fornecedor
+ - O valor total (em dolares) recebidos de um fornecedor
 
-![Supplier Scorecard variable](/docs/assets/img/buying/supplier-scorecard-variables.png)
+![Variavel do Scorecard do Fornecedor](/docs/assets/img/buying/supplier-scorecard-variables.png)
 
-Variables are pre-set, additional variables can be added through server-side customizations. Tick the Custom checkbox if the variable you're creating is for a custom field.
+Variaveis pre definidas, variaveis adicionais  pode ser incluidas via customização. Selecione a caixa Personalizado se a variavel que estiver a criar for para um campo customizado.
 
-The criteria formula should be customized to evaluate the suppliers in each criteria in a way that best fits the company requirements.
+A formula do criterio deve ser customizado para avaliar os fornecedores de cada criterio de uma forma que possa servir os requisitos da empresa.
 
-### 2.4 Evaluation Formulas
-The evaluation formula uses the pre-established or custom variables to evaluate an aspect of supplier performance over the scoring period. Formulas can use the following mathematical functions:
+### 2.4 Formula de Avaliação
+A formula de avaliação usa as pre-estabelicidas ou variaveis customizadas para avaliar um aspecto do desempenho do fornecedor durante um periodo de pontuação. Formulas podem usar as seguintes funções matematicas:
 
-* addition: + 
-* subtraction: -
-* multiplication: *
-* division: /
+* soma: + 
+* subtração: -
+* multiplicação: *
+* divisão: /
 * min: min(x,y)
 * max: max(x,y)
 * if/else: (x) if (formula) else (y)
-* less than: <
-* greater than: >
-* variables: {variable_name}
+* menor que: <
+* maior que: >
+* variaveis: {variable_name}
 
-It is crucial that the formula be solvable for all variable values. This is most often an issue if the value resolves to 0. For example:
+É crucial que a formula seja resolvida para todos os valores das variaveis. É normalmente um problema se o valor resolve para 0. Por exemplo:
 ```
 {total_accepted_items} / {total_received_items}
 ```
 
-This example would resolve to 0 / 0 in periods where there are no received items, and therefore should have a check to protect in this case:
+Este exemplo deve resolver para 0 / 0 em periodos aonde não tem itens recebidos, e para tal deve ter uma condição para proteger este caso:
 ```
 ({total_accepted_items} / {total_received_items}) 
 if {total_received_items} > 0
 else 1.
 ```
 
-### 2.5 Evaluating the Supplier
-An evaluation is generated for each Supplier Scorecard Period by clicking the "Generate Missing Scorecard Periods" button. The supplier's current score can be seen, as well as a visual graphic showing the performance of the supplier over time. Any actions against the supplier are also noted here, including warnings when creating RFQs and POs or preventing these features for this supplier altogether.
+### 2.5 Avaliando o Fornecedor
+Uma avaliação pode ser gerada para cada Periodo de Pontuação do Fornecedor fazendo o clique no botão "Periodo do Scorecard do Fornecedor". A pontuação actual do fornecedor pode ser visto, bem com um grafico visual mostrando o desempenho do fornecedor ao longo do tempo. Qualquer acção contra o fornecedor tambem são vistos aqui, incluindo avisos ao criar SDCs e PCs ou quando não são permitidos.
 
-### 3. Related Topics
-1. [Supplier](/docs/user/manual/en/buying/supplier)
-1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
+### 3. Topicos Relacionados
+1. [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+1. [Cotação de Fornecedor](/docs/user/manual/pt/compras/cotação-do-fornecedor)
 
 {next}

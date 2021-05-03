@@ -1,199 +1,198 @@
 <!-- add-breadcrumbs -->
-# Purchase Order
+# Ordem de Compra
 
-**A Purchase Order is a binding contract with your Supplier that you promise to buy a set of items under given conditions.**
+**Uma Ordem de Compra é um contracto que liga com o seu Fornecedor no qual voce prometeu comprar um conjunto de itens dentro das condições definidas.**
 
-It is similar to a Sales Order but instead of sending it to an external party, you keep it for internal records.
+É igual a Ordem de Venda mas em veze de enviar a um parceiro externo, voce guarda para registo internos.
 
-> Home > Buying > Purchasing > Purchase Order
+> Home > Comprar > Aquisição > Ordem de Compra
 
-![Buying Flow](/docs/assets/img/buying/buying_flow_po.png)
+![Fluxo de Compras](/docs/assets/img/buying/buying_flow_po.png)
 
-## 1. Prerequisites
-Before creating and using a Purchase Order, it is advised that you create the following first:
+## 1. Pre-requisitos
+Antes de criar e usar uma Ordem de Compra, é aconselhavel criar o seguinte:
 
-* [Supplier](/docs/user/manual/en/buying/supplier)
-* [Item](/docs/user/manual/en/stock/item)
+* [Fornecedor](/docs/user/manual/pt/compras/fornecedor)
+* [Item](/docs/user/manual/pt/inventario/item)
 
 
-## 2. How to create a Purchase Order
+## 2. Como criar uma Ordem de Compra
 
-A Purchase Order can be automatically created from a Material Request or Supplier Quotation.
+Uma Ordem de Compra pode ser criado automaticamente apartir de uma Solicitação de Material ou de um Cotação de Fornecedor.
 
-1. Go to the Purchase Order list, click on New.
-1. Select the Supplier, required by date.
-1. In the items table, select the item by code, you can change the required by date for each item.
-1. Set the quantity and the price will be fetched automatically if set in the Item master.
-1. Set taxes.
-1. Save and Submit.
+1. Va para a lista de Ordem de Compra, clique em Novo.
+1. Selecione o Fornecedor, requerido por data.
+1. Na tabela Itens, selecione o item pelo codigo, voce pode mudar o requerido por data para cada item.
+1. Defina a quantidade e o preço sera automaticamente inserido se definido no Item.
+1. Defina os Impostos.
+1. Salvar e Submeter.
     <img class="screenshot" alt="Purchase Order" src="{{docs_base_url}}/assets/img/buying/purchase-order.png">
 
-### 2.1 Setting Warehouses
+### 2.1 Configuração de Armazens
 
-* **Set Target Warehouse**: Optionally, you can set the default target Warehouse where the purchased Items will be delivered. This will be fetched into the Item table rows.
+* **Defina o Armazem Alvo**: Opcional, voce pode definir o Armazem alvo padrão aonde os itens comprados sera entregues. Este sera inserido nas linhas da tabela.
 
-### 2.2 Fetching Items from Open Material Requests
-Items can be fetched into the Purchase Order automatically from open [Material Requests](/docs/user/manual/en/stock/material-request). For this to work, the following steps need to be done:
+### 2.2 Procurando Itens apartir de uma Solicitação de Material Aberta
+Itens pode ser procurados na Ordem de Compra automaticamente apartir de uma [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material) aberta. Para que isto funcione, siga os seguintes passos:
 
-1. Select a Supplier in the Purchase Order.
-1. Set default Supplier in the Item form under [Item Defaults](/docs/user/manual/en/stock/item#39-item-defaults).
-1. A [Material Request](/docs/user/manual/en/stock/material-request) needs to present of type 'Purchase'.
-1. Click on the **Get Items from open Material Requests** button below the Supplier name. Now a dialog will appear with Material Requests containing Items for which the default Supplier is the same as the one selected in the Purchase Order. On selecting the Material Requests and clicking on **Get Items**, the Items will be fetched from the Material Requests.
+1. Selecione o Fornecedor na Ordem de Compra.
+1. Defina o Fornecedor padão no formulario do Item [Padrão do Item](/docs/user/manual/pt/inventario/item#39-padrões-do-item).
+1. Uma [Solicitação de Material](/docs/user/manual/pt/inventario/solicitação-material) precisar ser do tipo 'Compra'.
+1. Clique no botão **Obter Itens apartir da Solicitação de Material Aberta** em baixo do nome do Fornecedor. Agora uma caixa de dialogo irá aparecer com as Solicitações de Material contendo itens no qual o Fornecedor padrão é igual para todos os selecionados na Ordem de Compra. Ao selecionar a Solicitação de Material e fazendo o clique em **Obter Itens**, os Itens vao ser procurados apartir da Solicitação de Material.
 <img class="screenshot" alt="Get Items from Open Material Requests" src="{{docs_base_url}}/assets/img/buying/get-items-from-open-mr.png">
 
-> **Note:** The **Get Items from Open Material Requests** button is visible as long as the Items table is empty.
+> **Nota:** O botão **Obter Itens apartir da Solicitação de Material Aberta** é visivel até que a tabela de Itens fique vazia.
 
-## 3. Features
+## 3. Funcionalidades
 
-### 3.1 Address and Contact
+### 3.1 Endereço e Contacto
 
-* **Select Supplier Address**: The Supplier's billing address.
-* **Select Shipping Address**: The Supplier's shipping address from which they'll be sending the items.
-* Address, Shipping Address, Contact, Contact Email will be fetched if saved in the Supplier master.
+* **Selecionar o Endereço do Fornecedor**: O Endereço de cobrança do Fornecedor.
+* **Selecionar o Endereço de Envio**: O Endereço de envio do Fornecedor no qual eles vão enviar os itens.
+* Endereço, Endereço de Envio, Contacto, email de Contacto sao procurados se foram salvos na ficha do Fornecedor.
 
-For India:
+Para India:
 
 * **Supplier and Company GSTIN**: The GST Identification Number of your Supplier and your company.
 * **Place of Supply**: For GST, Place of Supply is necessary. It consists of the state's name and number.
 
-### 3.2 Currency and Price List
-You can set the currency in which the purchase order is to be stored. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+### 3.2 Moeda e Lista de Preços
+Voce pode definir a moeda no qual a ordem de compra é guardada. Se voce definir a Lista de Preço, então os preços dos itens vao ser procurados apartir desta lista. Selecionando em Ignorar Regras de Preço ira ignorar as Regras de Preço definidos em Contabilidade > Regras de Preço.
 
-To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
+Para saber sobre Listas de Preços, [clique aqui](/docs/user/manual/pt/inventario/lista-preços).
 
-To know about managing transactions in multiple currencies, [click here](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency).
+Para saber sobre gerirndo transações em varias moedas, [clique aqui](/docs/user/manual/pt/contabilidade/artigos/gerir-transações-multiplas-moedas).
 
-### 3.3 Subcontracting or 'Supply Raw Materials'
+### 3.3 Subcontratando ou 'Fornecer Materia Prima'
 
-Setting 'Supply Raw Materials' option is useful for subcontracting where you provide the raw materials for manufacturing an item. To know more, visit the [Subcontracting page](/docs/user/manual/en/manufacturing/subcontracting).
+Definindo a opção 'Fornecer Material Prima' é util para subcontractar aonde voce providencia a materia prima para o fabrico de um item. Para saber mais, visite a [pagina Subcontractando](/docs/user/manual/pt/fabrico/subcontratação).
 
-### 3.4 The Items table
+### 3.4 A tabela de Itens
 
-* **Scan Barcode**: You can add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+* **Codigo de Barras**: Voce pode adiconar Itens na tabela Item fazendo o scan dos codigos de barra se tiver um leitor. Saiba como rastrear [aqui](/docs/user/manual/pt/inventario/artigos/rastrear-itens-usando-codigo-de-barras)
 
-* **Quantity and Rate**: When you select the Item code, it's name, description, and UOM will be fetched. The 'UOM Conversion Factor' is set to 1 by default, you can change it depending on the UOM received from the seller, more in the next section.
+* **Quantidade e Preço**: Quando voce seleciona o Codigo do Item, o seu nome, descrição, e UDM vao ser procurados. O 'Factor de Conversão UDM' é definido por defeito 1, voce pode mudar dependendo da UDM que recebeu do seu vendedor, mais aqui neste secção.
 
-    'Price List Rate' will be fetched if a Standard Buying rate is set. 'Last Purchase Rate' shows the rate of the item from your last Purchase Order. Rate is fetched if set in the item master. You can attach an Item Tax Template to apply a specific tax rate to the item.
+    'Taxa da Lista de Preço' sera procurada se uma taxa de Compra Padrão foi definida. 'Ultima Taxa de Compra' mostra o preço do item da sua ultima Ordem de Compra. Preço sera procurado se foi definido na tabela Item. Voce pode anexar um Modelo de Imposto de Item para aplicar uma taxa de imposto ao item.
 
-* **Item weights** will be fetched if set in the Item master else enter manually.
+* **Peso do Item** sera procura se definido na tabela Item caso contrario digite manual.
 
-* **Warehouse**: The warehouse where the items will be delivered, will be auto-filled if 'Set Target Warehouse' was set in the Purchase Order. Via Blanket Order, a Blanket Order can be linked, to know more [click here](/docs/user/manual/en/selling/blanket-order). A 'Project' can be linked to track progress. A 'BOM' or Bill of Materials can also be linked to track progress.
+* **Armazem**: O armazem aonde os itens vão ser entregues, sera auto preenchido se 'Defina Armazem Alvo' foi defino na Ordem de Compra. Pela Ordem de Cobertura, uma Ordem de Cobertura pode ser ligada, saiba mais [clique aqui](/docs/user/manual/pt/vendas/pedido-cobertura). Um 'Projecto' pode ser ligado para rastrear o progresso. Uma 'LDM' ou Lista de Materiais pode tambem ser ligado para rastrear o progresso.
 
-* 'Qty as per Stock UOM' will show the current stock as per the UOM set in the Item master. 'Received Qty' will be updated when the items are billed.
+* 'Qtd de acordo o UDM de Stock' irá mostrar o stock corrente de acordo a UDM definido na Item. 'Qtd Recebida' ira ser actualizado quando os itens são cobrados.
 
-* **Accounting Details**: This section is autofilled for a Purchase Order. 'Expense Account' is the account against which the PO is billed and Cost Center is the CC against which the PO is charged.
+* **Detalhes de Contabilidade**: Neste secção é auto preenchido para a Ordem de Compra. 'Conta de Despesas' é uma conta contra o qual a OC é cobrada e o Centro de Custo é Centro de Custo contra o qual a OC é cobrada.
 
-A “Required By” date on each Item: If you are expecting part delivery, your Supplier will know how much quantity to deliver at which date. This will help you from preventing over-supply. It will also help you to track how well your Supplier is doing on timeliness.
+Um “Necessario pela” data em cada Item: Se voce estiver a espera entrega de peça, o seu Fornecedor irá saber a quantidade a entregar e em que data. Isto irá ajudar voce em não ter um volume alto de stock. Ajuda tambem voce a rastria como o seu Fornecedor esta.
 
-**Allow Zero Valuation Rate**: Ticking on 'Allow Zero Valuation Rate' will allow submitting the Purchase Receipt even if the Valuation Rate of the Item is 0. This can be a sample item or due to a mutual understanding with your Supplier.
+**Permitir Taxa de Avaliação Zero**: Selecionando 'Permitir Taxa de Avaliação Zero' irá permitir submeter o Recibo de Compra mesmo que a Taxa de Avaliação do Item seja 0. Este pode ser para um item de amostra ou devido a um entendimento mutuo com o seu fornecedor.
 
-### 3.6 Raw Materials Supplied
-This section appears when 'Supply Raw Materials' supplied is set to 'Yes'. This section shows a table with the Items to be supplied to the Supplier for the subcontracting process.
+### 3.6 Fornecido Materia Prima
+Esta secção aparece quando 'Fornecer Materia Prima' é definido como 'Sim'. Esta secção mostra a tabela com os Itens a serem entregues ao Fornecedor para o processo de Subcontratação.
 
-* **Set Reserve Warehouse**: When [Subcontracting](/docs/user/manual/en/manufacturing/subcontracting), the raw materials can be reserved in a separate Warehouse. On selecting the Reserved Warehouse here, it'll be fetched into Item rows of the Raw Materials Supplied table.
+* **Defina o Armazem Rerserva**: Quando [Subcontractando](/docs/user/manual/pt/fabrico/subcontratação), a materia prima pode ser reservada em Armazens separados. Ao selecionar o Armazem Reservado aqui, ira inserido nas linhas dos itens da tabela de Materias Primas.
 
-#### Supplied Items Table
+#### Tabela de Itens Entregues
 
-* **Required Quantity**: The count of Items required to complete the subcontracting as specified in the [BOM](/docs/user/manual/en/manufacturing/bill-of-materials).
-* **Supplied Quantity**: This will be updated when you create Stock Entries to transfer materials to Supplier Warehouse from the Reserve Warehouse using the **Transfer** button.
-    ![Subcontract Transfer Material](/docs/assets/img/buying/subcontract-transfer-materials.gif)
+* **Quantidade Necessaria**: A contagem dos Itens necessarios para completar a subcontracação como especificado na [LDM](/docs/user/manual/pt/fabrico/lista-de-materiais).
+* **Quantidade Fornecida**: Este sera actualizado quando voce criar o Registo de Entrada para transferir materiais para o Armazem do Fornecedor apartir do Armazem Reserva usando o botão **Transferir**.
+    ![Transferencia de Material do Subcontracto](/docs/assets/img/buying/subcontract-transfer-materials.gif)
 
-### 3.7 Purchase UOM and Stock UOM Conversion
+### 3.7 Conversão de UDM de Compra e UDM de Stock
 
-You can change your UOM as per your stock requirements in the Purchase Order.
+Voce pode mudar a sua UDM de acordo o seu requesito de stock na Ordem de Compra.
 
-For example, If you have bought your raw material in large quantities with UOM - boxes, and wish to stock them in UOM - Nos; you can do so while making your Purchase Order.
+Por exemplo, se voce comprou a sua materia prima em grandes quantidades com UDM - caixas, e deseja guardar em UDM - Nos; voce pode fazer quando estiver a criar a Ordem de Compra.
 
-1. Store UOM as Nos in the Item master. Note that the UOM in the Item master is the stock UOM.
+1. Guarde a UDM como Nos no Item. Nota que a UDM no Item é a UDM do Stock.
 
-2. In the Purchase Order mention UOM as Box. (Since material arrives in Boxes)
+2. Na Ordem de Compra mencione a UDM como Caixa. (Vendo que o material chega em Caixas)
 
-3. In the Warehouse and Reference section, the UOM will be pulled in as Nos (from the Item form):
+3. No Armazem e secção de Referencia, a UDM sera puxadas em Nos (apartir do formulario do Item):
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/purchase-order-uom.png">
 
-4. Mention the UOM conversion factor. For example, (1); If one box has 1 kilo.
+4. Mencione o Factor de Conversão. Por exemplo, (1); Se uma caixa tem 1 kilo.
 
-5. Notice that the stock quantity will be updated accordingly.
+5. Note que a quantidade de stock sera actualizado automaticamente.
 
  <img class="screenshot" alt="Purchase Order - UOM" src="{{docs_base_url}}/assets/img/buying/po-stock-uom.png">
 
-### 3.8 Taxes and Charges
+### 3.8 Impostos e Taxas
 
-If your Supplier is going to charge you additional taxes or charge like a
-shipping or insurance charge, you can add it here. It will help you to
-accurately track your costs. Also, if some of these charges add to the value
-of the product you will have to mention them in the Taxes table.
+Se o seu Fornecedor cobrar impostos adicionais ou cobrar como taxa de
+envio ou segurança, voce pode adiconar aqui. Irá ajudar voce a 
+ter um controle de custo certo. Tambem, se algum dos impostos adicionam valor 
+ao produto voce tera de mencionar na tabela de Impostos.
 
-Visit the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template) page to know more about taxes.
+Visite a pagina [Modelo de Impostos de Compra e Taxas](/docs/user/manual/pt/compras/modelo-impostos-taxas-compra) para saber mais sobre impostos.
 
-The total taxes and charges will be displayed below the table.
+O total dos impostos e taxa vao ser mostrados em baixo da tabela.
 
-To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+Para adicionar impostos automaticamente via Categoria de Imposto, visite [esta pagina](/docs/user/manual/pt/contabilidade/categoria-imposto).
 
-Make sure to mark all your taxes in the Taxes and Charges table correctly for an accurate valuation.
+Tenha a certeza em marcar todos os impostos na tabela de Impostos e Taxa correctamente para uma avaliação correcta.
 
-#### Shipping Rule
-A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
+#### Regras de Envio
+Uma Regra de Envio ajuda a definir o custo do envio do Item. O custo irá aumentar com a distancia do envio. Para saber mais, visite a pagina [Regras de Envio](/docs/user/manual/pt/vendas/regras-envio).
 
 <img class="screenshot" alt="Purchase Order Taxes" src="{{docs_base_url}}/assets/img/buying/po-taxes.png">
 
-For example, you buy Items worth X and sell them for 1.3X. So your Customer
-pays 1.3 times the tax you pay your Supplier. Since you have already paid tax
-to your Supplier for X, what you owe your government is only the tax on 0.3X.
+Por exemplo, voce compra Itens no valor de X e vendo por 1.3X. Então o seu Cliente
+paga 1.3 veze o imposto que voce paga ao seu Fornecedor. Vendo que voce já pagou o imposto
+ao seu Fornecedor por X, o que voce deve ao governo é somente o valor do imposto em 0.3X.
 
-This is very easy to track in ERPNext since each tax head is also an Account.
-Ideally you must create two Accounts for each type of VAT you pay and collect,
-“Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that
-effect.
+Isto é muito facil ver no ERPNext veno que cada imposto é uma Conta.
+O ideal é voce criar duas Contas para cada tipo de VAT que paga e recebe,
+“Compras VAT-X” (activos) e “Vendas VAT-X” (responsabilidade), ou algo para esse efeito.
 
-### 3.9 Additional Discount
-Other than recording discount per item, you can add a discount to the whole purchase order in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
+### 3.9 Desconto Adiconal
+Para alem de gravar descontos por item, voce pode adionar um desconto a ordem de compra completa nesta secção. Este desconto pode ser com base no Total Geral i.e., depois do imposto/taxa ou no Total Liquido i.e., antes do imposto/taxas. O Desconto adicional pode ser aplicado em percentagem ou em valor.
 
-Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
+Leia [Aplicando Desconto](/docs/user/manual/pt/vendas/artigos/aplicando-desconto) para mais detalhes.
 
-### 3.10 Payment Terms
-Sometimes payment is not done all at once. Depending on the agreement, half of the payment may be made before shipment and the other half after receiving the goods/services. You can add a Payment Terms template or add the terms manually in this section.
+### 3.10 Termos de Pagamento
+Algumas vezes o pagamento não é feito na totalidade. Dependendo do acordo, metade do pagamento pode ser feito antes do envio e a outra parte depois de receber os bens/serviços. Voce pode adiconar o Modelo de Termos de Pagamento ou adiconar os termos manualmente nesta secção.
 
-To know more about Payment Terms, [click here](/docs/user/manual/en/accounts/payment-terms).
+Para sber mais sobre Termos de Pagamento, [clique aqui](/docs/user/manual/pt/contabilidade/termos-pagamento).
 
-### 3.11 Terms and Conditions
-In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+### 3.11 Termos e Condições
+Em transações de Vendas/Compras pode haver alguns Termos e Condições com base em que o Fornecedor forneça bens ou serviços ao Cliente. Voce pode aplicar os Termos e Condições a transações que vão aparecer quando imprimir o docume nto. Para saber sobre Termos e Condições , [clique aqui](/docs/user/manual/pt/configuração/imprimir/termos-e-condições)
 
-### 3.12 Print Settings
-#### Letterhead
-You can print your request for quotation / purchase order on your company's letterhead. Know more [here](/docs/user/manual/en/setting-up/print/letter-head).
+### 3.12 Configurações de Impressão
+#### Cabeçalho
+Voce pode imprimir o seu pedido de cotação / compra com o cabeçalho da sua empresa. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/cabeçalho-carta).
 
-'Group same items' will group the same items added multiple times in the items table. This can be seen when your print.
+'Agrupar Itens iguais' irá agrupar os itens iguais adiconados varias vezes na tabela de itens. Este pode ser visto ao imprimir.
 
-#### Print Headings
-Titles of your documents can be changed. Know more [here](/docs/user/manual/en/setting-up/print/print-headings).
+#### Imprimir Cabeçalho
+Titulos dos seu documentos pode ser trocado. Saiba mais [aqui](/docs/user/manual/pt/configuração/imprimir/imprimir-cabeçahos).
 
-The seller's Additional Discount, Payment Terms, Terms and Conditions can be recorded in your Purchase Order.
+O Desconto Adiconal do vendedor, Termos de Pagamento, Termos e Condições podem ser registados na Ordem de Compra.
 
-### 3.13 More Information
-This section shows the status of the Purchase Order, percentage of items received, and percentage of items billed. If this is an Inter Company Order, the Sales Order can be linked here.
+### 3.13 Mais Informação
+Esta secção mostra o status da Ordem de Compra, percentagem de itens recebidos, e pertencegem de itens cobrado. Se for um pedido Inter Empresas, a Ordem de Venda por de ser ligada aqui.
 
-### 3.14 After Submitting
-Once you “Submit” your Purchase Order, you can trigger actions these actions:
+### 3.14 Depois de Submetido
+Uma vez que “Submetida” a Ordem de Compra, voce pode acionar acções:
 
-* You can Add, Update, Delete items in the Purchase Order by clicking on the **Update Items** button. However you cannot delete items which has already been received.
+* Voce pode Adiconar, Actualizar, Apagar itens na Ordem de Compra fazendo o clique no botão **Actualizar Itens**. Contudo voce não pode apagar itens que ja foram recebidos.
 
-* Status: Once submitted, you can hold a Purchase Order or Close it.
+* Status: Uma vez submetidos, voce pode por em espera a Ordem de Compra ou Fechar.
 
-* Create: From a submitted Purchase Order, you can create the following:
+* Criar: Apartir de uma Ordem de Compra Submetida, voce pode criar os seguintes:
 
-    * [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt) - A receipt indicating you've received the items.
-    * [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice) - An invoice/bill for the purchase order.
-    * [Payment Entry](/docs/user/manual/en/accounts/payment-entry) - A payment entry indicates that payment has been made against a purchase order.
-    * [Journal Entry](/docs/user/manual/en/accounts/journal-entry) - A Journal Entry is recorded in the general ledger.
+    * [Recibo de Compra](/docs/user/manual/pt/inventario/recibo-compra) - Um recibo indicando que voce recebeu os itens.
+    * [Factura de Compra](/docs/user/manual/pt/contabilidade/factura-compra) - Uma factura/cobrança para a ordem de compra.
+    * [Registo de Pagamento](/docs/user/manual/pt/contabilidade/registo-pagamento) - Um registo de pagamento indica que o pagamento foi feito contra uma ordem de compra.
+    * [Lançamento Contabilistico](/docs/user/manual/pt/contabilidade/lançamento-contabilistico) - Um Lançamento Contabilistico é guardado no Razão Geral.
 
-    ![Purchase Order post submitting](/docs/assets/img/buying/po-after-submit.png)
+    ![Depois de Submeter uma Ordem de Compra](/docs/assets/img/buying/po-after-submit.png)
 
-### 4. Related Topics
-1. [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
-1. [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template)
-1. [Purchasing In Different Unit](/docs/user/manual/en/buying/articles/purchasing-in-different-unit)
-1. [Amending Purchase Order After Submit](/docs/user/manual/en/buying/articles/amending-purchase-order-after-submit)
+### 4. Topicos Relacionados
+1. [Solicitação de Cotação](/docs/user/manual/pt/compras/solicitação-cotação)
+1. [Modelo de Imposto de Compras e Taxas](/docs/user/manual/pt/compras/modelo-impostos-taxas-compra)
+1. [Comprando em Unidades Diferentes](/docs/user/manual/pt/compras/artigos/comprando-em-unidades-diferentes)
+1. [Emendando Ordem de Compra depois de Submetida](/docs/user/manual/pt/compras/artigos/corrigindo-ordens-compra-depois-de-submetido)
 
 {next}
